@@ -1,0 +1,30 @@
+# LineBreak: Do not use \, | and brackets. Recommended : /, _
+
+Options:
+  Title: §3§lStart Page
+  UiSlotCount: 27
+  LineBreak: /
+Buttons:
+  '11':
+    displayName: §3§9§lBlocks
+    lore: §f§7Wide variety of building blocks!
+    icon: GRASS_BLOCK
+    action: ds shop Blocks
+  '13':
+    displayName: §3§3§lMining
+    lore: §f§7Ores and more!
+    icon: GOLD_INGOT
+    action: ds shop Mining
+  '15':
+    displayName: §3§5§lFarming
+    lore: §f§7All your farming essentials!
+    icon: WHEAT
+    action: ds shop Farming
+  '22':
+    displayName: §3Unobtainables
+    lore: '§f§nClick: go to shop'
+    icon: FLOWERING_AZALEA
+    action: ds shop Unobtainables
+    itemStack:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC

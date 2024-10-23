@@ -1,0 +1,64 @@
+Message:
+  Prefix: '§6§l[BustaMine]§r '
+  Instabust: §4Instabust!
+  Start: §fGame started.
+  Stop: §fGame will be stopped.
+  NotEnoughMoney: §eNot Enough Money.
+  NotEnoughExp: §eNot Enough Exp.
+  DivUpper: §6╔══════════════╗
+  DivLower: §6╚══════════════╝
+  NoPermission: §eYou do not have permission to use this command.
+  Reload2: §fReloaded.
+  Reload_FromNextRound: §fReloaded. Changes will take effect from the next round.
+  PlayerNotExist: §fPlayer does not exist.
+  LastUpdate: 'Last update: {sec} seconds ago'
+UI:
+  Title: §2[ Busta Mine ]
+  BetBtn: §6§lBet
+  CashOut: §6§lCash Out
+  History: §6§lHistory
+  Bankroll: §6§lBankroll
+  PlayerInfo: '§fBet: {amount}'
+  MyState: §6§lMy State
+  Click: §eClick
+  WinChance: §6§lWin chance
+  Close: §6§lClose
+  CashOutSetting: §6§lAuto Cash Out
+CO:
+  Title: §2[ Auto Cash Out ]
+  '-10': §6§l-10
+  '-1': §6§l-1
+  '-01': §6§l-0.1
+  '+10': §6§l+10
+  '+1': §6§l+1
+  '+01': §6§l+0.1
+  x: §fx
+  Enabled: §fEnabled
+  Disabled: §fDisabled
+  OnOff: §6§lOn/Off
+  PlayMoneyGame: §6§lGo to Money Game
+  PlayExpGame: §6§lGo to Exp Game
+Help:
+  BmGo: /bm go   §eStart game (Auto repeat)
+  BmStop: /bm stop   §eThe game will be stopped.
+  BmStatistics: /bm statistics   §eShow statistics.
+  BmReloadConfig: /bm reloadConfig   §eReload config files.
+  BmReloadLang: /bm reloadLang   §eReload Lang.yml
+  BmReloadLangWarning: §cWarning! Reload server or '/bm reloadLang' will terminate
+    current round.
+  BmTest: /bm test   §eGenerate random bust numbers 100000 times.
+MyBal: My Balance
+Bal: Balance
+Money: Money
+Exp: Exp
+MaximumMultiplier: Max
+Bet: Bet
+CashedOut: Cashed Out
+Busted: Busted
+Income: Income
+Expense: Expense
+Profit: Profit
+NetProfit: Net Profit
+GamesPlayed: Games Played
+Leaderboard: Leaderboard
+BettingLimit: §fYou've exceeded betting limit

@@ -1,0 +1,11 @@
+guncrate:
+  enabled: false
+  despawn: true
+  despawn_after: 1
+  display_name: "&b&lGun Crate"
+  world: "world"
+  spawn_every: 60
+  run_all_commands: false
+  command_rolls: 7
+  commands:
+    - "wm give %player_name% AK_47"

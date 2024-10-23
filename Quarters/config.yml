@@ -1,0 +1,30 @@
+# If comments are not present, please restart your server
+
+wand_material: FLINT # Material of the wand item
+mayor_bypasses_certain_elevated_perms: true # If this is set to true, mayors will bypass perms for certain command such as /q create, /q evict etc. This is intended to make configuration easier as most servers will want this behaviour
+technical:
+  can_plugin_request_user_groups: true # If set to true, the plugin will be allowed to query GitHub for the latest sponsor data to correctly format names (please keep this enabled as sponsors are what keep development coming!)
+quarters:
+  default_quarter_entry_notification_type: ACTION_BAR # Configure this to change the default quarter entry notification type
+  max_quarter_volume: -1 # Maximum block volume of all cuboids in a quarter combined, set to -1 for no limit
+  max_quarters_per_town: -1 # Maximum amount of quarters that can be in a single town, set to -1 for no limit
+  max_cuboid_volume: -1 # Maximum block volume of individual cuboids, set to -1 for no limit
+  max_cuboids_per_quarter: -1 # Maximum amount of cuboids that can be in each quarter, set to -1 for no limit
+  default_quarter_colour:
+    enabled: false
+    red: 63
+    green: 180
+    blue: 255
+  allow_quarter_entry_notifications: true # If set to true, players will be allowed to toggle notifications of when they have entered a quarter
+  quarter_entry_notifications_on_by_default: true # If set to false players will have to opt in to entry notifications
+particles:
+  allow_entry_particle_blinking: true # If set to true, players will be able to toggle quarter outlines to blink when entered
+  entry_particle_blinking_on_by_default: false # If set to true, quarters will blink their particles for one tick upon entry by a player, this can be a good alternative to constant particle outlines if it is causing lag
+  enabled: true # Set to false to completely disable particle outlines around cuboids
+  current_selection_particle: SCRAPE # Particle outline of the currently selected area
+  current_cuboids_particle: WAX_OFF # Particle outline of current cuboids added to selection
+  ticks_between_particle_outlines: 5 # The number of ticks between when the particle outlines of quarters will appear
+  max_distance_for_cuboid_particles: 48 # The maximum distance a player can be from a cuboid before the outline particles stop being sent to their client
+  allow_constant_particle_outlines: true # If set to true, players will be able to toggle quarter outlines to display constantly
+  default_particle_size: 1.0 # Sets the default size for particles of quarters that have been made
+  constant_particle_outlines_on_by_default: true # If set to false players will have to opt in to constant particle outlines

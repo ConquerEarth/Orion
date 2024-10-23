@@ -1,0 +1,26 @@
+#timer has to be restarted to take effect
+#timer in seconds
+forcepvp_on_timer: 3600
+
+forcepvp_off_timer: 7200
+
+#time in seconds
+forcepvp_on_timer_warning_interval: 300
+
+forcepvp_off_timer_warning_interval: 900
+
+forcepvp_on_warning_message: "&8&l(&a&l!&8&l) &a&l5 minutes until forcepvp is disabled!"
+
+forcepvp_off_warning_message: "&8&l(&c&l!&8&l) &c&l15 minutes until forcepvp is enabled!"
+
+forcepvp_on_message: "&8&l(&c&l!&8&l) &c&lForcepvp is now enabled!"
+
+forcepvp_off_message: "&8&l(&a&l!&8&l) &a&lForcepvp is now disabled!"
+
+commandson:
+  - "townyworld world toggle forcepvp on"
+  - "townyworld world toggle forceexplosion on"
+
+commandsoff:
+  - "townyworld world toggle forcepvp off"
+  - "townyworld world toggle forceexplosion off"

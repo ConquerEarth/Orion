@@ -1,0 +1,13 @@
+categories:
+    'default':
+      displayName: "All"
+      materials:
+        - ALL
+    'wood':
+      displayName: "Log"
+      materials:
+        - OAK_LOG
+        - SPRUCE_LOG
+        - JUNGLE_LOG
+        - ACACIA_LOG
+        - DARK_OAK_LOG

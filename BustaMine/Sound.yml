@@ -1,0 +1,7 @@
+# Enter 0 to play nothing.
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+
+Bet: ENTITY_PAINTING_PLACE
+CashOut: ENTITY_EXPERIENCE_ORB_PICKUP
+Bust: ENTITY_PLAYER_HURT
+Click: '0'

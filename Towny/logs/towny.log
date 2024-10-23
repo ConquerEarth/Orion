@@ -1,0 +1,58 @@
+22 Oct 2024 22:32:37 [Server thread]: Database: [Load] flatfile [Save] flatfile
+22 Oct 2024 22:32:38 [Server thread]: Database: Loaded in 435ms.
+22 Oct 2024 22:32:38 [ForkJoinPool.commonPool-worker-3]: Cleaning up old backups...
+22 Oct 2024 22:32:38 [ForkJoinPool.commonPool-worker-3]: Successfully cleaned backups.
+22 Oct 2024 22:32:38 [ForkJoinPool.commonPool-worker-6]: Making backup...
+22 Oct 2024 22:32:38 [Folia Async Scheduler Thread #0]: Time until a New Day: 13 hours, 27 minutes, 22 seconds
+22 Oct 2024 22:32:38 [Folia Async Scheduler Thread #1]: Checking for updates...
+22 Oct 2024 22:32:38 [Server thread]: Searching for third-party plugins...
+22 Oct 2024 22:32:38 [Server thread]: Plugins found: 
+22 Oct 2024 22:32:38 [Server thread]:   Permissions: TownyPerms, LuckPerms v5.4.141 via Vault
+22 Oct 2024 22:32:38 [Server thread]:   Chat: LuckPerms v5.4.141 via Vault
+22 Oct 2024 22:32:38 [Server thread]:   Economy: CMIEconomy via Vault
+22 Oct 2024 22:32:38 [Server thread]:   Add-ons: TownyChat v0.117, TownyFlight v1.12.0, TownyCultures
+                           v2.0.3, TownyResources v0.11.1, SiegeWar v2.14.0,
+                           Dynmap-Towny v1.1.3, WorldGuard-Towny
+                           v${project.version}, PlaceholderAPI v2.11.6
+22 Oct 2024 22:32:38 [Server thread]:   Warning: By default MyCommand has an alias for /time
+                           that uses /t stored in the
+                           mycommand/commands/examples.yml file. If you have not
+                           removed it you can expect the /t command to not work
+                           properly for Towny!
+22 Oct 2024 22:32:38 [Folia Async Scheduler Thread #1]: No new updates found.
+22 Oct 2024 22:32:39 [Server thread]: Version: 0.100.4.5 - Plugin Enabled
+22 Oct 2024 22:32:53 [Server thread]: Loaded additional language files for plugin: TownyCultures
+22 Oct 2024 22:32:56 [Server thread]: Loaded additional language files for plugin: SiegeWar
+22 Oct 2024 22:33:06 [Server thread]: Loaded additional language files for plugin: TownyMenus
+22 Oct 2024 22:33:06 [Server thread]: Loaded additional language files for plugin: TownyResources
+22 Oct 2024 22:59:43 [Folia Async Scheduler Thread #29]: [Town Msg] Soaraka: Torzzi deposited 4448 into the Town bank.
+22 Oct 2024 23:16:12 [Folia Async Scheduler Thread #67]: [Town Msg] PirateCode: TrumpHimself deposited 2500 into the Town bank.
+22 Oct 2024 23:28:03 [Folia Async Scheduler Thread #77]: [Town Msg] PirateCode: thebreadrat deposited 1300 into the Town bank.
+22 Oct 2024 23:32:28 [Folia Async Scheduler Thread #90]: [Town Msg] Island Land: HatMonkeyClan deposited 50 into the Town bank.
+22 Oct 2024 23:45:06 [Folia Async Scheduler Thread #101]: [Town Msg] Madinat Al-Bakoubiya: gustavusbackup deposited 1000 into the Town bank.
+23 Oct 2024 00:06:19 [Server thread]: [Town Msg] Island Land: HatMonkeyClan withdrew 20 from the Town bank.
+23 Oct 2024 00:11:46 [Server thread]: [Town Msg] Island Land: HatMonkeyClan withdrew 20 from the Town bank.
+23 Oct 2024 00:13:45 [Server thread]: [Town Msg] Island Land: HatMonkeyClan withdrew 10 from the Town bank.
+23 Oct 2024 00:20:39 [Folia Async Scheduler Thread #152]: [Town Msg] Kʼanchaq Ñan: ImpirrenRyRy withdrew 11 from the Town bank.
+23 Oct 2024 00:43:41 [Folia Async Scheduler Thread #181]: [Town Msg] Kʼanchaq Ñan: ImpirrenRyRy withdrew 111 from the Town bank.
+23 Oct 2024 00:52:59 [Folia Async Scheduler Thread #186]: [Town Msg] PirateCode: ButDestroyer21 deposited 3000 into the Town bank.
+23 Oct 2024 00:54:22 [Folia Async Scheduler Thread #188]: [Town Msg] PirateCode: ButDestroyer21 deposited 1000 into the Town bank.
+23 Oct 2024 01:01:00 [Folia Async Scheduler Thread #195]: [Town Msg] Kʼanchaq Ñan: ImpirrenRyRy deposited 900 into the Town bank.
+23 Oct 2024 01:26:47 [Server thread]: [Town Msg] Kʼanchaq Ñan: The Town's public status is now Enabled.
+23 Oct 2024 01:35:15 [Server thread]: [Town Msg] Poland: The Town's public status is now Enabled.
+23 Oct 2024 01:35:18 [Server thread]: [Town Msg] Poland: Inviteless joining is now Enabled.
+23 Oct 2024 01:35:30 [Server thread]: [Town Msg] Poland: Inviteless joining is now Disabled.
+23 Oct 2024 01:38:04 [Folia Async Scheduler Thread #252]: [Town Msg] Kʼanchaq Ñan: ImpirrenRyRy deposited 1355 into the Town bank.
+23 Oct 2024 01:43:40 [Folia Async Scheduler Thread #261]: [Town Msg] Cardiff: Illiana1 deposited 2000 into the Town bank.
+23 Oct 2024 01:44:02 [Folia Async Scheduler Thread #261]: [Town Msg] Cardiff: Illiana1 withdrew 800 from the Town bank.
+23 Oct 2024 01:46:33 [Server thread]: [Town Msg] Poland: The Town's public status is now Disabled.
+23 Oct 2024 01:53:57 [Folia Async Scheduler Thread #266]: [Town Msg] Cardiff: Illiana1 withdrew 300 from the Town bank.
+23 Oct 2024 01:55:27 [Folia Async Scheduler Thread #275]: [Town Msg] Cardiff: Illiana1 withdrew 600 from the Town bank.
+23 Oct 2024 02:04:35 [Folia Async Scheduler Thread #287]: [Town Msg] Cardiff: Illiana1 deposited 200 into the Town bank.
+23 Oct 2024 02:06:09 [Folia Async Scheduler Thread #278]: [Town Msg] Cardiff: Illiana1 deposited 200 into the Town bank.
+23 Oct 2024 02:29:19 [Folia Async Scheduler Thread #319]: [Town Msg] Cardiff: oWatur deposited 1200 into the Town bank.
+23 Oct 2024 02:35:04 [Folia Async Scheduler Thread #329]: [Town Msg] Soaraka: Torzzi deposited 1600 into the Town bank.
+23 Oct 2024 02:38:16 [Folia Async Scheduler Thread #322]: [Town Msg] Kʼanchaq Ñan: ImpirrenRyRy deposited 50 into the Town bank.
+23 Oct 2024 03:40:39 [Folia Async Scheduler Thread #406]: [Town Msg] Cordoba: bigg_jim_ deposited 200 into the Town bank.
+23 Oct 2024 04:31:11 [Folia Async Scheduler Thread #470]: [Town Msg] Kʼanchaq Ñan: ImpirrenRyRy deposited 510 into the Town bank.
+23 Oct 2024 04:35:11 [Folia Async Scheduler Thread #469]: [Town Msg] Soaraka: Torzzi deposited 7720 into the Town bank.

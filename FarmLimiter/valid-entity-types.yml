@@ -1,0 +1,132 @@
+# Documentation containing the list of valid entity types.
+# Modifying it has no effect, it updates automatically.
+
+valid-living-entity-types:
+- allay
+- armadillo
+- axolotl
+- bat
+- bee
+- blaze
+- bogged
+- breeze
+- camel
+- cat
+- cave spider
+- chicken
+- cod
+- cow
+- creeper
+- dolphin
+- donkey
+- drowned
+- elder guardian
+- enderman
+- endermite
+- ender dragon
+- evoker
+- fox
+- frog
+- ghast
+- giant
+- glow squid
+- goat
+- guardian
+- hoglin
+- horse
+- husk
+- illusioner
+- iron golem
+- llama
+- magma cube
+- mooshroom
+- mule
+- ocelot
+- panda
+- parrot
+- phantom
+- pig
+- piglin
+- piglin brute
+- pillager
+- polar bear
+- pufferfish
+- rabbit
+- ravager
+- salmon
+- sheep
+- shulker
+- silverfish
+- skeleton
+- skeleton horse
+- slime
+- sniffer
+- snow golem
+- spider
+- squid
+- stray
+- strider
+- tadpole
+- trader llama
+- tropical fish
+- turtle
+- vex
+- villager
+- vindicator
+- wandering trader
+- warden
+- witch
+- wither
+- wither skeleton
+- wolf
+- zoglin
+- zombie
+- zombie horse
+- zombie villager
+- zombified piglin
+valid-other-entity-types:
+- area effect cloud
+- armor stand
+- arrow
+- block display
+- boat
+- breeze wind charge
+- chest boat
+- chest minecart
+- command block minecart
+- dragon fireball
+- egg
+- ender pearl
+- end crystal
+- experience bottle
+- experience orb
+- eye of ender
+- falling block
+- fireball
+- firework rocket
+- fishing bobber
+- furnace minecart
+- glow item frame
+- hopper minecart
+- interaction
+- item
+- item display
+- item frame
+- leash knot
+- lightning bolt
+- llama spit
+- minecart
+- ominous item spawner
+- painting
+- potion
+- shulker bullet
+- small fireball
+- snowball
+- spawner minecart
+- spectral arrow
+- text display
+- tnt
+- tnt minecart
+- trident
+- wind charge
+- wither skull

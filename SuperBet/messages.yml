@@ -1,0 +1,72 @@
+#  --= SuperBet =--
+# -Plugin by PurpleFishh
+
+# This is the messages config
+# You can use '&' and the color code after for color
+
+# - Messages -
+
+# The message that the player gets when he doesn't have a permission
+permission: "&cYou don't have the permission!"
+
+# Put the water-mark of the plugin that will be in front of all the messages
+water_mark: "&4[&cSuperBet&4]"
+
+# The message that the player wants to execute a command for an offline player
+offline_player: "&cThe player is offline!"
+# If the player executes an unexciting command
+wrong_command: "&cWrong command! Check /bet help"
+# For commands that can be executed only by players
+players_only: "&cThis command can be executed only by players"
+# When the command sender executes don't have enough arguments
+not_enough_args: "&cNot enough arguments!"
+# If the reload was made successful after using /bet reload command
+reload_success: "&aPlugin reloaded with success!"
+# The message that the player gets when he gives the betting item to a player
+send_item: "&aThe item was send with success!"
+# The message that the player gets when he executes /bet remove to remove the bet item form his inventory
+remove_item: "&eThe item was removed from your inventory!"
+# The message that the player gets when he gets the betting item
+get_item: "&aYou have received the betting item."
+# The message that the player gets when he wants to get the item, but he already has that item in his inventory
+get_another_item: "&cYou already have the betting item."
+# The message that the player gets when he wants to bet when the roulette is already started
+started_game: "&cYou can't bet when the roulette is already started!"
+# The message that the player gets when he already placed a bet on a color, and he wants to bet on other color
+already_betted: "&cYou have already placed a bet!"
+# The message that the player gets when he wants to bet an amount of 0 money
+no_money_bet: "&cYou can't bet with the amount of 0 money!"
+# The message that the player gets when he selects an amount of money, use %sum% for the amount of money
+money_select: "&aYou had selected the sum of %sum%!"
+# When the player places the bet, use %sum% for the amount of money, use %color% for the color that the player bet on
+bet_placed: "&aYou placed a %sum%$ bet on %color%!"
+# The message that the player gets when he wants to select a sum less the 0
+make_less_zero: "&cYour amount is already 0!"
+# The message that the player gets when he wins, use %sum% for the amount of money that he wins
+win: "&aYou won: %sum%!"
+# The message that the player gets when he loses
+lose: "&cYou lost!"
+# The message that the player gets when he has the game stats
+start: "&aThe roulette has stared!"
+# The message that the player gets when he is the game stats in some time, use %minutes% for the minutes remain and %seconds% for the seconds that remain
+start_in_time: "&aThe roulette stats in &b%minutes% &aminutes and &b%seconds% &aseconds!"
+
+# - Help -
+# These are the messages that the player will get when he executes /bet help
+# If the player don't have permission to one command he will not see this command in the help menu
+
+# The first message that will appear
+helpheader: "&a&lSuperbet &r&ahelp:"
+# Help for /bet
+helpbet: "&6&l/bet &r&e- give the player the item that opens the roulette inventory"
+# Help for /bet inventory
+helpbetinventory: "&6&l/bet inventory &r&e- open the roulette inventory"
+# Help for /bet <player name>
+helpbetgive: "&6&l/bet <*player name> &r&e- give the item that opens the roulette inventory to an player"
+# Help for /bet remove
+helpbetremove: "&6&l/bet remove &r&e- remove the bet item from your inventory"
+# Help for /bet reload
+helpbetreload: "&6&l/bet reload &r&e- reload plugin config"
+# Help for /bet help
+helpcomm: "&6&l/bet help &r&e- the help command of the plugin"
+ 

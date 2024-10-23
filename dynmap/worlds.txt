@@ -1,0 +1,84 @@
+%YAML 1.1
+---
+worlds:
+-   name: world
+    title: world
+    enabled: true
+    extrazoomout: 3
+    maps:
+    -   class: org.dynmap.hdmap.HDMap
+        name: flat
+        title: Flat
+        prefix: flat
+        perspective: iso_S_90_vlowres
+        shader: stdtexture
+        lighting: shadows
+        image-format: default
+        mapzoomin: 2
+        mapzoomout: 2
+        boostzoom: 0
+        tilescale: 0
+        append_to_world: ''
+        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: surface
+        title: Surface
+        prefix: t
+        perspective: iso_SE_60_vlowres
+        shader: stdtexture
+        lighting: shadows
+        image-format: default
+        mapzoomin: 2
+        mapzoomout: 2
+        boostzoom: 0
+        tilescale: 0
+        append_to_world: ''
+        protected: false
+    protected: false
+    showborder: true
+    sendposition: true
+    sendhealth: true
+    visibilitylimits:
+    -   x0: 0
+        z0: 0
+        x1: 30719
+        z1: 15999
+    hiddenlimits: [
+        ]
+    hidestyle: air
+-   name: world_nether
+    title: world_nether
+    enabled: true
+    extrazoomout: 2
+    maps: [
+        ]
+    protected: false
+    showborder: true
+    sendposition: true
+    sendhealth: true
+    visibilitylimits: [
+        ]
+    hiddenlimits: [
+        ]
+    hidestyle: stone
+-   name: world_the_end
+    title: world_the_end
+    enabled: false
+    extrazoomout: 2
+    maps:
+    -   class: org.dynmap.hdmap.HDMap
+        name: flat
+        title: Flat
+        prefix: flat
+        perspective: iso_S_90_vlowres
+        shader: stdtexture
+        lighting: brightnight
+        mapzoomin: 2
+    -   class: org.dynmap.hdmap.HDMap
+        name: the_end
+        title: Surface
+        prefix: st
+        perspective: iso_SE_60_vlowres
+        shader: stdtexture
+        lighting: brightnight
+        mapzoomin: 2

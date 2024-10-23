@@ -1,0 +1,62 @@
+spawninwater: false
+spawnintowns: false
+
+
+
+north_america:
+  position1:
+    x: 10500
+    z: 4500
+  position2:
+    x: 1200
+    z: 8200
+
+
+south_america:
+  position1:
+    x: 12800
+    z: 9200
+  position2:
+    x: 7000
+    z: 15000
+
+africa:
+  position1:
+    x: 18300
+    z: 7000
+  position2:
+    x: 14000
+    z: 13000
+
+
+asia:
+  position1:
+    x: 21300
+    z: 9000
+  position2:
+    x: 27000
+    z: 2700
+
+antarctica:
+  position1:
+    x: 0
+    z: 0
+  position2:
+    x: 0
+    z: 0
+
+oceania:
+  position1:
+    x: 28500
+    z: 11000
+  position2:
+    x: 25000
+    z: 13500
+
+europe:
+  position1:
+    x: 14500
+    z: 4300
+  position2:
+    x: 18300
+    z: 6500

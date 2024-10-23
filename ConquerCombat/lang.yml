@@ -1,0 +1,12 @@
+Prefix: ''
+Combat_Tagged: '&8&l(&c!&8&l) &cYou are now in combat!'
+Combat_Tagger: '&8&l(&c!&8&l) &cYou are now in combat!'
+Combat_Untagged: '&8&l(&a!&8&l) &aYou are now out of combat!'
+Elytra_Disabled: '&8&l(&c!&8&l) &cYour elytra has been disabled!'
+EnderPearl_Disabled: '&8&l(&c!&8&l) &cEnder Pearls are disabled in combat!'
+ChorusFruit_Disabled: '&8&l(&c!&8&l) &cChous Fruit teleport is disabled in combat!'
+Command_Blocked: '&8&l(&c!&8&l) &cThis command is blocked in combat!'
+Flight_Disabled: '&8&l(&c!&8&l) &cFlight is disabled in combat!'
+Teleport_Disabled: '&8&l(&c!&8&l) &cYou cannot tp while in combat!'
+cooldown: '&8&l(&c!&8&l) &cYou cannot use this for another %cooldown% secs!'
+noriptidemessaage: "&8&l(&c!&8&l) &cRiptide is disabled in combat!"

@@ -1,0 +1,399 @@
+Starter:
+  CommandName: Starter
+  Delay: 43200
+  ShowWithoutUsages: true
+  Icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3955
+    type: NETHER_STAR
+  IconOff:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3955
+    type: BARRIER
+  Group: default
+  Items:
+    '28':
+      v: 3955
+      type: STONE_SWORD
+    '29':
+      v: 3955
+      type: STONE_PICKAXE
+    '30':
+      v: 3955
+      type: STONE_AXE
+    '31':
+      v: 3955
+      type: STONE_SHOVEL
+    '32':
+      v: 3955
+      type: STONE_HOE
+    '33':
+      v: 3955
+      type: BREAD
+      amount: 32
+    Helmet:
+      v: 3955
+      type: LEATHER_HELMET
+    Chest:
+      v: 3955
+      type: LEATHER_CHESTPLATE
+    Legs:
+      v: 3955
+      type: LEATHER_LEGGINGS
+    Boots:
+      v: 3955
+      type: LEATHER_BOOTS
+Noble:
+  Description:
+  - Noble kit
+  CommandName: Noble
+  Delay: 172800
+  Icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3955
+    type: NETHER_STAR
+  IconOff:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3955
+    type: BARRIER
+  Group: noble
+  Items:
+    '28':
+      v: 3955
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          minecraft:knockback: 1
+          minecraft:sharpness: 4
+    '29':
+      v: 3955
+      type: DIAMOND_PICKAXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          minecraft:efficiency: 2
+          minecraft:unbreaking: 2
+    '30':
+      v: 3955
+      type: DIAMOND_AXE
+    '31':
+      v: 3955
+      type: DIAMOND_SHOVEL
+    '32':
+      v: 3955
+      type: COOKED_BEEF
+      amount: 32
+    '33':
+      v: 3955
+      type: GOLDEN_APPLE
+      amount: 16
+    '34':
+      v: 3955
+      type: EXPERIENCE_BOTTLE
+      amount: 64
+    Helmet:
+      v: 3955
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 3
+          minecraft:thorns: 2
+          minecraft:unbreaking: 3
+    Chest:
+      v: 3955
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 3
+          minecraft:thorns: 2
+          minecraft:unbreaking: 3
+    Legs:
+      v: 3955
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 3
+          minecraft:thorns: 2
+          minecraft:unbreaking: 3
+    Boots:
+      v: 3955
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 3
+          minecraft:thorns: 2
+          minecraft:unbreaking: 3
+    OffHand:
+      v: 3955
+      type: SHIELD
+Divine:
+  Description:
+  - Divine kit
+  CommandName: Divine
+  Delay: 172800
+  ShowWithoutUsages: true
+  Icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3955
+    type: NETHER_STAR
+  IconOff:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3955
+    type: BARRIER
+  Group: divine
+  Items:
+    '28':
+      v: 3955
+      type: NETHERITE_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          minecraft:sharpness: 3
+          minecraft:unbreaking: 2
+    '29':
+      v: 3955
+      type: NETHERITE_PICKAXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          minecraft:efficiency: 2
+    '30':
+      v: 3955
+      type: NETHERITE_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          minecraft:efficiency: 2
+    '31':
+      v: 3955
+      type: NETHERITE_SHOVEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          minecraft:efficiency: 2
+    '32':
+      v: 3955
+      type: GOLDEN_APPLE
+      amount: 32
+    '33':
+      v: 3955
+      type: EXPERIENCE_BOTTLE
+      amount: 64
+    Helmet:
+      v: 3955
+      type: NETHERITE_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 1
+    Chest:
+      v: 3955
+      type: NETHERITE_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 1
+    Legs:
+      v: 3955
+      type: NETHERITE_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 1
+    Boots:
+      v: 3955
+      type: NETHERITE_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 1
+Conqueror:
+  Description:
+  - Conqueror kit
+  CommandName: Conqueror
+  Delay: 172800
+  ShowWithoutUsages: true
+  Icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3955
+    type: NETHER_STAR
+  IconOff:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3955
+    type: BARRIER
+  Group: conqueror
+  Items:
+    '28':
+      v: 3955
+      type: NETHERITE_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          minecraft:sharpness: 4
+          minecraft:unbreaking: 3
+    '29':
+      v: 3955
+      type: NETHERITE_PICKAXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          minecraft:efficiency: 4
+    '30':
+      v: 3955
+      type: NETHERITE_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          minecraft:efficiency: 4
+    '31':
+      v: 3955
+      type: NETHERITE_SHOVEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          minecraft:efficiency: 4
+    '32':
+      v: 3955
+      type: GOLDEN_APPLE
+      amount: 32
+    '33':
+      v: 3955
+      type: EXPERIENCE_BOTTLE
+      amount: 64
+    Helmet:
+      v: 3955
+      type: NETHERITE_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 2
+          minecraft:unbreaking: 1
+    Chest:
+      v: 3955
+      type: NETHERITE_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 2
+          minecraft:unbreaking: 1
+    Legs:
+      v: 3955
+      type: NETHERITE_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 2
+          minecraft:unbreaking: 1
+    Boots:
+      v: 3955
+      type: NETHERITE_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 2
+          minecraft:unbreaking: 1
+MVP:
+  Description:
+  - MVP kit
+  CommandName: MVP
+  Weight: 2
+  ShowDespiteWeight: true
+  Delay: 172800
+  ShowWithoutUsages: true
+  Icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3955
+    type: NETHER_STAR
+  IconOff:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3955
+    type: BARRIER
+  Group: vip
+  Items:
+    '28':
+      v: 3955
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          minecraft:sharpness: 3
+    '29':
+      v: 3955
+      type: DIAMOND_PICKAXE
+    '30':
+      v: 3955
+      type: DIAMOND_AXE
+    '31':
+      v: 3955
+      type: DIAMOND_SHOVEL
+    '32':
+      v: 3955
+      type: COOKED_BEEF
+      amount: 64
+    '33':
+      v: 3955
+      type: EXPERIENCE_BOTTLE
+      amount: 64
+    Helmet:
+      v: 3955
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 3
+    Chest:
+      v: 3955
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 3
+    Legs:
+      v: 3955
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 3
+    Boots:
+      v: 3955
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        enchants:
+          minecraft:protection: 3
+    OffHand:
+      v: 3955
+      type: SHIELD

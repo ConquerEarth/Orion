@@ -1,0 +1,45 @@
+# Changes will take effect from the next round.
+# RoundInterval: 3~ (real time second) / Default: 5
+# MultiplierMax: 30~150 / Default: 120
+# ProbabilityOfInstaBust: 0.8~20.0 / Default: 1.0 (%) / The final value may vary depending on the MultiplierMax.
+#
+# Command.WhenRoundStart: placeholder: n/a
+# Command.WhenPlayerBet: placeholder: {player} {amount}
+# Command.WhenPlayerCashOut: placeholder: {player} {amount} {multiplier} {prize}
+# Command.WhenRoundEnd: placeholder: {multiplier}
+
+CurrencySymbol: $
+RoundInterval: 5
+MultiplierMax: 120
+ProbabilityOfInstaBust: 2.0
+ShowWinChance: true
+ShowBankroll: true
+LoadPlayerSkin: true
+UIForceUpdate: false
+Bet:
+  Small: 10
+  Medium: 100
+  Big: 1000
+  Max: 5000
+  ExpSmall: 10
+  ExpMedium: 100
+  ExpBig: 1000
+  ExpMax: 5000
+Broadcast:
+  Jackpot: false
+  InstaBust: false
+Command:
+  WhenRoundStart: ''
+  WhenPlayerBet: ''
+  WhenPlayerCashOut: ''
+  WhenRoundEnd: ''
+BtnIcon:
+  Bankroll: DIAMOND
+  WinChance: PAPER
+  MyState: PAPER
+  History: PAPER
+  CashOut: EMERALD
+  CashOutSetting: PAPER
+  BetSmall: GOLD_NUGGET
+  BetMedium: GOLD_INGOT
+  BetBig: GOLD_BLOCK

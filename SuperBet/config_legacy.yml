@@ -1,0 +1,141 @@
+#  --= SuperBet =--
+# - Plugin by PurpleFishh
+# This plugin is a bet plugin with roulette game
+# This game is simple, you bet on a color(red, black or green), if you bet on red or black, and you will get the money you bet x2 and if you bet on green, and you win you will get x14, but it is a smaller chance
+
+# - Commands -
+# /bet - give the player the item that opens the roulette inventory (bet.itemgive.himself)
+# /bet inventory - open the roulette inventory (bet.inventory)
+# /bet <*player name> - give the item that opens the roulette inventory to a player (bet.itemgive.other)
+# /bet remove - remove the bet item from your inventory (bet.remove)
+# /bet reload - reload plugin config (bet.reload)
+# /bet help - the help command of the plugin (bet.help)
+
+# You can use '&' and the color code after for color
+
+# - Options -
+
+# Put the time that takes for the roulette to start (in sec)
+time: 30
+# To make the roulette run individual, for every player, not to have a global roulette for everyone
+separate_roulette: false
+# If you want when the player close the Bet Inventory to be removed the Bet Item from their inventory
+delete_after_bet: false
+# The amounts that you can bet
+bet1: 100
+bet2: 1000
+bet3: 10000
+bet4: 100000
+bet5: 1000000
+bet6: 10000000
+bet7: 100000000
+# How much the sum you bet will be multiplied, for each color if you win
+multiply_black: 2
+multiply_red: 2
+multiply_green: 14
+
+# Sound effects
+sound_effects: true
+# Fireworks for winners
+fireworks: true
+
+# - Main bet inventory
+# This is the main inventory that will open when you right-click the betting item
+main_inv_name: "&cRoulette"
+# - Bet money
+# This is the inventory that will open when you what to bet on a color, and now you need to select the amount of money
+bet_inv_name: "&aBetting"
+# - Last Colors
+# This is the name for the inventory where you can see the colors that were picked last rounds
+last_colors_inv_name: "&eLast colors"
+
+# -Betting Item
+# Here is the configuration for all the items that the plugin uses
+# Please use the text name of the items not id number if you get an error, please firstly verify the items id
+# Example: LIME_STAINED_GLASS(version > 1.13), STAINED_GLASS:5(version < 1.13)
+# For materials id: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+items:
+ # These are the information for the betting item that the players right-click to open the inventory
+ betting:
+  material: "GOLD_INGOT"
+  name: "&6Super Bet"
+  lore:
+   - "&eWith this item you enter in the betting menu"
+
+ # - Exit Item
+ # That is the item that will be in every inventory for going back or exit
+ exit:
+  material: "SLIME_BALL"
+  name: "&cBack"
+
+ # Betting Items:
+ red:
+  material: "STAINED_CLAY:14"
+  name: "&cRed"
+ green:
+  material: "STAINED_CLAY:13"
+  name: "&aGreen"
+ black:
+  material: "STAINED_CLAY:15"
+  name: "&8Black"
+
+ # Betting buttons: the items that if you click you will get in the inventory for betting on this color
+ # You can use %bet_amount% - for the money amount already placed on that color
+ red_button:
+  material: "STAINED_CLAY:14"
+  name: "&cRed"
+  lore:
+   - "&7 - Bet: &f%bet_amount%$"
+ green_button:
+  material: "STAINED_CLAY:13"
+  name: "&aGreen"
+  lore:
+   - "&7 - Bet: &f%bet_amount%$"
+ black_button:
+  material: "STAINED_CLAY:15"
+  name: "&8Black"
+  lore:
+   - "&7 - Bet: &f%bet_amount%$"
+
+ # Set a block in the inventory that will show the timer status(in how much seconds the game will start, if the timer is not started), (%time% - the time remained)
+ status_no_bet:
+  material: "EMERALD_BLOCK"
+  name: "&eNo one is betting"
+ status_timer:
+  material: "GOLD_BLOCK"
+  name: "&aThe game starts in: &b%time%"
+ status_running:
+  material: "REDSTONE_BLOCK"
+  name: "&cThe game is running, please wait"
+
+ # Set an item in the inventory for the last colors.
+ # This item will open an inventory where you will have the history of the colors that were in the last rounds
+ last_colors:
+  material: "MAP"
+  name: "&eLast colors"
+  lore:
+   - "&7 - The colors from previous rounds"
+
+ # The items that are on the background
+ main_bg:
+  material: "STAINED_GLASS_PANE"
+  name: ""
+ line_bg:
+  material: "STAINED_GLASS_PANE:7"
+  name: ""
+
+ # Increase and decrease the amount of money
+ increase:
+  material: "STAINED_GLASS:5"
+  name: "&a" # !The color that the sum will be displayed with, not the actual name
+ decrease:
+  material: "STAINED_GLASS:14"
+  name: "&c" # !The color that the sum will be displayed with, not the actual name
+
+ # Put the bet or cancel it
+ put:
+  material: "DIAMOND"
+  name: "&aBet"
+ cancel:
+  material: "SLIME_BALL"
+  name: "&cCancel"

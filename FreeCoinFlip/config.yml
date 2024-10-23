@@ -1,0 +1,118 @@
+Settings:
+  Broadcast:
+    Message: '&b%player% &7created CoinFlip game with &a%amount%$'
+    Enabled: true
+    MinAmount: 1000
+  Prefix: '&7[<#882285>FreeCoinFlip</#EE6F20>&7]'
+  bstats: true
+  # update checker
+  enable-update-check: true
+  # The min bet amount
+  minAmount: 1000
+  Multiplier: 2.0 # if player win a game of 1000 he will win 2k with multiplier 2, 5k with mult. 5.0 etx
+  Tax:
+    Enabled: true # allows tax rate
+    Rate: 5 # this will bne 5% taax rate / int
+
+GUI:
+  Size: 27
+  Title: '&lCOIN FLIP'
+  ClickSound: BLOCK_COMPARATOR_CLICK, 1f, 1f
+  EndSpinSound: ENTITY_EXPERIENCE_ORB_PICKUP, 1f, 1f
+  
+  FillerItems:
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    type: GRAY_STAINED_GLASS_PANE
+    name: '&0'
+  
+  AnimationItem:
+    type: PLAYER_HEAD
+    name: '&f&l%name%'
+  
+  SkullItem:
+    type: YELLOW_BANNER
+    name: '&f&l%name%'
+    lore:
+    - ''
+    - '&b&lWager'
+    - ' &7$%money%'
+    - ''
+    - '&b&lSide Chosen'
+    - ' &7%side%'
+    - ''
+    - '&7Click here to &a&lENTER &7the bet!'
+  BookInfo:
+    type: BOOK
+    name: '&b&lCoin Flip Help'
+    lore:
+    - ''
+    - '&f/coinflip'
+    - '&7View all active coinflip matches'
+    - ''
+    - '&f/coinflip <amount> <heads/tails>'
+    - '&7Start a coinflip match'
+    - ''
+    - '&f/coinflip cancel'
+    - '&7Remove your coinflip match'
+    - ''
+    - '&f/coinflip toggle'
+    - '&7Toggles coinflip broadcasts'
+  RefreshItem:
+    type: CHEST
+    name: '&b&lRefresh'
+    lore:
+    - '&7Click here to refresh this page'
+
+AnimationGUI:
+  Size: 27
+  Title: '&lWINNER IS..'
+
+# messages
+Messages:
+  NotEnoughPerm: '&c&l[!] &cYou dont have enough permissions to do that!'
+  WinBroadcastWithTax: '&7&l** &a%winner% &7has defeated &c%loser% &7in a &7&n$%amount%&r(-%taxed_money%$
+    %tax_rate%%tax) &7/coinflip &7&l**'
+  WinBroadcast: '&7&l** &a%winner% &7has defeated &c%loser% &7in a &7&n$%amount%&r
+    &7/coinflip &7&l**'
+  CantEnterSelfBet: '&c&l[!] &cYou can''t accept your own bet!'
+  Entered: '&b&l[!] &bYou created a bet of &3$%amount% (&b/coinflip&3)'
+  Canceled: '&e&l[!] &eYou removed yourself from the coinflip matches!'
+  CanceledHelp: '&e&l[!] &eTo remove a coin flip type &6/cf cancel'
+  ReceivedMoney: ' &a&l+ %amount%'
+  LostMoney: ' &c&l- %amount%'
+  NotEnoughMoney: '&c&l[!] &cYou dont have enough money to enter!'
+  NotEnoughEnterMoney: '&c&l[!] &cAmount must be greater than &4$1,000!'
+  AlreadyInBet: '&c&l[!] &cYou already are in the coins bet menu!'
+  NotInBet: '&e&l[!] &eYou are not in the coinflip menu!'
+  ToggleON: '&e&l[!] &eCoinFlip broadcasts are &a&lON'
+  ToggleOFF: '&e&l[!] &eCoinFlip broadcasts are &c&lOFF'
+  ReloadSuccess: '&b&l[!] &eCoinFlip config has been reloaded!'
+  ReloadError: '&c&l[!] &eAn error occured while reloading config file!'
+  Usage: '&c&l[!] &eUsage: &6&n/coinflip <$amount> <heads/tails>'

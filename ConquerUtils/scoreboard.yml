@@ -1,0 +1,14 @@
+title: "#254ff7&lOriginal"
+
+update-every: 600
+
+#with placeholder api suppport
+content:
+  - "#424242Forced PVP/Explo: %conquerutils_onoff%"
+  - "#424242Timeleft: %conquerutils_timeleft%"
+  - " "
+  - "#424242Balance: #ff6c17%vault_eco_balance_formatted%"
+  - "#424242VotePoints: #ff6c17%conquervotes_points%"
+  - " "
+  - "#424242Town: %townyadvanced_town%"
+  - "#424242Nation: %townyadvanced_nation%"

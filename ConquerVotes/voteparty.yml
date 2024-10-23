@@ -1,0 +1,10 @@
+votepartylimit: 50
+
+commands:
+  - 'giveall goldingot 50'
+
+votesmademessage: '&eThe vote party is at &b&l%votesmade%/%votesmax%!'
+
+votepartystartmessage: '&eA new vote party has started!'
+
+votepartycompletemessage: '&eA vote party has just been complete!'

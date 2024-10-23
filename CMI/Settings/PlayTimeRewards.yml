@@ -1,0 +1,20 @@
+hourly1:
+  DisplayName: "&7Hourly reward"
+  AutoClaim: true
+  Description:
+  - "&2Get reward for every hour you are online"
+  - "&2100 bucks into your pocket!"
+  PayEvery: 3600
+  Commands:
+  - asConsole! cmi money give [playerName] 50
+daily1:
+  DisplayName: "&7Daily reward"
+  AutoClaim: true
+  Description:
+  - "&2Get reward for every 24 hours of playtime"
+  - "&22000 bucks into your pocket!"
+  PayEvery: 86400
+  Commands:
+  - asConsole! cmi money give [playerName] 2500
+
+  

@@ -1,0 +1,200 @@
+# details for menu customisation as well as more templates may be found on our wiki:
+# https://github.com/tjtanjin/SurvivalTop/wiki/Tutorial#gui-customisation
+#####################################################################################
+#                                                                                   #
+#                              Main Page Configurations                             #
+#                                                                                   #
+#####################################################################################
+# title shown on main page
+main-page-title: "%entity%'s Total Stats"
+
+# size of main page, must be multiple of 9 (other values will be rounded up)
+main-page-size: 27
+
+# buttons on main page (note that only block, spawner, container and inventory buttons are clickable)
+# guide for adding custom buttons for including papi values are found on the wiki
+main-page-buttons:
+  total-wealth:
+    slot: 10
+    name: "&bTotal Combined Wealth"
+    lore:
+      - "&eValue: &a%value%"
+    material: BEACON
+    enchanted: false
+
+  balance-wealth:
+    slot: 11
+    name: "&bTotal Balance Wealth"
+    lore:
+      - "&eValue: &a%value%"
+    material: EMERALD
+    enchanted: false
+
+  land-wealth:
+    slot: 12
+    name: "&bTotal Land Wealth"
+    lore:
+      - "&eValue: &a%value%"
+    material: GOLDEN_SHOVEL
+    enchanted: false
+
+  block-wealth:
+    slot: 13
+    name: "&bBlock Wealth"
+    lore:
+      - "&eValue: &a%value%"
+    material: GRASS_BLOCK
+    enchanted: false
+
+  spawner-wealth:
+    slot: 14
+    name: "&bSpawner Wealth"
+    lore:
+      - "&eValue: &a%value%"
+    material: SPAWNER
+    enchanted: false
+
+  container-wealth:
+    slot: 15
+    name: "&bContainer Wealth"
+    lore:
+      - "&eValue: &a%value%"
+    material: CHEST
+    enchanted: false
+
+  inventory-wealth:
+    slot: 16
+    name: "&bInventory Wealth"
+    lore:
+      - "&eValue: &a%value%"
+    material: PLAYER_HEAD
+    enchanted: false
+
+# background for main page
+main-page-background:
+  0: BLUE_STAINED_GLASS_PANE
+  1: BLUE_STAINED_GLASS_PANE
+  2: BLUE_STAINED_GLASS_PANE
+  3: BLUE_STAINED_GLASS_PANE
+  4: BLUE_STAINED_GLASS_PANE
+  5: BLUE_STAINED_GLASS_PANE
+  6: BLUE_STAINED_GLASS_PANE
+  7: BLUE_STAINED_GLASS_PANE
+  8: BLUE_STAINED_GLASS_PANE
+  9: BLUE_STAINED_GLASS_PANE
+  17: BLUE_STAINED_GLASS_PANE
+  18: BLUE_STAINED_GLASS_PANE
+  19: BLUE_STAINED_GLASS_PANE
+  20: BLUE_STAINED_GLASS_PANE
+  21: BLUE_STAINED_GLASS_PANE
+  22: BLUE_STAINED_GLASS_PANE
+  23: BLUE_STAINED_GLASS_PANE
+  24: BLUE_STAINED_GLASS_PANE
+  25: BLUE_STAINED_GLASS_PANE
+  26: BLUE_STAINED_GLASS_PANE
+
+#####################################################################################
+#                                                                                   #
+#                               Sub Page Configurations                             #
+#                                                                                   #
+#####################################################################################
+# titles for subpages
+sub-page-block-title: "%entity%'s Block Stats"
+sub-page-spawner-title: "%entity%'s Spawner Stats"
+sub-page-container-title: "%entity%'s Container Stats"
+sub-page-inventory-title: "%entity%'s Inventory Stats"
+
+# size of subpage, must be multiple of 9 (other values will be rounded up)
+sub-page-size: 54
+
+# buttons on subpage for returning to main menu or navigating pages
+sub-page-buttons:
+  main-menu:
+    slot: 49
+    name: "&bMain Page"
+    lore:
+      - "&eReturn to main page"
+    material: COMPASS
+    enchanted: false
+
+  previous-page:
+    slot: 47
+    name: "&bPrevious Page"
+    lore:
+      - "&eGo to Page &b%page%"
+    material: ARROW
+    enchanted: false
+
+  next-page:
+    slot: 51
+    name: "&bNext Page"
+    lore:
+      - "&eGo to Page &b%page%"
+    material: ARROW
+    enchanted: false
+
+# layout and slots to use for showing items in subpages
+sub-page-items:
+  name: "&b%name%"
+  lore:
+    - "&eQuantity: &a%amount%"
+    - "&eItem Worth: &a%worth%"
+    - "&eTotal Value: &a%value%"
+  slots:
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+
+# background for subpage
+sub-page-background:
+  0: BLUE_STAINED_GLASS_PANE
+  1: BLUE_STAINED_GLASS_PANE
+  2: BLUE_STAINED_GLASS_PANE
+  3: BLUE_STAINED_GLASS_PANE
+  4: BLUE_STAINED_GLASS_PANE
+  5: BLUE_STAINED_GLASS_PANE
+  6: BLUE_STAINED_GLASS_PANE
+  7: BLUE_STAINED_GLASS_PANE
+  8: BLUE_STAINED_GLASS_PANE
+  9: BLUE_STAINED_GLASS_PANE
+  17: BLUE_STAINED_GLASS_PANE
+  18: BLUE_STAINED_GLASS_PANE
+  26: BLUE_STAINED_GLASS_PANE
+  27: BLUE_STAINED_GLASS_PANE
+  35: BLUE_STAINED_GLASS_PANE
+  36: BLUE_STAINED_GLASS_PANE
+  37: BLUE_STAINED_GLASS_PANE
+  38: BLUE_STAINED_GLASS_PANE
+  39: BLUE_STAINED_GLASS_PANE
+  40: BLUE_STAINED_GLASS_PANE
+  41: BLUE_STAINED_GLASS_PANE
+  42: BLUE_STAINED_GLASS_PANE
+  43: BLUE_STAINED_GLASS_PANE
+  44: BLUE_STAINED_GLASS_PANE
+  45: BLUE_STAINED_GLASS_PANE
+  46: BLUE_STAINED_GLASS_PANE
+  47: BLUE_STAINED_GLASS_PANE
+  48: BLUE_STAINED_GLASS_PANE
+  49: BLUE_STAINED_GLASS_PANE
+  50: BLUE_STAINED_GLASS_PANE
+  51: BLUE_STAINED_GLASS_PANE
+  52: BLUE_STAINED_GLASS_PANE
+  53: BLUE_STAINED_GLASS_PANE

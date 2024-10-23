@@ -1,0 +1,19 @@
+delay: 120
+
+speed: 6
+
+disable_in_worlds:
+  - "world_nether"
+  - "world_the_end"
+
+block_blacklist:
+  - AIR
+  - TNT
+
+#Used for better compatibility with things like crate plugins and vault plugins
+ignore_tilestates: true
+
+#Stop itemframes and paintings breaking on explode
+hanging_protection: true
+
+towny-integration: true

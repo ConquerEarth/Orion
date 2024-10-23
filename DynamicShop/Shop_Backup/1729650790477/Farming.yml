@@ -1,0 +1,149 @@
+Options:
+  title: Farming
+  enable: true
+  lore: ''
+  page: 1
+  permission: dshop.user.shop.Farming
+  log:
+    active: true
+  fluctuation:
+    interval: 24
+    strength: 2.5
+  stockStabilizing:
+    interval: 24
+    strength: 2.5
+  flag:
+    hidepricingtype: ''
+    hideshopbalance: ''
+    showvaluechange: ''
+    hidestock: ''
+'0':
+  mat: BLACK_STAINED_GLASS_PANE
+'1':
+  mat: BLACK_STAINED_GLASS_PANE
+'2':
+  mat: BLACK_STAINED_GLASS_PANE
+'3':
+  mat: BLACK_STAINED_GLASS_PANE
+'4':
+  mat: BLACK_STAINED_GLASS_PANE
+'5':
+  mat: BLACK_STAINED_GLASS_PANE
+'6':
+  mat: BLACK_STAINED_GLASS_PANE
+'7':
+  mat: BLACK_STAINED_GLASS_PANE
+'8':
+  mat: BLACK_STAINED_GLASS_PANE
+'9':
+  mat: BLACK_STAINED_GLASS_PANE
+'10':
+  mat: BLACK_STAINED_GLASS_PANE
+'11':
+  mat: BLACK_STAINED_GLASS_PANE
+'12':
+  mat: PUMPKIN_SEEDS
+  value: 0.09
+  median: 999
+  stock: 971
+  tradeType: SellOnly
+'13':
+  mat: BEETROOT_SEEDS
+  value: 0.09
+  median: 999
+  stock: 900
+  tradeType: SellOnly
+'14':
+  mat: MELON_SEEDS
+  value: 0.09
+  median: 999
+  stock: 993
+  tradeType: SellOnly
+'15':
+  mat: BLACK_STAINED_GLASS_PANE
+'16':
+  mat: BLACK_STAINED_GLASS_PANE
+'17':
+  mat: BLACK_STAINED_GLASS_PANE
+'18':
+  mat: BLACK_STAINED_GLASS_PANE
+'19':
+  mat: BLACK_STAINED_GLASS_PANE
+'20':
+  mat: SUGAR_CANE
+  value: 0.09
+  median: 999
+  stock: 868
+  tradeType: SellOnly
+'21':
+  mat: WHEAT_SEEDS
+  value: 0.09
+  median: 999
+  stock: 1612
+  tradeType: SellOnly
+'22':
+  mat: CACTUS
+  value: 0.09
+  median: 999
+  stock: 1098
+  tradeType: SellOnly
+'23':
+  mat: NETHER_WART
+  value: 0.14
+  median: 999
+  stock: 1022
+  tradeType: SellOnly
+'24':
+  mat: BAMBOO
+  value: 0.09
+  median: 999
+  stock: 2197
+  tradeType: SellOnly
+'25':
+  mat: BLACK_STAINED_GLASS_PANE
+'26':
+  mat: BLACK_STAINED_GLASS_PANE
+'27':
+  mat: BLACK_STAINED_GLASS_PANE
+'28':
+  mat: BLACK_STAINED_GLASS_PANE
+'29':
+  mat: BLACK_STAINED_GLASS_PANE
+'30':
+  mat: COCOA_BEANS
+  value: 0.12
+  median: 999
+  stock: 947
+  tradeType: SellOnly
+'31':
+  mat: BLACK_STAINED_GLASS_PANE
+'32':
+  mat: VINE
+  value: 0.11
+  median: 999
+  stock: 1104
+  tradeType: SellOnly
+'33':
+  mat: BLACK_STAINED_GLASS_PANE
+'34':
+  mat: BLACK_STAINED_GLASS_PANE
+'35':
+  mat: BLACK_STAINED_GLASS_PANE
+'36':
+  mat: BLACK_STAINED_GLASS_PANE
+'37':
+  mat: BLACK_STAINED_GLASS_PANE
+'38':
+  mat: BLACK_STAINED_GLASS_PANE
+'39':
+  mat: BLACK_STAINED_GLASS_PANE
+'40':
+  mat: BLACK_STAINED_GLASS_PANE
+'41':
+  mat: BLACK_STAINED_GLASS_PANE
+'42':
+  mat: BLACK_STAINED_GLASS_PANE
+'43':
+  mat: BLACK_STAINED_GLASS_PANE
+'44':
+  mat: BLACK_STAINED_GLASS_PANE

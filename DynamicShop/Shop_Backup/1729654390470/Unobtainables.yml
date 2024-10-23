@@ -1,0 +1,131 @@
+Options:
+  title: Unobtainables
+  enable: true
+  lore: ''
+  page: 1
+  permission: dshop.user.shop.unobtainables
+  log:
+    active: false
+  flag:
+    showvaluechange: ''
+    hidestock: ''
+    hidepricingtype: ''
+    hideshopbalance: ''
+'0':
+  mat: BLACK_STAINED_GLASS_PANE
+'1':
+  mat: BLACK_STAINED_GLASS_PANE
+'2':
+  mat: BLACK_STAINED_GLASS_PANE
+'3':
+  mat: BLACK_STAINED_GLASS_PANE
+'4':
+  mat: BLACK_STAINED_GLASS_PANE
+'5':
+  mat: BLACK_STAINED_GLASS_PANE
+'6':
+  mat: BLACK_STAINED_GLASS_PANE
+'7':
+  mat: BLACK_STAINED_GLASS_PANE
+'8':
+  mat: BLACK_STAINED_GLASS_PANE
+'9':
+  mat: BLACK_STAINED_GLASS_PANE
+'10':
+  mat: BLACK_STAINED_GLASS_PANE
+'11':
+  mat: BLACK_STAINED_GLASS_PANE
+'12':
+  mat: DARK_OAK_SAPLING
+  value: 100.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
+'13':
+  mat: GLOW_BERRIES
+  value: 125.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
+'14':
+  mat: SMALL_DRIPLEAF
+  value: 50.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
+'15':
+  mat: BLACK_STAINED_GLASS_PANE
+'16':
+  mat: BLACK_STAINED_GLASS_PANE
+'17':
+  mat: BLACK_STAINED_GLASS_PANE
+'18':
+  mat: BLACK_STAINED_GLASS_PANE
+'19':
+  mat: BLACK_STAINED_GLASS_PANE
+'20':
+  mat: BLACK_STAINED_GLASS_PANE
+'21':
+  mat: BIG_DRIPLEAF
+  value: 75.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
+'22':
+  mat: AZALEA
+  value: 160.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
+'23':
+  mat: FLOWERING_AZALEA
+  value: 200.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
+'24':
+  mat: BLACK_STAINED_GLASS_PANE
+'25':
+  mat: BLACK_STAINED_GLASS_PANE
+'26':
+  mat: BLACK_STAINED_GLASS_PANE
+'27':
+  mat: BLACK_STAINED_GLASS_PANE
+'28':
+  mat: BLACK_STAINED_GLASS_PANE
+'29':
+  mat: BLACK_STAINED_GLASS_PANE
+'30':
+  mat: BLACK_STAINED_GLASS_PANE
+'31':
+  mat: POINTED_DRIPSTONE
+  value: 60.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
+'32':
+  mat: BLACK_STAINED_GLASS_PANE
+'33':
+  mat: BLACK_STAINED_GLASS_PANE
+'34':
+  mat: BLACK_STAINED_GLASS_PANE
+'35':
+  mat: BLACK_STAINED_GLASS_PANE
+'36':
+  mat: BLACK_STAINED_GLASS_PANE
+'37':
+  mat: BLACK_STAINED_GLASS_PANE
+'38':
+  mat: BLACK_STAINED_GLASS_PANE
+'39':
+  mat: BLACK_STAINED_GLASS_PANE
+'40':
+  mat: BLACK_STAINED_GLASS_PANE
+'41':
+  mat: BLACK_STAINED_GLASS_PANE
+'42':
+  mat: BLACK_STAINED_GLASS_PANE
+'43':
+  mat: BLACK_STAINED_GLASS_PANE
+'44':
+  mat: BLACK_STAINED_GLASS_PANE

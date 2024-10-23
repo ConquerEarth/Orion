@@ -1,0 +1,16 @@
+Limit:
+  Position1:
+    x: -12000
+    z: 12000
+
+  Position2:
+    x: 12000
+    z: -12000
+
+broadcast_crate_spawn: false
+
+towny_integration: true
+
+use_holograms: true
+
+spawn_in_water: true

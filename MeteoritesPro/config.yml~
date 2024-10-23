@@ -1,0 +1,814 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                     __  ___  __   __   __   ___  ___  __   __    __   __    __               | #
+# |               |\/| |__   |  |__  |  | |__)   |    |  |__  /__`  |__) |__)  |  |              | #
+# |               |  | |__   |  |__  |__| |  \  _|_   |  |__  .__/  |    |  \  |__|              | #
+# |                                                                                              | #
+# |                                                              by OliPulse                     | #
+# |                                                                                              | #
+# |               Please follow the instructions noted above every setting.                      | #
+# |               For support, please join the Discord server: https://discord.gg/47YEbMm        | #
+# |                                                                                              | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+#Enable or disable the random falling of meteorites.
+enable-random-meteorites: true
+#The interval between random meteorites in seconds.
+random-meteorite-interval: 3600
+#The name of the world you want random meteorites to fall in.
+random-meteorite-world: world
+#Use these 4 parameters to set the region you want the meteorites to possibly fall in.
+random-meteorite-max-spawn-x-coord: 30000
+random-meteorite-max-spawn-z-coord: 15500
+random-meteorite-min-spawn-x-coord: 0
+random-meteorite-min-spawn-z-coord: 0
+#The height (Y coordinate) where the random meteorites will spawn.
+#I recommend staying below build height limit 256. Meteorites disappear after a few seconds above the height limit.
+random-meteorite-spawn-height: 250
+
+#Worldguard Safe Zones, you need the worldguard and worldedit (worldguard requires worldedit) plugin to use these features.
+#Enable this to avoid random meteorites falling inside 'safe zone' worldguard regions.
+enable-worldguard-safe-zones: true
+#The names of the worldguard regions you don't want meteorites to spawn in.
+worldguard-safe-zone-names:
+  - 'spawn'
+  - 'MyHouse'
+#Enable this to protect ALL defined worldguard regions/zones.
+protect-all-worldguard-zones: true
+#This indicates the amount of blocks meteorites have to be away from the borders of your worldguard safe zones in order to be able to spawn. Use value 0 to disable the buffer.
+#Disabling the buffer means that the meteorite can spawn right next to worldguard safe zones and can potentially fly in and land there anyway.
+worldguard-safe-zone-buffer: 100
+
+#Enable this to make every GriefPrevention claim a safe zone. No more random meteorites will fall in claimed areas.
+enable-griefprevention-safe-zones: true
+#This indicates the amount of blocks meteorites have to be away from any claim in order to be able to spawn. Use value 0 to disable the buffer.
+#Disabling the buffer means that the meteorite can spawn right next to claims and can potentially fly in to the claimed zones and land there anyway.
+#Make sure your potential spawn area for the random meteorites has enough places for the meteorite to spawn in!
+#To prevent server overload, no meteorite will spawn if it doesn't find a safe location after 10 attempts.
+griefprevention-safe-zone-buffer: 50
+
+meteorites:
+  #You can name your meteorites anything you want, I used numbers. Use '/mp shoot 1' to shoot this fiery meteorite.
+  '1':
+    #The chance this meteorite has to randomly spawn compared to your other meteorites. (Example: Two meteorites with chance 10 will bot have a 50% chance of spawning)
+    chance: 10
+    #This makes the meteorite's blocks (including the treasure) disappear after a certain amount of time (in seconds). Set to 0 or lower to make the meteorite blocks stay forever.
+    #Note: this timer starts running at the meteorite's launch, not landing. To give the meteorite enough time to land on the ground, the delay must be at least 20 seconds!
+    #Disclaimer: Your random meteorite interval has to be more than 20 seconds to make this feature work 100% of the time. Especially if you mix up meteorites that should and shouldn't clean up!
+    clean-up-meteorite-blocks-interval: 43200
+    #You can alter the meteorites speed here. This will affect both random meteorites and '/mp shoot' - meteorites.
+    #Use a value from 0 - 5, I recommend 2. If value is 0, meteorites will drop straight down (!Also right on top of your head when you use /mp shoot, so I don't recommend speed 0 for this)
+    #Keep in mind, at higher speed the meteorite can land further away from the location it spawns (visible in chat).
+    meteorite-speed: 2
+
+    #A meteorite will consists of 1 core block, an outer layer and an optional inner layer.
+    outer-layer-size: 4
+    enable-inner-layer: true
+    inner-layer-size: 3
+
+    #Leave the '' empty to disable the chat message when a meteorite spawns.
+    chat-message: '&9[&6MeteoritesPro&9] &7A &4&lFiery &9&lMeteorite &7has been sighted near &3X:&f%locationX% &3Z:&f%locationZ% &7!'
+    #Use empty '' to disable console commands when a meteorite spawns. Placeholders also work here.
+    meteorite-spawn-commands:
+      - ''
+    #List the possible block types that your meteorites will consist of along with the chance of this block appearing.
+    #List of valid item types: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    #The chances are relative to each other and must not be 100 in total, for example: two blocks with chance 100 (or 1) will result in both blocks appearing 50-50.
+    core-block:
+      GOLD_BLOCK: 1
+      DIAMOND_BLOCK: 1
+
+    inner-layer-blocks:
+      DIAMOND_ORE: 5
+      GOLD_ORE: 10
+      COAL_BLOCK: 10
+
+    outer-layer-blocks:
+      MAGMA_BLOCK: 10
+      NETHERRACK: 10
+      OBSIDIAN: 5
+
+  #Use '/mp shoot 2' to shoot this icy meteorite.
+  '2':
+    chance: 5
+    clean-up-meteorite-blocks-interval: 43200
+    meteorite-speed: 2
+
+    outer-layer-size: 5
+    enable-inner-layer: true
+    inner-layer-size: 3
+
+    chat-message: '&9[&6MeteoritesPro&9] &7An &b&lIcy &9&lMeteorite &7has been sighted near &3X:&f%locationX% &3Z:&f%locationZ% &7!'
+    meteorite-spawn-commands:
+      - ''
+
+    core-block:
+      DIAMOND_BLOCK: 1
+
+    inner-layer-blocks:
+      DIAMOND_ORE: 5
+      TUBE_CORAL_BLOCK: 5
+      BLUE_ICE: 10
+
+    outer-layer-blocks:
+      BLUE_ICE: 10
+      PACKED_ICE: 15
+      CYAN_GLAZED_TERRACOTTA: 5
+      LIGHT_BLUE_GLAZED_TERRACOTTA: 5
+      BLUE_GLAZED_TERRACOTTA: 2
+      BLUE_STAINED_GLASS: 10
+      OBSIDIAN: 10
+
+core-settings:
+  can-hurt-entities: true
+  drop-item-when-destroyed: false
+
+  enable-explosion: true
+  explosion-power: 6
+  explosion-breaks-blocks: true
+  explosion-sets-fire: true
+  enable-lighting-strike: true
+
+  #The message that will show when the core successfully lands. Use empty '' or to disable.
+  #Sometimes the meteorite's core doesn't land and gets destroyed! In this case no message or command will be executed.
+  #You can use placeholders %locationX%, %locationY% and %locationZ% in the message and the commands. These are the core's landing coords.
+  message: ''
+  #These commands will run when the core successfully lands. Use empty '' or to disable commands.
+  commands:
+    - ''
+
+inner-layer-settings:
+  can-hurt-entities: true
+  drop-item-when-destroyed: false
+
+  #These explosions will happen every time an inner layer block hits the ground. Beware of high explosion power!
+  #Higher explosion power will mean the meteorite's spread is larger, even if it doesn't break blocks.
+  enable-explosion: true
+  explosion-breaks-blocks: false
+  explosion-power: 1
+  explosion-sets-fire: true
+  enable-lighting-strike: false
+
+outer-layer-settings:
+  can-hurt-entities: true
+  drop-item-when-destroyed: false
+
+  #These explosions will happen every time an outer layer block hits the ground. Beware of high explosion power!
+  #Higher explosion power will mean the meteorite's spread is larger, even if it doesn't break blocks.
+  enable-explosion: true
+  explosion-breaks-blocks: false
+  explosion-power: 1
+  explosion-sets-fire: true
+  enable-lighting-strike: false
+
+#This will enable particles appearing behind a falling meteorite.
+enable-meteorite-particles: true
+#The interval between the spawning particles. Lower interval will result in more particles.
+#More particles will require more PC power to watch the meteorite fall & more server power to make the meteorite fall smoothly. Use a rounded value from 1 - 10.
+meteorite-particle-interval: 5
+#A list of random particles that can appear
+possible-meteorite-particle-effects:
+  #You can also use custom names instead of numbers for this list. These will only be visible in the console, not to the players.
+  '1':
+    #Enable or disable the chance of this particle appearing using true or false.
+    enabled: true
+    #The chance that this particle has to appear compared to other particles in this list.
+    chance: 30
+    #The type of particle effect. List of valid particles: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+    particle-effect: CAMPFIRE_COSY_SMOKE
+    #The amount of particles spawning per block, per interval. Must be 1 or higher.
+    amount: 1
+    #The spread is the random amount of blocks of where the particle will away from the normal location.
+    #Using a spread of 0 will make sure all particles spawn in a perfectly straight line.
+    spread: 0.1
+    #This is the speed at which the particle will shoot away from the spawn location. Use a number from 0 - 2.
+    #Using a speed of 0 will make the particles static. I don't recommend very high speed.
+    speed: 0.05
+    #Enabling this will make the particles always visible to the players, no matter how far away the meteorite is.
+    #If you disable this, particles will not be visible further than the players particle view distance (this isn't very far)
+    #Enabling this will increase work load for both players and server, but make the effect a lot better.
+    force-visibility: true
+  '2':
+    enabled: true
+    chance: 10
+    particle-effect: SMOKE_LARGE
+    amount: 1
+    spread: 5
+    speed: 0.1
+    force-visibility: true
+  '3':
+    enabled: true
+    chance: 10
+    particle-effect: SMOKE_NORMAL
+    amount: 1
+    spread: 0.1
+    speed: 0.3
+    force-visibility: true
+  '4':
+    enabled: true
+    chance: 20
+    particle-effect: FLAME
+    amount: 1
+    spread: 0.1
+    speed: 0.05
+    force-visibility: true
+
+
+#Enable or disable a barrel/chest appearing in meteorites.
+#Disclaimer: Even when enabled, the treasure will not spawn 100% of the time, sometimes the meteorite's core gets destroyed.
+enable-meteorite-treasure: true
+#Determine whether the treasure will appear in a chest or a barrel.
+treasure-barrel-or-chest: 'BARREL'
+
+treasure-content:
+  #You can also use custom names instead of numbers in this list. These will only be visible in the console, not to the players.
+  '1':
+    #Enable or disable the chance of this item appearing using true or false.
+    enabled: true
+    #Define item type, valid items: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    item-type: DIAMOND_AXE
+    amount: 1
+    #The chance that this item has to appear in the treasure (0-100)
+    chance: 10
+    display-name: '&5Starlight Axe'
+    lore:
+      - ''
+      - '&7Gleaming with &dMysterious Power &7. . .'
+      - ''
+    #Defines whether the item will be unbreakable or not.
+    unbreakable: true
+    #Only use the enchantment names like on this list (minus the 'minecraft:'):
+    #https://www.spigotmc.org/threads/1-13-enchantment-namespacedkeys.351275/
+    enchants:
+      sharpness: 3
+      knockback: 5
+      unbreaking: 3
+    #Set the custom model data for this item. Remove this line or use '0' to use default settings.
+    custom-model-data: 0
+    #Set the damage (durability the item has lost) for this item. Remove this line or use '0' to use default settings.
+    #This will have no effect on the durability if unbreakable is set to true.
+    damage: 0
+
+  '2':
+    #Enable or disable the chance of this item appearing using true or false.
+    enabled: true
+    #Define item type, valid items: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    item-type: DIAMOND_PICKAXE
+    amount: 1
+    #The chance that this item has to appear in the treasure (0-100)
+    chance: 10
+    display-name: '&5Starlight Pickaxe'
+    lore:
+      - ''
+      - '&7Gleaming with &dMysterious Power &7. . .'
+      - ''
+    #Defines whether the item will be unbreakable or not.
+    unbreakable: true
+    #Only use the enchantment names like on this list (minus the 'minecraft:'):
+    #https://www.spigotmc.org/threads/1-13-enchantment-namespacedkeys.351275/
+    enchants:
+      efficency: 5
+      fortune: 4
+      unbreaking: 3
+    #Set the custom model data for this item. Remove this line or use '0' to use default settings.
+    custom-model-data: 0
+    #Set the damage (durability the item has lost) for this item. Remove this line or use '0' to use default settings.
+    #This will have no effect on the durability if unbreakable is set to true.
+    damage: 0
+
+  '3':
+    enabled: true
+    item-type: EMERALD
+    amount: 1
+    chance: 10
+    display-name: '&e* &6The Arkenstone &e*'
+    unbreakable: false
+    lore:
+      - ''
+      - '&7The owner of this &6Gem &7is considered'
+      - '&7to be &3King &7of the &2Lonely Mountain &7. . .'
+      - ''
+    enchants:
+      infinity: 10
+
+  '4':
+    enabled: true
+    item-type: DIAMOND
+    amount: 3
+    chance: 75
+    display-name: '&3Star Diamond'
+    lore:
+      - ''
+      - '&7It looks extra &eShiny &7. . .'
+      - ''
+    enchants:
+      fortune: 5
+
+  '5':
+    #Enable or disable the chance of this item appearing using true or false.
+    enabled: true
+    #Define item type, valid items: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    item-type: DIAMOND_HELMET
+    amount: 1
+    #The chance that this item has to appear in the treasure (0-100)
+    chance: 1
+    display-name: '&e&lDragonforge Helmet'
+    lore:
+      - ''
+      - '&4This armor grants unparalleled strength.'
+      - '&4But beware, for upon your death,'
+      - '&4this powerful armor shall vanish into the flames,'
+      - '&4leaving nothing but ash behind.'
+    #Defines whether the item will be unbreakable or not.
+    unbreakable: true
+    #Only use the enchantment names like on this list (minus the 'minecraft:'):
+    #https://www.spigotmc.org/threads/1-13-enchantment-namespacedkeys.351275/
+    enchants:
+      protection: 5
+      fire_protection: 10
+      thorns: 3
+      unbreaking: 3
+      vanishing_curse: 1
+      binding_curse: 1
+    #Set the custom model data for this item. Remove this line or use '0' to use default settings.
+    custom-model-data: 0
+    #Set the damage (durability the item has lost) for this item. Remove this line or use '0' to use default settings.
+    #This will have no effect on the durability if unbreakable is set to true.
+    damage: 0
+
+  '6':
+    #Enable or disable the chance of this item appearing using true or false.
+    enabled: true
+    #Define item type, valid items: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    item-type: DIAMOND_CHESTPLATE
+    amount: 1
+    #The chance that this item has to appear in the treasure (0-100)
+    chance: 1
+    display-name: '&e&lDragonforge Chestplate'
+    lore:
+      - ''
+      - '&4This armor grants unparalleled strength.'
+      - '&4But beware, for upon your death,'
+      - '&4this powerful armor shall vanish into the flames,'
+      - '&4leaving nothing but ash behind.'
+    #Defines whether the item will be unbreakable or not.
+    unbreakable: true
+    #Only use the enchantment names like on this list (minus the 'minecraft:'):
+    #https://www.spigotmc.org/threads/1-13-enchantment-namespacedkeys.351275/
+    enchants:
+      protection: 5
+      fire_protection: 10
+      thorns: 3
+      unbreaking: 3
+      vanishing_curse: 1
+      binding_curse: 1
+    #Set the custom model data for this item. Remove this line or use '0' to use default settings.
+    custom-model-data: 0
+    #Set the damage (durability the item has lost) for this item. Remove this line or use '0' to use default settings.
+    #This will have no effect on the durability if unbreakable is set to true.
+    damage: 0
+
+  '7':
+    #Enable or disable the chance of this item appearing using true or false.
+    enabled: true
+    #Define item type, valid items: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    item-type: DIAMOND_LEGGINGS
+    amount: 1
+    #The chance that this item has to appear in the treasure (0-100)
+    chance: 1
+    display-name: '&e&lDragonforge Leggings'
+    lore:
+      - ''
+      - '&4This armor grants unparalleled strength.'
+      - '&4But beware, for upon your death,'
+      - '&4this powerful armor shall vanish into the flames,'
+      - '&4leaving nothing but ash behind.'
+    #Defines whether the item will be unbreakable or not.
+    unbreakable: true
+    #Only use the enchantment names like on this list (minus the 'minecraft:'):
+    #https://www.spigotmc.org/threads/1-13-enchantment-namespacedkeys.351275/
+    enchants:
+      protection: 5
+      fire_protection: 10
+      thorns: 3
+      unbreaking: 3
+      vanishing_curse: 1
+      binding_curse: 1
+    #Set the custom model data for this item. Remove this line or use '0' to use default settings.
+    custom-model-data: 0
+    #Set the damage (durability the item has lost) for this item. Remove this line or use '0' to use default settings.
+    #This will have no effect on the durability if unbreakable is set to true.
+    damage: 0
+
+  '8':
+    #Enable or disable the chance of this item appearing using true or false.
+    enabled: true
+    #Define item type, valid items: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    item-type: DIAMOND_BOOTS
+    amount: 1
+    #The chance that this item has to appear in the treasure (0-100)
+    chance: 1
+    display-name: '&e&lDragonforge Boots'
+    lore:
+      - ''
+      - '&4This armor grants unparalleled strength.'
+      - '&4But beware, for upon your death,'
+      - '&4this powerful armor shall vanish into the flames,'
+      - '&4leaving nothing but ash behind.'
+    #Defines whether the item will be unbreakable or not.
+    unbreakable: true
+    #Only use the enchantment names like on this list (minus the 'minecraft:'):
+    #https://www.spigotmc.org/threads/1-13-enchantment-namespacedkeys.351275/
+    enchants:
+      protection: 5
+      fire_protection: 10
+      thorns: 3
+      unbreaking: 3
+      vanishing_curse: 1
+      binding_curse: 1
+    #Set the custom model data for this item. Remove this line or use '0' to use default settings.
+    custom-model-data: 0
+    #Set the damage (durability the item has lost) for this item. Remove this line or use '0' to use default settings.
+    #This will have no effect on the durability if unbreakable is set to true.
+    damage: 0
+
+  '9':
+    enabled: true
+    item-type: EBOLT_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '10':
+    enabled: true
+    item-type: COAST_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '11':
+    enabled: true
+    item-type: DUNE_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '12':
+    enabled: true
+    item-type: EYE_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '13':
+    enabled: true
+    item-type: FLOW_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '14':
+    enabled: true
+    item-type: HOST_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '15':
+    enabled: true
+    item-type: RAISER_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '16':
+    enabled: true
+    item-type: RIB_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '17':
+    enabled: true
+    item-type: SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '18':
+    enabled: true
+    item-type: SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '19':
+    enabled: true
+    item-type: SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '20':
+    enabled: true
+    item-type: SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '21':
+    enabled: true
+    item-type: SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '22':
+    enabled: true
+    item-type: TIDE_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '23':
+    enabled: true
+    item-type: VEX_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '24':
+    enabled: true
+    item-type: WARD_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+  '25':
+    enabled: true
+    item-type: WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 10
+    unbreakable: false
+
+  '26':
+    enabled: true
+    item-type: WILD_ARMOR_TRIM_SMITHING_TEMPLATE
+    amount: 1
+    chance: 100
+    unbreakable: false
+
+  '27':
+    enabled: true
+    item-type: GOLD_INGOT
+    amount: 5
+    chance: 50
+    unbreakable: false
+
+  '28':
+    enabled: true
+    item-type: COAL
+    amount: 16
+    chance: 100
+    unbreakable: false
+
+  '29':
+    enabled: true
+    item-type: AMETHYST_SHARD
+    amount: 1
+    chance: 30
+    unbreakable: false
+
+  '29':
+    enabled: true
+    item-type: DIAMOND
+    amount: 2
+    chance: 30
+    unbreakable: false
+
+  '30':
+    enabled: true
+    item-type: MACE
+    amount: 1
+    chance: 5
+    unbreakable: false
+
+  '31':
+    enabled: true
+    item-type: SADDLE
+    amount: 1
+    chance: 15
+    unbreakable: false
+
+  '32':
+    enabled: true
+    item-type: GOAT_HORN
+    amount: 1
+    chance: 5
+    unbreakable: false
+
+  '33':
+    enabled: true
+    item-type: MUSIC_DISC_11
+    amount: 1
+    chance: 5
+    unbreakable: false
+
+  '34':
+    enabled: true
+    item-type: MUSIC_DISC_13
+    amount: 1
+    chance: 5
+    unbreakable: false
+
+  '35':
+    enabled: true
+    item-type: MUSIC_DISC_CHIRP
+    amount: 1
+    chance: 5
+    unbreakable: false
+
+  '36':
+    enabled: true
+    item-type: MUSIC_DISC_CAT
+    amount: 1
+    chance: 5
+    unbreakable: false
+
+  '37':
+    enabled: true
+    item-type: MUSIC_DISC_MELLOHI
+    amount: 1
+    chance: 5
+    unbreakable: false
+
+  '38':
+    enabled: true
+    item-type: MUSIC_DISC_RELIC
+    amount: 1
+    chance: 5
+    unbreakable: false
+
+  '39':
+    enabled: true
+    item-type: MUSIC_DISC_WARD
+    amount: 1
+    chance: 5
+    unbreakable: false
+
+  '40':
+    enabled: true
+    item-type: MUSIC_DISC_WAIT
+    amount: 1
+    chance: 5
+    unbreakable: false
+
+  '41':
+    enabled: true
+    item-type: GOAT_HORN
+    amount: 1
+    chance: 5
+    unbreakable: false
+
+  '42':
+    enabled: true
+    item-type: TRIDENT
+    amount: 1
+    chance: 2
+    unbreakable: false
+
+  '43':
+    enabled: true
+    item-type: CHERRY_SAPLING
+    amount: 2
+    chance: 40
+    unbreakable: false
+
+
+
+
+
+
+
+#Enable or disable a guardian mob spawning when someone interacts with the meteorite treasure.
+enable-treasure-guardian: false
+
+possible-guardians:
+  #Name your guardian whatever you want here, it will only show in console error messages if there are errors.
+  'meteoriteguardian':
+    #Enable or disable the chance of this guardian spawning using true or false.
+    #Disclaimer: if you disable all possible guardians, please set 'enable-treasure-guardian' to false to avoid unnecessary errors.
+    enabled: false
+
+    #The message the player will see in chat when trying to open a guarded treasure. Use empty '' to cancel the message.
+    player-message: '&8[&9Meteorite Guardian&8] &cYou have made a mistake coming here, pay for it now!'
+
+    #The commands that will run when this guardian spawns. Use empty '' or to disable commands for this guardian.
+    #Location placeholders %locationX%, %locationY%, %locationZ% and %player% are usable, this is the (spawn)location located between the player and the treasure and the player's name.
+    commands:
+      - ''
+    #enable this to disable all other guardian features and handle everything with commands!
+    use-command-only: true
+
+    #The sound that will play when the treasure guardian spawns. Use empty '' for no sound. Valid sound list: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+    guardian-spawn-sound: ENTITY_ENDER_DRAGON_GROWL
+    #Set spawn sound volume
+    #If the volume is 1.0 it's the loudest it can be at the source, but can be heard only 15 blocks.
+    #If the volume is higher than 1.0, like 10.0, it will not be louder at the source, but can be heard over 150 blocks far!
+    #So 0 - 1 changes source volume, 1 - ... changes how far the sound can be heard.
+    guardian-spawn-sound-volume: 5
+    #Set sound pitch from 0.5 - 2.0
+    #0.5 is half the speed, 1.0 is normal speed and 2.0 is double the speed.
+    guardian-spawn-sound-pitch: 0.5
+
+    #Use this list to choose your guardian's type: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+    #Only use mobs!
+    guardian-mob-type: WITHER_SKELETON
+    #The chance of this guardian spawning compared to other guardians on this list. There will always spawn 1 guardian.
+    chance: 0
+    #The name that will appear above the guardian's head ingame. use empty '' to disable the ingame display name.
+    guardian-display-name: '&9Meteorite Guardian'
+
+    #Set guardian attack damage.
+    #Use 'default' to leave the mob's damage unaltered. Check this table for default attack damage per mob: https://minecraft.gamepedia.com/Damage/Mobs
+    #Keep the value from 0 - 500
+    #Without armor: 1 attack damage = 1/2 heart, 2 attack damage = 1 heart, ..., 20 attack damage = 10 hearts
+    #70 attack damage will one-hit kill a player in a full set of diamond armor (without a weapon).
+    #135 attack damage will one-hit kill a player in full protection 4 - diamond armor
+    #300 attack damage will one-hit kill a player in full protection 4 - diamond armor + god apple effects.
+    #!Disclaimer: always use default if you're using a mob type that doesn't attack like a sheep or cow!
+    guardian-attack-damage: 12
+
+    #Set guardian health.
+    #Use 'default' to leave the mob's health unaltered. Check this table for the default health per mob: https://minecraft.gamepedia.com/Health
+    #Keep the value from 1 - 2000
+    #1 health = 1/2 heart, 2 health = 1 heart, ..., 20 health =  10 hearts
+    guardian-health: 80
+
+    #Set guardian movement speed.
+    #Use 'default' to leave the mob's movement speed unaltered. Check this table for the default movement speed per mob: https://minecraft.gamepedia.com/Attribute
+    #Examples: Zombie speed = 0.23, Skeleton speed = 0.25, Spider speed = 0.3, villager (sprint) speed = 0.5, ender dragon speed = 0.7
+    #Keep the value between 0 - 0.7
+    guardian-movement-speed: 0.45
+
+    #Enable or disable all of the guardian's equipment.
+    enable-guardian-equipment: false
+    #List of valid equipment: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    #Use empty '' if you don't want to equip anything in a specific slot.
+    guardian-equipment:
+      main-hand: GOLDEN_AXE
+      off-hand: GOLDEN_AXE
+      #You can put other stuff than a helmet on the head.
+      helmet: WHITE_STAINED_GLASS
+      chestplate: IRON_CHESTPLATE
+      leggings: IRON_LEGGINGS
+      boots: IRON_BOOTS
+
+  'goldenguardian':
+    enabled: false
+    player-message: '&8[&eGolden Guardian&8] &cDON''T TOUCH MY TREASURE!'
+
+    guardian-spawn-sound: ENTITY_RAVAGER_CELEBRATE
+    guardian-spawn-sound-volume: 5
+    guardian-spawn-sound-pitch: 0.7
+
+    guardian-mob-type: ZOMBIE
+    chance: 0
+    guardian-display-name: '&eGolden Guardian'
+
+    guardian-attack-damage: 9
+    guardian-health: 150
+    guardian-movement-speed: 0.35
+
+    enable-guardian-equipment: false
+    guardian-equipment:
+      main-hand: DIAMOND_SWORD
+      off-hand: EMERALD
+      helmet: CLOCK
+      chestplate: GOLDEN_CHESTPLATE
+      leggings: GOLDEN_LEGGINGS
+      boots: GOLDEN_BOOTS
+
+  'defaultsettingsexample':
+    #This is disabled, it's just an example or default settings. It would spawn a normal zombie
+    enabled: false
+    player-message: ''
+
+    guardian-spawn-sound: ''
+
+    guardian-mob-type: ZOMBIE
+    chance: 0
+    guardian-display-name: ''
+
+    guardian-attack-damage: default
+    guardian-health: default
+    guardian-movement-speed: default
+
+    enable-guardian-equipment: false
+    guardian-equipment:
+      main-hand: ''
+      off-hand: ''
+      helmet: ''
+      chestplate: ''
+      leggings: ''
+      boots: ''

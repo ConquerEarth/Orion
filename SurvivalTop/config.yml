@@ -1,0 +1,206 @@
+#####################################################################################
+#                                                                                   #
+#                              General Configurations                               #
+#                                                                                   #
+#####################################################################################
+
+# an elaborate tutorial and setup guide can be found on our wiki:
+# https://github.com/tjtanjin/SurvivalTop/wiki
+
+# language file to use (feel free to add your own lang file within the lang folder)
+lang-file: 'en.yml'
+
+# if true, will provide a gui for viewing entity stats
+# if false, will provide entity stats in chat
+# note that permission nodes are used to control whether users can view detailed breakdown in gui
+# relevant permission nodes may be found on our wiki:
+# https://github.com/tjtanjin/SurvivalTop/wiki/Tutorial#commands--permissions
+use-gui-stats: false
+
+# calculation mode to use, defaults to 1 (descriptions are below and more details are on wiki)
+# 0 - only does real-time calculations and does not use cache (most performance intensive)
+# 1 - balance between using cache and real-time calculations (recommended)
+# 2 - only uses cache calculations from leaderboard (i.e. players cannot get real-time stats)
+# you may find out more details about the calculation modes on our wiki:
+# https://github.com/tjtanjin/SurvivalTop/wiki/Tutorial#general-configurations
+calculation-mode: 1
+
+# only used if calculation mode is 1 or 2, sets the duration before cache expires in seconds
+cache-duration: 3600
+
+#####################################################################################
+#                                                                                   #
+#                               Group Configurations                                #
+#                                                                                   #
+#####################################################################################
+
+# by default, the term entity in this plugin refers to players
+# however, if enable-groups is set to true, then entity refers to a group (e.g. factions, kingdom)
+# this option should only be set to true for users who wish to show group-based leaderboards
+# make sure a valid group-type is set below and the relevant plugin is installed
+# otherwise, if enabled without a valid group-type, plugin will still disable group
+enable-group: false
+
+# the group-type option only works if enable-groups is set to true with the relevant plugin installed
+# options supported for group-type can be found on our wiki:
+# https://github.com/tjtanjin/SurvivalTop/wiki/Tutorial#group-configurations
+group-type: FactionsUuid
+
+#####################################################################################
+#                                                                                   #
+#                               Balance Configurations                              #
+#                                                                                   #
+#####################################################################################
+
+# if true, will include player /balance in calculating wealth (requires vault)
+include-bal: false
+
+#####################################################################################
+#                                                                                   #
+#                                 Land Configurations                               #
+#                                                                                   #
+#####################################################################################
+
+# if true, will include blocks in land for calculating wealth (requires a land claim plugin)
+include-land: false
+
+# if you are intending to include land, make sure a valid land type is set below
+# options supported for land-type can be found on our wiki:
+# https://github.com/tjtanjin/SurvivalTop/wiki/Tutorial#land-configurations
+land-type: GriefPrevention
+
+# the following 2 options are recommended to be left as default to use the heights provided by
+# the land plugin
+# if you wish to adjust this, kindly refer to a more detailed explanation on the wiki:
+# https://github.com/tjtanjin/SurvivalTop/wiki/Tutorial#land-configurations
+max-land-height: default
+min-land-height: default
+
+# if true, spawners will be included as part of land wealth in calculations
+# also requires include-land to be true!
+# note that checks for spawners are more expensive and you should consider disabling this if updates take too long
+include-spawners: false
+
+# if true, containers (chest, trapped_chest, hopper, dropper, furnace) will be included as part of land wealth in calculations
+# also requires include-land to be true!
+# note that checks for containers are the most expensive and you should consider disabling this if updates take too long
+include-containers: false
+
+# list of containers that will be checked
+# this list is ignored if include-containers is false
+container-type:
+  - CHEST
+  - TRAPPED_CHEST
+
+#####################################################################################
+#                                                                                   #
+#                              Inventory Configurations                             #
+#                                                                                   #
+#####################################################################################
+
+# if true, will include player inventory in calculating wealth (currently only works for online players)
+include-inventory: false
+
+#####################################################################################
+#                                                                                   #
+#                            PlaceholderAPI Configurations                          #
+#                                                                                   #
+#####################################################################################
+
+# if true, will include papi placeholders in calculating wealth (requires placeholderapi)
+# for more information on setting up papi placeholders for wealth calculations, check our wiki:
+# https://github.com/tjtanjin/SurvivalTop/wiki/Tutorial#placeholderapi-configurations
+include-papi: false
+
+# the plugin also comes with its own papi placeholders
+# note that the above include-papi option need not be set to true to use the placeholders here:
+# https://github.com/tjtanjin/SurvivalTop/wiki/Tutorial#papi-placeholders
+
+#####################################################################################
+#                                                                                   #
+#                             Leaderboard Configurations                            #
+#                                                                                   #
+#####################################################################################
+
+# interval (in seconds) between updating the leaderboard (set to -1 to disable)
+# not recommended updating too frequently, especially if you have a large player-base
+# plugin reloads will restart/update this interval count from the point of reload
+update-interval: 3600
+
+# if true, will first update leaderboard on server start
+# if false, will first update leaderboard upon reaching the specified interval
+update-on-start: false
+
+# minimum wealth (inclusive) required to be included on the leaderboard - 0 will disallow negative wealth on leaderboard
+minimum-wealth: 0
+
+# the below options only apply if you have enable-group set to false (i.e. entity = player)
+# these options are also mostly applicable to very old or large servers that find leaderboard
+# updates taking a very long time
+# for a full and clearer explanation on how to use this, please take a look at our wiki:
+# https://github.com/tjtanjin/SurvivalTop/wiki/Tutorial#leaderboard-configurations
+filter-last-join: false
+filter-player-time: 2592000
+
+# total number of leaderboard positions to be shown
+# -1 means all players are shown
+# 100 means only the top 100 players are shown
+total-leaderboard-positions: -1
+
+# number of leaderboard positions shown on each page
+leaderboard-positions-per-page: 10
+
+# if true, will show breakdown of wealth on hover
+# if use-gui-stats is enabled, users can also click on the leaderboard to view entity stats in gui
+# disabling may improve performance on servers struggling with little resources
+use-interactive-leaderboard: false
+
+# commands to run before starting a leaderboard update
+commands-on-start:
+  - broadcast &aSurvivalTop leaderboard update has started!
+
+# commands to run after finishing a leaderboard update
+# allows entity placeholders %player-(position)% and %group-(position)%
+# more information on the use of placeholders in commands may be found on our wiki:
+# https://github.com/tjtanjin/SurvivalTop/wiki/Tutorial#leaderboard-configurations
+commands-on-end:
+  - broadcast &aSurvivalTop leaderboard update has been completed!
+
+# blacklist of entities that will not show up on leaderboard
+# if enable-group is false, this refers to player names
+# if enable-group is true, this refers to group names
+leaderboard-blacklist:
+  - FruznFever
+
+#####################################################################################
+#                                                                                   #
+#                               Storage Configurations                              #
+#                                                                                   #
+#####################################################################################
+
+# whether to write updated entity data to file/mysql or not at all
+# options here include: MySQL, YAML and None
+# note that information storage is not required for this plugin since the results of updates are stored in cache
+# as of the latest version of this plugin, the storage only serves a purpose if you have your own means to make use of this information
+# it is thus recommended setting this to None if you have a large player-base, lag issues or have no use for storing the information
+storage-type: None
+
+# mysql connection details (ignore if not using)
+host: 127.0.0.1
+port: 3306
+user: survtop
+password: password
+database-name: survtop
+table-name: survtop
+
+#####################################################################################
+#                                                                                   #
+#                             Miscellaneous Configurations                          #
+#                                                                                   #
+#####################################################################################
+
+# this section contains plugin-specific configurations that should be ignored if not used
+
+# towny advanced users should make sure this block size is the same as in the towny advanced config
+town-block-size: 16
+

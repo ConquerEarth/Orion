@@ -1,0 +1,4 @@
+Commands:
+  - 'broadcast &b&l%player% &ehas voted on &b&l%service%!'
+  - 'cmi give %player% diamond 3'
+  - 'cmi money give %player% 300'
