@@ -54,31 +54,31 @@ protections:
             autoRegister: private
         trapped_chest:
             enabled: true
-            autoRegister: private
+            autoRegister: false
         furnace:
             enabled: true
-            autoRegister: private
+            autoRegister: false
         blast_furnace:
             enabled: true
-            autoRegister: private
+            autoRegister: false
         smoker:
             enabled: true
-            autoRegister: private
+            autoRegister: false
         dispenser:
             enabled: true
-            autoRegister: private
+            autoRegister: false
         dropper:
             enabled: true
-            autoRegister: private
+            autoRegister: false
         barrel:
             enabled: true
             autoRegister: private
         composter:
             enabled: true
-            autoRegister: private
+            autoRegister: false
         lectern:
             enabled: true
-            autoRegister: private
+            autoRegister: false
         shulker_box:
             enabled: true
             autoRegister: private
