@@ -53,32 +53,32 @@ protections:
             enabled: true
             autoRegister: private
         trapped_chest:
-            enabled: true
-            autoRegister: false
+            enabled: false
+            autoRegister: public
         furnace:
-            enabled: true
-            autoRegister: false
+            enabled: false
+            autoRegister: public
         blast_furnace:
-            enabled: true
-            autoRegister: false
+            enabled: false
+            autoRegister: public
         smoker:
-            enabled: true
-            autoRegister: false
+            enabled: false
+            autoRegister: public
         dispenser:
-            enabled: true
-            autoRegister: false
+            enabled: false
+            autoRegister: public
         dropper:
-            enabled: true
-            autoRegister: false
+            enabled: false
+            autoRegister: public
         barrel:
             enabled: true
             autoRegister: private
         composter:
-            enabled: true
-            autoRegister: false
+            enabled: false
+            autoRegister: public
         lectern:
-            enabled: true
-            autoRegister: false
+            enabled: false
+            autoRegister: public
         shulker_box:
             enabled: true
             autoRegister: private
@@ -131,163 +131,163 @@ protections:
             enabled: true
             autoRegister: private
         sign:
-            enabled: true
+            enabled: false
         oak_hanging_sign:
-            enabled: true
+            enabled: false
         spruce_hanging_sign:
-            enabled: true
+            enabled: false
         birch_hanging_sign:
-            enabled: true
+            enabled: false
         jungle_hanging_sign:
-            enabled: true
+            enabled: false
         acacia_hanging_sign:
-            enabled: true
+            enabled: false
         dark_oak_hanging_sign:
-            enabled: true
+            enabled: false
         mangrove_hanging_sign:
-            enabled: true
+            enabled: false
         crimson_hanging_sign:
-            enabled: true
+            enabled: false
         warped_hanging_sign:
-            enabled: true
+            enabled: false
         bamboo_hanging_sign:
-            enabled: true
+            enabled: false
         cherry_hanging_sign:
-            enabled: true
+            enabled: false
         iron_door:
-            enabled: true
+            enabled: false
         oak_door:
-            enabled: true
+            enabled: false
         spruce_door:
-            enabled: true
+            enabled: false
         birch_door:
-            enabled: true
+            enabled: false
         jungle_door:
-            enabled: true
+            enabled: false
         acacia_door:
-            enabled: true
+            enabled: false
         dark_oak_door:
-            enabled: true
+            enabled: false
         mangrove_door:
-            enabled: true
+            enabled: false
         crimson_door:
-            enabled: true
+            enabled: false
         warped_door:
-            enabled: true
+            enabled: false
         bamboo_door:
-            enabled: true
+            enabled: false
         cherry_door:
-            enabled: true
+            enabled: false
         iron_trapdoor:
-            enabled: true
+            enabled: false
         oak_trapdoor:
-            enabled: true
+            enabled: false
         spruce_trapdoor:
-            enabled: true
+            enabled: false
         birch_trapdoor:
-            enabled: true
+            enabled: false
         jungle_trapdoor:
-            enabled: true
+            enabled: false
         acacia_trapdoor:
-            enabled: true
+            enabled: false
         dark_oak_trapdoor:
-            enabled: true
+            enabled: false
         mangrove_trapdoor:
-            enabled: true
+            enabled: false
         crimson_trapdoor:
-            enabled: true
+            enabled: false
         warped_trapdoor:
-            enabled: true
+            enabled: false
         bamboo_trapdoor:
-            enabled: true
+            enabled: false
         cherry_trapdoor:
-            enabled: true
+            enabled: false
         oak_fence_gate:
-            enabled: true
+            enabled: false
         spruce_fence_gate:
-            enabled: true
+            enabled: false
         birch_fence_gate:
-            enabled: true
+            enabled: false
         jungle_fence_gate:
-            enabled: true
+            enabled: false
         acacia_fence_gate:
-            enabled: true
+            enabled: false
         dark_oak_fence_gate:
-            enabled: true
+            enabled: false
         mangrove_fence_gate:
-            enabled: true
+            enabled: false
         crimson_fence_gate:
-            enabled: true
+            enabled: false
         warped_fence_gate:
-            enabled: true
+            enabled: false
         bamboo_fence_gate:
-            enabled: true
+            enabled: false
         cherry_fence_gate:
-            enabled: true
+            enabled: false
         white_banner:
-            enabled: true
+            enabled: false
         orange_banner:
-            enabled: true
+            enabled: false
         magenta_banner:
-            enabled: true
+            enabled: false
         light_blue_banner:
-            enabled: true
+            enabled: false
         yellow_banner:
-            enabled: true
+            enabled: false
         lime_banner:
-            enabled: true
+            enabled: false
         pink_banner:
-            enabled: true
+            enabled: false
         gray_banner:
-            enabled: true
+            enabled: false
         light_gray_banner:
-            enabled: true
+            enabled: false
         cyan_banner:
-            enabled: true
+            enabled: false
         purple_banner:
-            enabled: true
+            enabled: false
         blue_banner:
-            enabled: true
+            enabled: false
         brown_banner:
-            enabled: true
+            enabled: false
         green_banner:
-            enabled: true
+            enabled: false
         red_banner:
-            enabled: true
+            enabled: false
         black_banner:
-            enabled: true
+            enabled: false
         white_wall_banner:
-            enabled: true
+            enabled: false
         orange_wall_banner:
-            enabled: true
+            enabled: false
         magenta_wall_banner:
-            enabled: true
+            enabled: false
         light_blue_wall_banner:
-            enabled: true
+            enabled: false
         yellow_wall_banner:
-            enabled: true
+            enabled: false
         lime_wall_banner:
-            enabled: true
+            enabled: false
         pink_wall_banner:
-            enabled: true
+            enabled: false
         gray_wall_banner:
-            enabled: true
+            enabled: false
         light_gray_wall_banner:
-            enabled: true
+            enabled: false
         cyan_wall_banner:
-            enabled: true
+            enabled: false
         purple_wall_banner:
-            enabled: true
+            enabled: false
         blue_wall_banner:
-            enabled: true
+            enabled: false
         brown_wall_banner:
-            enabled: true
+            enabled: false
         green_wall_banner:
-            enabled: true
+            enabled: false
         red_wall_banner:
-            enabled: true
+            enabled: false
         black_wall_banner:
-            enabled: true
+            enabled: false
 modes:
     droptransfer:
         enabled: true
