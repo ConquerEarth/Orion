@@ -45,20 +45,20 @@ Options:
 '12':
   mat: FLINT
   value: 6.0
-  median: 4000
-  stock: 4620
+  median: 999
+  stock: 999
   tradeType: SellOnly
 '13':
   mat: COAL
   value: 1.25
-  median: 1000
-  stock: 946
+  median: 999
+  stock: 999
   tradeType: SellOnly
 '14':
   mat: IRON_INGOT
   value: 3.0
-  median: 2000
-  stock: 1795
+  median: 999
+  stock: 999
   tradeType: SellOnly
 '15':
   mat: BLACK_STAINED_GLASS_PANE
@@ -73,14 +73,14 @@ Options:
 '20':
   mat: REDSTONE
   value: 2.14
-  median: 900
-  stock: 1012
+  median: 999
+  stock: 999
   tradeType: SellOnly
 '21':
   mat: COPPER_INGOT
   value: 3.75
-  median: 2000
-  stock: 2164
+  median: 999
+  stock: 999
   tradeType: SellOnly
   value2: 2.75
 '22':
@@ -92,14 +92,14 @@ Options:
 '23':
   mat: DIAMOND
   value: 33.225
-  median: 13290
-  stock: 13653
+  median: 999
+  stock: 999
   tradeType: SellOnly
 '24':
   mat: QUARTZ
   value: 0.5
-  median: 200
-  stock: 172
+  median: 999
+  stock: 999
   tradeType: SellOnly
 '25':
   mat: BLACK_STAINED_GLASS_PANE
@@ -114,21 +114,20 @@ Options:
 '30':
   mat: EMERALD
   value: 100.0
-  median: 78000
-  stock: 74779
+  median: 500
+  stock: 500
   tradeType: SellOnly
-  value2: 70.0
 '31':
   mat: AMETHYST_SHARD
   value: 10.100100000000001
-  median: 12000
-  stock: 9319
+  median: 999
+  stock: 999
   tradeType: SellOnly
 '32':
   mat: LAPIS_LAZULI
   value: 1.3001000000000003
-  median: 1000
-  stock: 1162
+  median: 999
+  stock: 999
   tradeType: SellOnly
 '33':
   mat: BLACK_STAINED_GLASS_PANE
