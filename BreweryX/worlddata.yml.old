@@ -1,0 +1,107 @@
+BCauldron:
+  beb17d09-8537-4d8a-97f8-64da877c9987:
+    '0':
+      block: 17949/50/5150
+      state: 8534
+      ingredients: BAAABtAA_Q[MaSm]iYC5j1%wFN]5JbBABtF
+  e2262bde-7754-4585-8df7-95fbb5cc79e6: {}
+  632845fa-99fc-48b0-8f2e-f52feb474d8f: {}
+Barrel:
+  beb17d09-8537-4d8a-97f8-64da877c9987:
+    '0':
+      spigot: 17944/51/5172
+      sign: 1
+      bounds: 17943,51,5173,17945,53,5176
+      time: 60.74936
+      inv:
+        '0':
+          ==: org.bukkit.inventory.ItemStack
+          v: 3955
+          type: POTION
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            display-name: '{"text":"","extra":[{"text":"Wheatbeer","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            lore:
+            - '{"text":"","extra":["§u"]}'
+            - '{"text":"","extra":["§s",{"text":"⭑⭑⭑⭒","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":["§v",{"text":"Ingredients","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":["§w",{"text":"8 minutes fermented","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":["§y",{"text":"Hundreds of Years Barrel aged","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_red","bold":false}]}'
+            - '{"text":"","extra":["§z",{"text":"Woodtype","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            ItemFlags:
+            - HIDE_ADDITIONAL_TOOLTIP
+            PublicBukkitValues: |-
+              {
+                  "brewery:brewdata": [B; 86B, 1B, 0B, 0B, 7B, 78B, 0B, 3B, 67B, -71B, 51B, -74B, 64B, -128B, 0B, 0B, 0B, 9B, 87B, 104B, 101B, 97B, 116B, 98B, 101B, 101B, 114B, 0B, 0B, 0B, 8B, 1B, 0B, 2B, 83B, 73B, 0B, 5B, 87B, 72B, 69B, 65B, 84B, 0B, 0B, 0B, 3B]
+              }
+            custom-color:
+              ==: Color
+              ALPHA: 255
+              RED: 255
+              BLUE: 77
+              GREEN: 184
+        '1':
+          ==: org.bukkit.inventory.ItemStack
+          v: 3955
+          type: POTION
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            display-name: '{"text":"","extra":[{"text":"Wheatbeer","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            lore:
+            - '{"text":"","extra":["§u"]}'
+            - '{"text":"","extra":["§s",{"text":"⭑⭑⭑⭒","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":["§v",{"text":"Ingredients","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":["§w",{"text":"8 minutes fermented","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":["§y",{"text":"Hundreds of Years Barrel aged","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_red","bold":false}]}'
+            - '{"text":"","extra":["§z",{"text":"Woodtype","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            ItemFlags:
+            - HIDE_ADDITIONAL_TOOLTIP
+            PublicBukkitValues: |-
+              {
+                  "brewery:brewdata": [B; 86B, 1B, 0B, 0B, 7B, 78B, 0B, 3B, 67B, -71B, 51B, -74B, 64B, -128B, 0B, 0B, 0B, 9B, 87B, 104B, 101B, 97B, 116B, 98B, 101B, 101B, 114B, 0B, 0B, 0B, 8B, 1B, 0B, 2B, 83B, 73B, 0B, 5B, 87B, 72B, 69B, 65B, 84B, 0B, 0B, 0B, 3B]
+              }
+            custom-color:
+              ==: Color
+              ALPHA: 255
+              RED: 255
+              BLUE: 77
+              GREEN: 184
+        '2':
+          ==: org.bukkit.inventory.ItemStack
+          v: 3955
+          type: POTION
+          meta:
+            ==: ItemMeta
+            meta-type: POTION
+            display-name: '{"text":"","extra":[{"text":"Wheatbeer","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            lore:
+            - '{"text":"","extra":["§u"]}'
+            - '{"text":"","extra":["§s",{"text":"⭑⭑⭑⭒","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":["§v",{"text":"Ingredients","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":["§w",{"text":"8 minutes fermented","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":["§y",{"text":"Hundreds of Years Barrel aged","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_red","bold":false}]}'
+            - '{"text":"","extra":["§z",{"text":"Woodtype","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            ItemFlags:
+            - HIDE_ADDITIONAL_TOOLTIP
+            PublicBukkitValues: |-
+              {
+                  "brewery:brewdata": [B; 86B, 1B, 0B, 0B, 7B, 78B, 0B, 3B, 67B, -71B, 51B, -74B, 64B, -128B, 0B, 0B, 0B, 9B, 87B, 104B, 101B, 97B, 116B, 98B, 101B, 101B, 114B, 0B, 0B, 0B, 8B, 1B, 0B, 2B, 83B, 73B, 0B, 5B, 87B, 72B, 69B, 65B, 84B, 0B, 0B, 0B, 3B]
+              }
+            custom-color:
+              ==: Color
+              ALPHA: 255
+              RED: 255
+              BLUE: 77
+              GREEN: 184
+  e2262bde-7754-4585-8df7-95fbb5cc79e6: {}
+  632845fa-99fc-48b0-8f2e-f52feb474d8f: {}
+Worlds:
+  ff1eae55-b027-411b-bf61-dd8cc04eac23: world
+  306c5ac3-db57-43b1-9d7c-b0a6326d691d: world_nether
+  83af68bb-b179-48bb-a1fc-850988f5625c: world_the_end
+  892500b7-1c95-4448-8168-0b065e2fa3f5: world
+  e2262bde-7754-4585-8df7-95fbb5cc79e6: world_nether
+  632845fa-99fc-48b0-8f2e-f52feb474d8f: world_the_end
+  beb17d09-8537-4d8a-97f8-64da877c9987: world

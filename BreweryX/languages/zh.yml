@@ -1,0 +1,118 @@
+# BreweryX�?�件的语言文件
+
+# 酿造
+Brew_-times: 次
+Brew_BadPotion: 一滩烂液
+Brew_BarrelRiped: 陈酿
+Brew_DistillUndefined: 未知的蒸�?液
+Brew_Distilled: 蒸�?
+Brew_LessDistilled: 较低的蒸�?
+Brew_HundredsOfYears: 百年陈酿
+Brew_Ingredients: �?料
+Brew_MinutePluralPostfix: ""
+Brew_OneYear: 一年
+Brew_ThickBrew: 一滩烂液
+Brew_Undefined: 未知的饮�?
+Brew_Woodtype: 木头�?类
+Brew_Years: 年
+Brew_fermented: �?�酵
+Brew_minute: 分钟
+Brew_Alc: 酒精度 &v1ml
+Brew_Brewer: "Brewer: &v1"
+
+# 命令
+CMD_Copy_Error: "&6&v1&r, &c你的背包塞�?下了"
+CMD_Info_Drunk: "&v1醉酒程度为&6&v2%&f, 醉酒质�?为&6&v3"
+CMD_Info_NotDrunk: "&v1没醉"
+CMD_NonStatic: "&e饮�?已开�?, 现在�?�以进行蒸�?或陈酿"
+CMD_Player: "&a&v1醉酒程度为&6&v2%&f, 醉酒质�?为&6&v3"
+CMD_Player_Error: "&c醉酒质�?必须在1到10之间"
+CMD_Reload: "&a�?置文件�?载�?功."
+CMD_Created: "&a�?方添加�?功."
+CMD_Configname: "�?置文件中&aName的�??字是: &f&v1"
+CMD_Configname_Error: "&c无法找到物�?�??称"
+CMD_Static: "&a饮�?已密�?, 现在无法进行蒸�?或陈酿"
+CMD_UnLabel: "&a标签已去除!"
+CMD_Drink: "&a你�?了一�?�&v1"
+CMD_DrinkOther: "&a&v1�?了一�?�&v2"
+CMD_Set: '&a�?功设置 &v1 的醉酒程度为 &v2，质�?为 &v3。'
+
+# 错误
+Error_ConfigUpdate: "未知的�?置版本:v&v1, �?�件�?置未更新!"
+Error_ItemNotPotion: "&c你手上的物�?并未�?功地被认定为饮�?!"
+Error_SealingTableDisabled: "&c密�?�?�已�?用"
+Error_SealedAlwaysStatic: "密�?的饮�?�?会�?�质"
+Error_AlreadyUnlabeled: "&c你手上的饮�?没有标签�?"
+Error_NoBarrelAccess: "&c你没有�?��?与该木桶互动!"
+Error_NoBrewName: "&c未找到�??字为'&v1&c'的饮�?!"
+Error_NoPermissions: "&c你没有�?��?这样�?�."
+Error_PlayerCommand: "&c该命令必须由玩家执行."
+Error_Recipeload: "&c加载饮�?�?方时出现问题, 请查看控制�?�以获得详细信�?�!"
+Error_ShowHelp: 使用&6/brew help&f以查看帮助
+Error_UnknownCommand: 未知命令.
+Error_YmlRead: "无法读�?�config.yml, 请�?�?该文件符�?�正确的yml格�?!(例如更正错误的空格等试试看…)"
+Error_NoPlayer: "未找到玩家: &v1"
+
+# 其他
+Etc_Barrel: 木桶
+Etc_Page: 页
+Etc_Usage: "用途:"
+Etc_SealingTable: 密�?�?�
+Etc_UpdateAvailable: "有�?�用更新: &a&v1 &f-> &a&v2 &b请访问 https://www.spigotmc.org/resources/breweryx.114777/ 获�?�更新"
+
+# 帮助
+Help_Copy: "&6/brew copy [数�?] &9�?制当�?手中的饮�?"
+Help_Create: "&6/brew create <饮�?�??称(若有颜色符�?�须附上)> [饮�?质�?] [授予玩家] &9获得一�?�饮�?, 质�?�?�为1到10, 越高越好"
+Help_Give: "&6/brew give <饮�?�??称(若有颜色符�?�须附上)> [饮�?质�?] [授予玩家] &9为/brew create的别�??"
+Help_Delete: "&6/brew delete &9删除手中的饮�?"
+Help_Help: "&6/brew help [页数] &9显示�?一页的帮助"
+Help_Info: "&6/brew info &9显示你目�?的醉酒程度与质�?, 醉酒质�?将会影�?宿醉程度"
+Help_InfoOther: "&6/brew info [指定玩家] &9显示指定玩家目�?的醉酒程度与质�?"
+Help_Reload: "&6/brew reload &9�?载�?�件�?置, �?�用以�?载饮�?�?方"
+Help_Configname: "&6/brew ItemName &9显示手中物�?的�?置�??称"
+Help_Static: "&6/brew static &9将手中饮�?密�?, 这将无法被蒸�?或陈酿"
+Help_Set: "&6/brew set <目标玩家> <%醉酒程度> [醉酒质�?] &9设定目标玩家的醉酒程度与质�?"
+Help_UnLabel: "&6/brew unlabel &9去除饮�?的附加信�?�"
+Help_Seal: "&6/brew seal &9商店出售的密�?饮�?"
+Help_Wakeup: "&6/brew wakeup list <页数> &9列出所有的�?醒处, 下线的醉酒玩家�?次上线�?�能会在这些地方醒�?�"
+Help_WakeupAdd: "&6/brew wakeup add &9添加�?醒处"
+Help_WakeupCheck: "&6/brew wakeup check &9传�?至�?一个�?醒处进行一一检查"
+Help_WakeupCheckSpecific: "&6/brew wakeup check <id> &9传�?至指定�?醒处"
+Help_WakeupList: "&6/brew wakeup list <页数> [世界] &9列出该世界所有的�?醒处"
+Help_WakeupRemove: "&6/brew wakeup remove <页数> &9移除指定id的�?醒处"
+Help_Puke: "&6/brew puke [玩家] [数�?] &9使你或[玩家]呕�??"
+Help_Drink: "&6/brew drink <饮�?�??称(若有颜色符�?�须附上)> [饮�?质�?] [玩家] &9模拟[玩家]饮用饮�?"
+
+# �?��?
+Perms_NoBarrelCreate: "&c你没有�?��?创造木桶!"
+Perms_NoBigBarrelCreate: "&c你没有�?��?创造大型木桶!"
+Perms_NoCauldronFill: "&c你没有�?��?从这�?�锅中�?�用液体!"
+Perms_NoCauldronInsert: "&c你没有�?��?将原料放入这�?�锅!"
+Perms_NoSmallBarrelCreate: "&c你没有�?��?创造�?型木桶!"
+
+# 玩家
+Player_BarrelCreated: 木桶已创建
+Player_BarrelFull: "&c这个木桶无法�?存放更多饮�?了"
+Player_CantDrink: 你�?能�?�?了
+Player_CauldronInfo1: 这�?�锅已�?炖了&v1分钟了
+Player_CauldronInfo2: 这�?�锅�?刚刚烧开
+Player_DrunkPassOut: 你�?高了, 晕了过去
+Player_LoginDeny: 你的角色试图登入�?务器, �?�惜他晕得找�?�?�北, �?试一次?
+Player_LoginDenyLong: 你的角色�?到�?�?人事, �?倒在地, �??分钟�?��?�?试登录�?�!
+Player_TriedToSay: "&v1试图说出: &0&v2"
+Player_Wake: 淦, 我怎么到的这儿...?
+Player_WakeAlreadyDeleted: "&cid为: &6&v1 &c的�?醒处已被删除!"
+Player_WakeCancel: "&6�?醒处检查已被�?�消."
+Player_WakeCreated: "&aid为: &6&v1 &a的�?醒处被�?功创建!"
+Player_WakeDeleted: "&aid为: &6&v1 &a的�?醒处被�?功删除!"
+Player_WakeFilled: "&cid为: &6&v1 &c所在方�?为: &6&v2 &v3, &v4, &v5 &c被填充了方�?�!"
+Player_WakeHint1: "�?往下一个�?醒处, 请对空气左键."
+Player_WakeHint2: "�?�消检查: &9/brew wakeup cancel"
+Player_WakeLast: "&a这是最�?�一个�?醒处了."
+Player_WakeNoCheck: "&c目�?没有执行�?醒处检查."
+Player_WakeNoPoints: "&c目�?没有设定任何一个�?醒处!"
+Player_WakeNotExist: "&cid为: &6&v1 &c的�?醒处并�?存在!"
+Player_WakeTeleport: "�?往id为: &6&v1 &f�??标为: &6&v2 &v3, &v4, &v5 &r的�?醒处."
+Player_ShopSealBrew: "&e建议交易使用/sell指令以出售&6密�?&e饮�?"
+Player_Drunkeness: "醉酒值"
+Player_Hangover: "你的宿醉"

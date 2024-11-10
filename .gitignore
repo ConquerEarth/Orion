@@ -1,5 +1,12 @@
+*.DS_STORE
 *.jar
 *.db
+DynamicShop/Shop_Backup
+CMILib/FileBackups
+NotBounties/posters
+mcMMO/backup
+DynamicShop/Log 
+CMI/moneyLog
 .paper-remapped/
 spark/
 BlackJack/stats.yml

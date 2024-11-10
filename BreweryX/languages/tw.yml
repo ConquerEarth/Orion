@@ -1,0 +1,116 @@
+# Brew
+Brew_-times: 次
+Brew_BadPotion: 失敗的藥水
+Brew_BarrelRiped: 貯存陳化
+Brew_DistillUndefined: 無法確定的蒸餾
+Brew_Distilled: 蒸餾
+Brew_LessDistilled: Less Distilled
+Brew_HundredsOfYears: 數百年
+Brew_Ingredients: �?料
+Brew_MinutePluralPostfix: 的
+Brew_OneYear: 1年
+Brew_ThickBrew: 混�?的釀造
+Brew_Undefined: 無法確定的釀造
+Brew_Woodtype: 木�??質
+Brew_Years: 年
+Brew_fermented: 發酵
+Brew_minute: 分�?�
+Brew_Alc: Alc &v1ml
+Brew_Brewer: 'Brewer: &v1'
+
+# CMD
+CMD_Copy_Error: '&6&v1 &c藥水�?�?��?�你的庫存'
+CMD_Info_Drunk: '&v1 是 &6&v2% &f醉酒,酒的�?質為 &6&v3'
+CMD_Info_NotDrunk: '&v1 沒有醉酒'
+CMD_NonStatic: '&e藥水�?�?是�?�止的,會在桶木中�?化.'
+CMD_Player: '&a&v1 �?�在是 &6&v2% &a醉酒,酒的�?質為 &6&v3'
+CMD_Player_Error: '&c酒的�?質必須在1到10之間�?'
+CMD_Reload: '&a設定檔已�?功�?新加載'
+CMD_Created: '&aBrew Created'
+CMD_Configname: '&aName for the Config is: &f&v1'
+CMD_Configname_Error: '&cCould not find item in your hand'
+CMD_Static: '&a藥水�?�在是�?�止的,�?會在桶或釀造�?�上變化.'
+CMD_UnLabel: '&a標籤已刪除�?'
+CMD_Drink: '&aYou drank one &v1'
+CMD_DrinkOther: '&a&v1 drinks one &v2'
+CMD_Set: '&a�?功設置 &v1 的醉酒程度為 &v2，�?質為 &v3。'
+
+# Error
+Error_ConfigUpdate: '未知 釀酒 設定檔版本: v&v1,設定檔沒有更新!'
+Error_ItemNotPotion: '&c你手上的物�?�?能確定為藥水'
+Error_SealingTableDisabled: '&cThe Sealing Table is disabled'
+Error_SealedAlwaysStatic: 'Sealed Brews are always static!'
+Error_AlreadyUnlabeled: '&cThe Brew in your hand is already unlabeled!'
+Error_NoBarrelAccess: '&c你沒有權�?存�?��?'
+Error_NoBrewName: '&c沒有這個�?方: ''&v1&c'' 找到!'
+Error_NoPermissions: '&c你沒有權�?這樣�?��?'
+Error_PlayerCommand: '&c這個指令�?�能由玩家執行�?'
+Error_Recipeload: '&c並�?�所有�?方都�?�以有用：�?務器日誌中的更多信�?��?'
+Error_ShowHelp: 使用 &6/brew help &f顯示幫助
+Error_UnknownCommand: 未知的指令
+Error_YmlRead: 'Could not read file config.yml, please make sure the file is in valid yml format (correct spaces, using '' '' etc.)'
+Error_NoPlayer: 'Player not found: &v1'
+
+# Etc
+Etc_Barrel: 釀造桶
+Etc_Page: �?數
+Etc_Usage: '用法:'
+Etc_SealingTable: Brew Sealing Table
+Etc_UpdateAvailable: 'Update available: &a&v1 &f-> &a&v2 &bhttps://www.spigotmc.org/resources/breweryx.114777/'
+
+# Help
+Help_Copy: '&6/brew copy [數�?]&9 複製手中的藥水'
+Help_Create: '&6/brew create <�?方> [數�?] [玩家] &9創建具有�?��?�酒的�?質釀造（1-10）'
+Help_Give: '&6/brew give <Recipe> [Quality] [Player] &9Alias for /brew create'
+Help_Delete: '&6/brew delete &9刪除你手中的藥水'
+Help_Help: '&6/brew help [�?數] &9顯示幫助的�?�?�'
+Help_Info: '&6/brew info&9 顯示您當�?的醉酒和酒的�?質'
+Help_InfoOther: '&6/brew info [玩家]&9 顯示 [玩家] 當�?醉酒程度和酒的�?質程度'
+Help_Reload: '&6/brew reload &9�?新加載設定檔'
+Help_Configname: '&6/brew ItemName &9Display name of item in hand for the config'
+Help_Static: '&6/brew static &9使釀造�?�止 - >�?�?進一步�?化或蒸餾'
+Help_Set: '&6/brew set <玩家> <%醉酒> [數�?] &9設置玩家的醉酒度（和酒的�?質）'
+Help_UnLabel: '&6/brew unlabel &9刪除藥水的詳細標籤'
+Help_Seal: '&6/brew seal &9Seal Brews for selling in shops'
+Help_Wakeup: '&6/brew wakeup list <�?數>&9 列出所有喚醒點'
+Help_WakeupAdd: '&6/brew wakeup add &9在當�?�?置添加喚醒點'
+Help_WakeupCheck: '&6/brew wakeup check &9傳�?到所有喚醒點'
+Help_WakeupCheckSpecific: '&6/brew wakeup check <id> &9使用<id>傳�?到喚醒點'
+Help_WakeupList: '&6/brew wakeup list <�?數> [World]&9 列出<world>的所有喚醒點'
+Help_WakeupRemove: '&6/brew wakeup remove <id> &9使用<id>刪除喚醒點'
+Help_Puke: '&6/brew puke [Player] [Amount] &9Makes you or [Player] puke'
+Help_Drink: '&6/brew drink <Recipe> [Quality] [Player] &9Simulates [Player] drinking a Brew'
+
+# Perms
+Perms_NoBarrelCreate: '&c您沒有權�?創建釀造桶!'
+Perms_NoBigBarrelCreate: '&c你沒有權�?創建大釀造桶!'
+Perms_NoCauldronFill: '&c你沒有權利從這個�?�釜裡�?滿瓶�?!'
+Perms_NoCauldronInsert: '&c您無權將�??料放入�?�釜中!'
+Perms_NoSmallBarrelCreate: '&c您無權創建�?釀造桶�?'
+
+# Player
+Player_BarrelCreated: 創造釀造桶
+Player_BarrelFull: '&cThis barrel can''t hold any more drinks'
+Player_CantDrink: 你�?能飲更多了.
+Player_CauldronInfo1: 這個�?�釜煮了 &v1 分�?�.
+Player_CauldronInfo2: 這個�?�釜剛開始沸騰.
+Player_DrunkPassOut: 你�?得太多,�?倒了.
+Player_LoginDeny: 你試圖登錄,但是你飲得太醉了,無法找到�?務器.�?試一次�?
+Player_LoginDenyLong: 你的角色真的�?醉了,已經�?倒了.10分�?�後�?試一次�?
+Player_TriedToSay: '&v1 試圖說: &0&v2'
+Player_Wake: �?好了�?我�?記得我是怎麼來到這裡的......
+Player_WakeAlreadyDeleted: '&c這個喚醒點 id: &6&v1 &chas 已被刪除�?'
+Player_WakeCancel: '&6喚醒點檢查被�?�消'
+Player_WakeCreated: '&a這個喚醒點 id: &6&v1 &a�?功創建!'
+Player_WakeDeleted: '&a這個喚醒點 id: &6&v1 &a�?功刪除!'
+Player_WakeFilled: '&c這個喚醒點 id: &6&v1&c 在�?置 &6&v2 &v3, &v4, &v5&c 充滿了方塊!'
+Player_WakeHint1: '到下一個喚醒點：把拳頭打在空中'
+Player_WakeHint2: '�?�消: &9/brew wakeup cancel'
+Player_WakeLast: '&a這是最後一個喚醒點'
+Player_WakeNoCheck: '&c目�?沒有喚醒點是處於活動狀態'
+Player_WakeNoPoints: '&c沒有喚醒點!'
+Player_WakeNotExist: '&c這個喚醒點 id: &6&v1 &c�?存在!'
+Player_WakeTeleport: '傳�?到這個喚醒點 id: &6&v1&f 在�?置: &6&v2 &v3, &v4, &v5'
+Player_ShopSealBrew: '&eIt''s recommended to trade/sell &6sealed &eBrews'
+Player_Drunkeness: '醉酒'
+Player_Hangover: '你的宿醉'

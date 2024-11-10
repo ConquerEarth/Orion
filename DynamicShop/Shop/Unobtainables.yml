@@ -2,48 +2,30 @@ Options:
   title: Unobtainables
   enable: true
   lore: ''
-  page: 1
+  page: 2
   permission: dshop.user.shop.unobtainables
   log:
-    active: false
+    active: true
   flag:
     showvaluechange: ''
     hidestock: ''
     hidepricingtype: ''
     hideshopbalance: ''
-'0':
-  mat: BLACK_STAINED_GLASS_PANE
-'1':
-  mat: BLACK_STAINED_GLASS_PANE
-'2':
-  mat: BLACK_STAINED_GLASS_PANE
-'3':
-  mat: BLACK_STAINED_GLASS_PANE
 '4':
-  mat: BLACK_STAINED_GLASS_PANE
-'5':
-  mat: BLACK_STAINED_GLASS_PANE
-'6':
-  mat: BLACK_STAINED_GLASS_PANE
-'7':
-  mat: BLACK_STAINED_GLASS_PANE
-'8':
-  mat: BLACK_STAINED_GLASS_PANE
-'9':
-  mat: BLACK_STAINED_GLASS_PANE
-'10':
-  mat: BLACK_STAINED_GLASS_PANE
-'11':
-  mat: BLACK_STAINED_GLASS_PANE
+  mat: COBWEB
+  value: 300.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
 '12':
-  mat: DARK_OAK_SAPLING
-  value: 100.0
+  mat: GLOW_BERRIES
+  value: 125.0
   median: -1
   stock: -1
   tradeType: BuyOnly
 '13':
-  mat: GLOW_BERRIES
-  value: 125.0
+  mat: DARK_OAK_SAPLING
+  value: 100.0
   median: -1
   stock: -1
   tradeType: BuyOnly
@@ -53,79 +35,83 @@ Options:
   median: -1
   stock: -1
   tradeType: BuyOnly
-'15':
-  mat: BLACK_STAINED_GLASS_PANE
-'16':
-  mat: BLACK_STAINED_GLASS_PANE
-'17':
-  mat: BLACK_STAINED_GLASS_PANE
-'18':
-  mat: BLACK_STAINED_GLASS_PANE
-'19':
-  mat: BLACK_STAINED_GLASS_PANE
 '20':
-  mat: BLACK_STAINED_GLASS_PANE
+  mat: TRIDENT
+  value: 10000.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
 '21':
+  mat: MANGROVE_PROPAGULE
+  value: 100.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
+'22':
   mat: BIG_DRIPLEAF
   value: 75.0
   median: -1
   stock: -1
   tradeType: BuyOnly
-'22':
-  mat: AZALEA
-  value: 160.0
-  median: -1
-  stock: -1
-  tradeType: BuyOnly
 '23':
-  mat: FLOWERING_AZALEA
-  value: 200.0
-  median: -1
-  stock: -1
-  tradeType: BuyOnly
-'24':
-  mat: BLACK_STAINED_GLASS_PANE
-'25':
-  mat: BLACK_STAINED_GLASS_PANE
-'26':
-  mat: BLACK_STAINED_GLASS_PANE
-'27':
-  mat: BLACK_STAINED_GLASS_PANE
-'28':
-  mat: BLACK_STAINED_GLASS_PANE
-'29':
-  mat: BLACK_STAINED_GLASS_PANE
-'30':
-  mat: BLACK_STAINED_GLASS_PANE
-'31':
   mat: POINTED_DRIPSTONE
   value: 60.0
   median: -1
   stock: -1
   tradeType: BuyOnly
+'24':
+  mat: NAME_TAG
+  value: 1500.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
+'29':
+  mat: MACE
+  value: 50000.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
+'30':
+  mat: PRISMARINE_SHARD
+  value: 10.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
+'31':
+  mat: AZALEA
+  value: 160.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
 '32':
-  mat: BLACK_STAINED_GLASS_PANE
+  mat: FLOWERING_AZALEA
+  value: 200.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
 '33':
-  mat: BLACK_STAINED_GLASS_PANE
-'34':
-  mat: BLACK_STAINED_GLASS_PANE
-'35':
-  mat: BLACK_STAINED_GLASS_PANE
-'36':
-  mat: BLACK_STAINED_GLASS_PANE
-'37':
-  mat: BLACK_STAINED_GLASS_PANE
-'38':
-  mat: BLACK_STAINED_GLASS_PANE
-'39':
-  mat: BLACK_STAINED_GLASS_PANE
-'40':
-  mat: BLACK_STAINED_GLASS_PANE
-'41':
-  mat: BLACK_STAINED_GLASS_PANE
-'42':
-  mat: BLACK_STAINED_GLASS_PANE
-'43':
-  mat: BLACK_STAINED_GLASS_PANE
-'44':
-  mat: BLACK_STAINED_GLASS_PANE
+  mat: TURTLE_EGG
+  value: 1000.0
+  median: -1
+  stock: -1
+  tradeType: BuyOnly
+'45':
+  mat: RAISER_ARMOR_TRIM_SMITHING_TEMPLATE
+  value: 1.0
+  median: 10000
+  stock: 9936
+'46':
+  mat: HOST_ARMOR_TRIM_SMITHING_TEMPLATE
+  value: 1.0
+  median: 10000
+  stock: 9935
+'47':
+  mat: FLOW_ARMOR_TRIM_SMITHING_TEMPLATE
+  value: 1.0
+  median: 10000
+  stock: 9803
+'48':
+  mat: BOLT_ARMOR_TRIM_SMITHING_TEMPLATE
+  value: 1.0
+  median: 10000
+  stock: 9935

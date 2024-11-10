@@ -1,0 +1,34 @@
+###########################################################################################################################################################################
+###################################  TradeManager Plugin By (CantBeJohn) | for permissions, please refer to the official post.  ################################
+###########################################################################################################################################################################
+
+# Format: ITEM:AMOUNT->ITEM:AMOUNT->ITEM:AMOUNT->Stock Amount (Max Uses)->Cooldown (Seconds, this is optional)->Trade Exp
+Villager-Trade-Stock: # Example (This makes Mending books have 3 stock with a 1 minute cooldown that gives 2 experience): EMPTY_SLOT->EMPTY_SLOT->MENDING{1}->3->60->2
+  Farmer:
+    Overrides: &id001 []
+  Librarian:
+    Overrides: *id001
+  Cartographer:
+    Overrides: *id001
+  Cleric:
+    Overrides: *id001
+  Armorer:
+    Overrides: *id001
+  Weaponsmith:
+    Overrides: *id001
+  Toolsmith:
+    Overrides: *id001
+  Butcher:
+    Overrides: *id001
+  Leatherworker:
+    Overrides: *id001
+  Mason:
+    Overrides: *id001
+  Fisherman:
+    Overrides: *id001
+  Shepherd:
+    Overrides: *id001
+  Fletcher:
+    Overrides: *id001
+  Wandering-Trader:
+    Overrides: *id001

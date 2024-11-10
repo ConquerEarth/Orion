@@ -1,0 +1,1193 @@
+# �?置文件版本
+version: "3.1"
+
+# 翻译由Neubulae贡献, mcbbsID: 891215991
+# 二次补全翻译由Mr-Wang635进行
+
+# -- Storage Settings --
+storage:
+  # What type of storage to use [FLATFILE]
+  # Available types: FlatFile, MySQL, SQLite, MongoDB
+  type: FlatFile
+  # The name of the database. When the database is a file, this will be the name of the file. [brewery-data]
+  database: brewery-data
+  tablePrefix: brewery_
+  address: localhost
+  username: root
+  password: ''
+
+# -- 设置 --
+# 方框[]内的设定为默认设定
+# 移除�?一行�?�以�?用该功能, 或者true为�?�用, false为�?用
+
+# 语言文件(�?�在plugins/Brewery/languages下找到)
+language: zh
+
+# 是�?�检查更新 [true]
+# 若有更新, �?务端�?��?�与上线时的管�?�员会收到通知
+updateCheck: true
+
+# 自动�?存时间间隔, �?��?:分钟 [3]
+autosave: 3
+
+# 是�?�在日志中显示调试信�?� [false]
+debug: false
+
+# 用于此�?�件的消�?��?缀[Brewery]
+pluginPrefix: '&2[BreweryX]&f '
+
+# �?高了的下线玩家会在家里醒�?�(需�?/home等功能支�?)[true]
+enableHome: true
+
+# 上述功能的回家方�?: ['cmd: home']
+# bed = 会在床边醒�?�
+# 'cmd: home' = 强制让玩家执行/home. 需�?设置好玩家�?��?, 以�?��?传�?出现延迟.
+# 'cmd: spawn' = 强制让玩家执行/spawn.
+# 'cmd: 指定命令' = 强制让玩家执行该命令, 例如'cmd: warp xxx'等.
+homeType: "cmd: home"
+
+# 玩家醉酒以�?�下线一段时间醒�?�是�?�会在�?些�?醒处醒�?�(�?醒处需�?管�?�员通过'/brew Wakeup add'进行设定).
+# 玩家将会在最近的两个�?醒处之一醒�?�.[true]
+enableWake: true
+
+# 醉酒的玩家是�?�需�?�??�?�?试登录�?能进入�?务器.[true]
+enableLoginDisallow: true
+
+# 饮酒过�?的玩家是�?�会晕倒一�?段时间(�?�被暂时踢出�?务器).[false]
+enableKickOnOverdrink: false
+
+# 醉酒程度过高的玩家是�?�会呕�??(呕�??物在下�?�定义).[true]
+# 物�?无法被�?�起, 直至消失.
+enablePuke: true
+
+# 呕�??物[Soul_Sand]
+pukeItem: [Soul_Sand]
+
+# 呕�??物消失的时间, �?��?为秒(MC默认为300 = 5分钟) [60]
+# 如果spigot.yml中的物�?消失时间被�?�更, 此处也会�?�更
+pukeDespawntime: 60
+
+# 玩家跌倒程度�?�决于饮酒�?，设置范围�?�以是0或超过100 [100]
+stumblePercent: 100
+
+# 玩家饮用饮�?或�?�掉解酒物时，显示其醉酒程度 [true]
+showStatusOnDrink: true
+
+# 解酒物/解酒强度
+# �?低玩家一定程度的醉酒程度, 解酒强度为百分数
+drainItems:
+  - Bread/4
+  - Milk_Bucket/2
+
+# 当炼�?�锅中有�?料和热�?时，显示炼�?�埚上方的颗粒效果[true]
+# 颗粒颜色的�?�化有助于掌�?��?些�?方的时机
+enableCauldronParticles: true
+
+# 是�?�将炼�?�埚颗粒效果�?少到最低挡�? [false]
+minimalParticles: false
+
+# 是�?��?许制造密�?�?�         ------>  玻璃瓶 玻璃瓶
+# (2个玻璃瓶在4�?�木�?�上方)   ------>   木�?�   木�?�
+# [true, true]             ------>   木�?�   木�?�
+craftSealingTable: true
+enableSealingTable: true
+
+# 是�?�始终根�?�物�?质�?显示1-5颗星，如果设置为�?�，则仅在酿造过程中显示星星 [true]
+alwaysShowQuality: true
+
+# 是�?�始终在物�?上显示酒精�?��?，如果设置为�?�，则�?�在酿造�?�上显示 [false]
+alwaysShowAlc: false
+
+# 如果我们应该显示�?制作了这�?�饮料 [false]
+showBrewer: false
+
+# �?�有在放置的标志包�?�“酒桶�?一�?（或其它语言的翻译）时�?创建酒桶 [true]
+requireKeywordOnSigns: true
+
+# MC自带的桶内�?�以存放多少饮�? [6]
+ageInMCBarrels: true
+maxBrewsInMCBarrels: 6
+
+# 陈酿饮�?时“年份�?的�?续时间（分钟）[20]
+agingYearDuration: 20
+
+# 使用的原料和其他酿造数�?�会被�?存在所有酿酒物�?中
+# 为了防止被修改�?�的客户端读�?�饮�?的确切原料，数�?��?�以被编�?/�?�乱
+# 这是一个快速过程，�?�以阻止玩家在获得酿造�?�?�破解�?方
+# 唯一的缺点是：饮�?�?�能在具有相�?�encodeKey的�?�一�?务器上使用
+# 当在多个（BungeeCord）�?务器上使用酿造�?时，请在’multiServerDB’下方定义一个共享数�?�库
+# 如果你想�?让�?方作弊更困难，但�?想通过世界下载�?�?图或其他方�?共享任何酿造�?，请�?�用此选项 [false]
+enableEncode: false
+encodeKey: 0
+
+
+# -- 定义自定义物�? --
+# 定义�?�的ID�?�以在�?方中使用
+
+# matchAny[匹�?任何]: 如果其中一个信�?�匹�?就足够了，则为true
+# material[�??料]: 物�?必须是什么�??质
+
+# name[姓�??]:
+# 物�?必须是什么�??称（�?�使用格�?化代�?，例如&e）
+
+# lore[�??述文本]:
+# 物�?�??述中必须包�?�的内容
+
+# customModelData[自定义物�?模型]:
+# 物�?在列表中应具有的模型数�?�编�?�
+
+customItems:
+  # 四个实例项目
+  ex-item:
+    # 一个�??为“城墙�?的�?障物�?，其�??述中包�?�指定的文字行
+    material: Barrier
+    name: "墙"
+    lore:
+      - "&7收到�?�常好的�?护"
+
+  ex-item2:
+    # 使用matchAny时，�?�需满足以下任一�?�件
+    # 在此例中，�?�以是任�?一�?类型的门，或�??为“山毛榉木门�?的物�?，或�??述中包�?�“一扇门�?的物�?
+    matchAny: true
+    material:
+      - Acacia_Door
+      - Oak_Door
+      - Spruce_Door
+    name:
+      - "山毛榉木门"
+    lore:
+      - "一扇门"
+
+  rasp:
+    name: "&c覆盆�?"
+
+  modelitem:
+    material: paper
+    customModelData:
+      - 10234
+      - 30334
+
+  blue-flowers:
+    matchAny: true
+    material:
+      - cornflower
+      - blue_orchid
+
+# -- 炼�?�锅中的饮�?基底 --
+# 哪些原料�?�以被炼�?�锅接�?�，以�?�这些原料所能生�?的饮�?基底
+# �?�有当你需�?为饮�?基底设定一个特定的�??称或颜色时，�?需�?在此处进行设置
+
+# name[�??称]：
+# 炼�?�锅产出基底的�??称（支�?格�?化代�?，例如：&6）
+
+# ingredients[�?分]：‘�??料/数�?’的列表
+# 当你手�?物�?时，使用命令 /brew 物�?�??称 �?�获�?�该物�?的�??料数�?�，以便在�?方中使用
+# （请注�?，Bukkit�?�?支�?使用物�?ID，必须使用�??料�??称）
+# �??料列表请�?�考：https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html [打�?开需�?挂梯�?进行�?览]
+
+# color[颜色]: 炼�?�锅产出基底的颜色，默认设置为�?�色
+# �?�用的颜色:
+# DARK_RED[深红色]      RED[红色]       BRIGHT_RED[鲜红色]    ORANGE[橙色]
+# YELLOW[黄色]          PINK[粉色]      PURPLE[紫色]          BLUE[�?色]
+# CYAN[�?�色]            WATER[浅�?色]   TEAL[�?绿色]          OLIVE[橄榄绿色]
+# GREEN[绿色]           LIME[鲜绿色]    BLACK[黑色]           GREY[�?�色]
+# BRIGHT_GREY[亮�?�色]   WHITE[白色]
+# 或者使用RGB颜色    [�??六进制格�?：例如 ‘99FF33’，需用引�?�括起�?�]
+# �?�或者使用HTML颜色 [在互�?�网上�?�索“HTML颜色�?�?�获�?�更多颜色代�?]
+
+# cookParticles[烹饪粒�?]:
+# 炼�?�锅在�?�?�阶段时上方粒�?的颜色
+# 指定�?�?颜色�?�其出现的具体分钟数，例如在第8分钟显示一�?颜色，然�?�在第18分钟�?�?�?�为�?�一�?颜色
+# 以列表形�?，�?�?颜色以�??称或RGB格�?表示，具体�?上文，格�?为‘Color/Minute’[颜色/分钟]
+# 如果列表中有多个颜色，最终将�?�?�到列表中的最�?�一个颜色
+# 如果列表中�?�有一个颜色，则最终将�?�?�到�?�色
+
+# lore[�??述文本]: 基底上�?外文本的列表（支�?格�?化代�?，例如：&6）
+
+# customModelData[自定义物�?模型]:
+# 自定义物�?模型标签，这些数字�?�用于为物�?添加特定的自定义纹�?�
+
+cauldron:
+  # 一个�?�“例�?�?的物�?
+  ex:
+    name: 例�?
+    ingredients:
+      - Bedrock/2
+      - Diamond
+    color: BLACK
+    cookParticles:
+      - "RED/5"
+      - "WHITE/10"
+      - "800000/25" # 栗色
+    lore:
+      - 一个饮�?基底的示例
+      - 这就是基底从炼�?�锅中制作完�?�?�的样�?
+    customModelData: 545
+
+  # -- �?��?料: --
+  wheat:
+    name: �?�酵麦�?
+    ingredients: Wheat
+    cookParticles:
+      - "2d8686/8" # 深�?�色
+
+  sugarcane:
+    name: 浓糖浆
+    ingredients: Sugar_Cane
+    color: "f1ffad" # 黄绿色
+    cookParticles:
+      - "f1ffad/4"
+      - "858547/10" # 深橄榄色
+
+  sugar:
+    name: 甜糖水
+    ingredients: Sugar
+    cookParticles:
+      - "WHITE/4"
+      - "BRIGHT_GREY/25"
+
+  apple:
+    name: 苹果�?
+    ingredients: Apple
+
+  berries:
+    name: 浆果�?
+    ingredients: Sweet_Berries
+    color: RED
+    cookParticles:
+      - "ff6666/2" # 鲜红色
+      - "RED/7"
+      - "ac6553/13" # 棕红色
+
+  potato:
+    name: 土豆泥
+    ingredients: Potato
+
+  grass:
+    name: �?��?��?��?�物
+    ingredients: Grass
+    color: "99ff66" # 鲜绿色
+    cookParticles:
+      - "GREEN/2"
+      - "99ff99/20" # 湖滨绿
+
+  rmushroom:
+    name: 红蘑�?�酿
+    ingredients: Red_Mushroom
+    color: "ff5c33" # �?��?�红
+    cookParticles:
+      - "fab09e/15" # 暗红色
+
+  bmushroom:
+    name: 棕蘑�?�酿
+    ingredients: Brown_Mushroom
+    color: "c68c53" # 亮棕色
+    cookParticles:
+      - "c68c53/15"
+
+  cocoa:
+    name: 巧克力水
+    ingredients: Cocoa_Beans
+    color: "804600" # mocca
+    cookParticles:
+      - "a26011/1"
+      - "5c370a/3"
+      - "4d4133/8" # �?��?色
+
+  milk:
+    name: 牛奶水
+    ingredients: Milk_Bucket
+    color: BRIGHT_GREY
+    cookParticles:
+      - "fbfbd0/1" # 黄白色
+      - "WHITE/6"
+
+  bl_flow:
+    name: �?花液
+    ingredients: blue-flowers
+    color: "0099ff" # 天�?色
+    cookParticles:
+      - "0099ff"
+
+  cactus:
+    name: 龙舌兰原液
+    ingredients: cactus
+    color: "00b300" # 仙人掌绿
+    cookParticles:
+      - "00b300/16"
+
+  poi_potato:
+    name: 毒土豆泥
+    ingredients: Poisonous_Potato
+
+  egg:
+    name: 粘稠蛋液
+    ingredients: Egg
+
+  oak_sapling:
+    name: 橡苗�?��?�物
+    ingredients: Oak_Sapling
+
+  vine:
+    name: 藤蔓�?��?�物
+    ingredients: vine
+    color: "99ff66" # 亮绿色
+    cookParticles:
+      - "GREEN/2"
+      - "99ff99/20" # 淡绿色
+
+  rot_flesh:
+    name: 糜烂物
+    ingredients: Rotten_Flesh
+    color: "263300" # 棕绿色
+    cookParticles:
+      - "263300/8"
+      - "BLACK/20"
+
+  melon:
+    name: 西瓜�?
+    ingredients: melon_slice
+
+  wheat_seeds:
+    name: 苦�?�?酒(�?麦味)
+    ingredients: Wheat_Seeds
+
+  melon_seeds:
+    name: 苦�?�?酒(西瓜味)
+    ingredients: Melon_Seeds
+
+  pumpkin_seeds:
+    name: 苦�?�?酒(�?�瓜味)
+    ingredients: Pumpkin_Seeds
+
+  bone_meal:
+    name: 骨头汤
+    ingredients: bone_meal
+    color: BRIGHT_GREY
+
+  cookie:
+    name: 巧克力
+    ingredients: Cookie
+    color: "804600" # mocca
+    cookParticles:
+      - "a26011/1"
+      - "5c370a/3"
+      - "4d4133/8" # �?�棕色
+
+  fer_spid_eye:
+    name: �?�酵眼液
+    ingredients: Fermented_Spider_Eye
+
+  ghast_tear:
+    name: 悲伤泪水
+    ingredients: ghast_tear
+
+  snowball:
+    name: 冰水
+    ingredients: Snowball
+
+  Gold_Nugget:
+    name: 液金
+    ingredients: Gold_Nugget
+    color: "ffd11a" # 金色
+    cookParticles:
+      - "ffd11a"
+
+  glowstone_dust:
+    name: Glowing brew
+    ingredients: Glowstone_Dust
+    color: "ffff33" # 亮黄色
+    cookParticles:
+      - "ffff99/3"
+      - "d9d926/15" # 暗黄色
+
+  # -- 多�?料: --
+  applemead_base:
+    name: 甜苹果�?
+    ingredients:
+      - Sugar_Cane/3
+      - Apple
+    color: "e1ff4d" # 绿黄色
+    cookParticles:
+      - "e1ff4d/4"
+
+  poi_grass:
+    name: 酸泥汤
+    ingredients:
+      - Grass
+      - Poisonous_Potato
+    color: "99ff66" # 亮绿色
+    cookParticles:
+      - "GREEN/2"
+      - "99ff99/20" # 暗绿色
+
+  juniper:
+    name: �?��?��?酒(原味)
+    ingredients:
+      - blue-flowers
+      - wheat
+    color: "00ccff" # 水绿色
+    cookParticles:
+      - "00ccff/8"
+
+  gin_base:
+    name: �?��?��?酒(苹果味)
+    ingredients:
+      - blue-flowers
+      - wheat
+      - apple
+    color: "66e0ff" # 浅水绿色
+    cookParticles:
+      - "00ccff/5"
+
+  eggnog_base:
+    name: Smooth egg mixture
+    ingredients:
+      - egg
+      - sugar
+      - milk_bucket
+    color: "ffecb3" # 黄橙色
+    cookParticles:
+      - "ffecb3/2"
+
+# -- 饮�?�?方列表 --
+
+# name[�??称]：
+# �?�以为 劣质/普通/优质 这三�?质�?的饮�?命�??
+# (�?��?�入样�?代�?, 如:&6)
+
+# ingredients[�?方列表]:
+# 格�?为"�??料�??称/数�?"
+# 手中�?有物�?的时候, �?�以使用/brew ItemName�?�获�?�其物�?id, 便于在�?方中使用
+# (由于Bukkit�?�?支�?物�?ID, 物�?ID已被弃用, 使用�??料�??称是唯一支�?的�?�法)
+# �??料�??称列表详�?此处: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html [打�?开需�?挂梯�?进行�?览]
+# 带有 'plugin:id' 标识的�?�件项目（目�?支�? ExoticGarden, Slimefun, MMOItems 和 Brewery �?�件）
+# 或者一个在上�?�定义的自定义物�?
+
+# cookingtime[料�?�时间]:
+# 原料需�?在炼�?�锅内烹制�?�酵的时间, �?��?为现实分钟
+
+# distillruns[料�?�次数]:
+# 饮�?需�?在酿造�?�上需�?蒸�?的次数 [0=无需蒸�?]
+
+# distilltime[蒸�?时间]:
+# �?次蒸�?所需�?耗费的时间 [0=默认值为40秒] [MC默认则为20秒]
+
+# wood[木头]: 木桶所需�?的木质
+# 0=任�?     1=白桦木   2=橡木   3=丛林木   4=云�?�木   5=金�?�欢木
+# 6=深色橡木  7=诡异�?�  8=扭曲�?�  9=红树木  10=樱花木   11=竹�?   (12=切割铜)
+# MC的木桶默认为橡木桶
+
+# age[年龄]:
+# 饮�?需�?在木桶中熟�?所需�?的时间(�?��?为MC天数) [0=无需陈酿]
+
+# color[颜色]: 炼�?�锅产出基底的颜色，默认设置为�?�色
+# �?�用的颜色:
+# DARK_RED[深红色]      RED[红色]       BRIGHT_RED[鲜红色]    ORANGE[橙色]
+# YELLOW[黄色]          PINK[粉色]      PURPLE[紫色]          BLUE[�?色]
+# CYAN[�?�色]            WATER[浅�?色]   TEAL[�?绿色]          OLIVE[橄榄绿色]
+# GREEN[绿色]           LIME[鲜绿色]    BLACK[黑色]           GREY[�?�色]
+# BRIGHT_GREY[亮�?�色]   WHITE[白色]
+# 或者使用RGB颜色    [�??六进制格�?：例如 ‘99FF33’，需用引�?�括起�?�]
+# �?�或者使用HTML颜色 [在互�?�网上�?�索“HTML颜色�?�?�获�?�更多颜色代�?]
+
+# difficulty[酿造难度]:
+# 由1到10 难度�?次递增：
+# 1 = �?需�?�?�常精确的�?作就�?�以制出优质饮�?
+# 10 = 需�?�?�常精确的�?作�?�?�以制出优质饮�?
+
+# alcohol[酒精�?��?]:
+# 完美饮�?中的�?对酒精�?��?，范围是 0-100（将直接作用于玩家，100�?味�?�玩家会�?迷）
+
+# lore[�??述文本]: 酿造完�?�?�的物�?�??述文本列表(�?�用的格�?化代�?：例如 &6)
+# 根�?�物�?�?质，�?�以在行首添加特定的lore标记，如 + 表示差, ++ 表示普通, +++ 表示好
+
+# servercommands[�?务器命令]:
+# 饮用饮�?时，�?务器将执行的命令列表
+# �?�以使用�?��? %player_name% 和 %quality%
+# playercommands[玩家命令]:
+# 饮用饮�?时，玩家将执行的命令列表
+# �?�以使用�?��? %player_name% 和 %quality%
+# 这两个都�?�以根�?��?质添加特定命令，使用 + 表示差, ++ 表示普通, +++ 表示好，添加到�?行命令的�?�?�
+
+# drinkmessage[饮用消�?�]:
+# 玩家饮用饮�?时接收的�?�天信�?�
+
+# drinktitle[饮用标题]:
+# 玩家饮用饮�?时�?幕上显示的标题
+
+# glint[附魔闪�?]:
+# 表示物�?是�?�应该显示魔法光泽 [true/false]
+
+# customModelData[自定义物�?模型]:
+# 用于�?�物�?添加自定义纹�?�的数字标签
+# �?�以为一个饮�?设置，或者为�?个饮�?的�?�?��?质分别设置，用 / 分隔
+
+# effects[�?�效列表]: 饮用时产生的�?�水效果�?等级和�?续时间的列表
+# �?续时间�?��?为秒
+# 等级或�?续时间�?�用"-"表示，例如 'SPEED/1-2/30-40' 表示最差情况为等级 1 �?续 30 秒，最佳情况为等级 2 �?续 40 秒
+# 等级或�?续时间也�?�逆�?�设置，例如 'POISON/3-1/20-5' 表示最差情况为等级 3 �?续 20 秒，最佳情况为等级 1 �?续 5 秒
+# 最长�?�水效果�?续时间为 1638 秒 瞬间类�?�水效果无需指定�?续时间
+# �?�用�?�水效果列表: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html [打�?开需�?挂梯�?进行�?览]
+
+recipes:
+  # 例�?:
+  ex:
+    name: 劣质范例饮�?/普通范例饮�?/优质范例饮�? # �??称 ‘/’分隔代表�?�?��?质�?�?��??称
+    ingredients: # 制作所需的�??料清�?�
+      - Diamond/1 # 支�?ExoticGarden, Slimefun, MMOItems, Brewery的�?�件物�?
+      - Spruce_Planks/8
+      - Bedrock/1
+      - Brewery:Wheatbeer/2 # �?�件物�?需�?在物�?�?加上所属�?�件ID
+      #    - ExoticGarden:Grape/3
+      - ex-item/4
+    cookingtime: 3 # 料�?�时间
+    distillruns: 2 # 蒸�?次数
+    distilltime: 60 # 蒸�?时间
+    wood: 4 # 其陈酿的木桶�??质 在这对应的是 云�?�木
+    age: 11 # 陈酿时间
+    color: DARK_RED # 呈现颜色
+    difficulty: 3 # 制作难度
+    alcohol: 14 # 酒精度
+    lore: # �??述文本 �?�?�的加�?�表示在�?�?��?质下 �??述的�?�?�
+      - 这是一个饮�?示例
+      - ++�?�是一个普通示例
+      - 这段文本将显示在这个饮�?上
+      - + 闻起�?�很�?�心
+      - ++ 闻起�?�还�?�以
+      - +++ 闻起�?�真的很香
+    servercommands: # �?务器指令 �?�?�的加�?�表示在�?�?��?质下 执行指令的�?�?�
+      - +++ weather clear
+      - + weather rain
+    playercommands: # 玩家指令 效果和触�?�方�?�?�上
+      - homes
+    drinkmessage: 味�?��?错 # 在�?�天�?时出现的消�?�
+    drinktitle: 让你从内而外感到温暖 # 出现的标题
+    customModelData: 556/557/557 # 物�?模型编�?� ‘/’分隔代表�?�?��?质�?�?�模型
+    effects: # �?�水效果
+      - FIRE_RESISTANCE/20 # 固定值 �?�?��?质好�??影�?
+      - HEAL/1 # 固定值 �?�?��?质好�??影�?
+      - WEAKNESS/2-3/50-60 # �?质越高 效果越好
+      - POISON/1-0/20-0 #�?质越高 效果越差
+
+  wheatbeer:
+    name: 劣质麦啤/普通麦啤/优质麦啤
+    ingredients:
+      - Wheat/3
+    cookingtime: 8
+    distillruns: 0
+    wood: 1
+    age: 2
+    color: "ffb84d" # 橙色
+    difficulty: 1
+    alcohol: 5
+    lore: +++ &8令人耳目一新
+
+  beer:
+    name: 劣质啤酒/普通啤酒/优质啤酒
+    ingredients:
+      - Wheat/6
+    cookingtime: 8
+    distillruns: 0
+    wood: 0
+    age: 3
+    color: "ffd333" # 亮橙色
+    difficulty: 1
+    lore:
+      - +++ &8清爽的味�?�
+    alcohol: 6
+
+  darkbeer:
+    name: 劣质黑啤/普通黑啤/优质黑啤
+    ingredients:
+      - Wheat/6
+    cookingtime: 8
+    distillruns: 0
+    wood: 6
+    age: 8
+    color: "650013" # 深红�??棕色
+    difficulty: 2
+    lore:
+      - +++ &8烤的味�?�
+    alcohol: 7
+
+  wine:
+    name: 红酒
+    ingredients:
+      - Sweet_Berries/5
+    cookingtime: 5
+    distillruns: 0
+    wood: 0
+    age: 20
+    color: RED
+    difficulty: 4
+    alcohol: 8
+    lore:
+      - "+ &8略带苦涩"
+      - "+ &8木塞味"
+      - "++ &8醇和"
+      - "+++ &8酒体饱满"
+
+  mead:
+    name: 粗制蜜酒/普通蜜酒/黄金蜜酒
+    ingredients:
+      - Sugar_Cane/6
+    cookingtime: 3
+    distillruns: 0
+    wood: 2
+    age: 4
+    color: ORANGE
+    difficulty: 2
+    lore:
+      - +++ 仿佛闪�?�?�金色的光泽
+    alcohol: 9
+
+  ap_mead:
+    name: 普通苹果蜜酒/甜苹果蜜酒/甘醇苹果蜜酒
+    ingredients:
+      - Sugar_Cane/6
+      - Apple/2
+    cookingtime: 4
+    distillruns: 0
+    wood: 2
+    age: 4
+    color: ORANGE
+    difficulty: 4
+    alcohol: 11
+    lore:
+      - + 这里�?�有苹果�?�？
+      - ++ 清新的苹果味�?�
+      - +++ 最细微的苹果甜味
+    effects:
+      - WATER_BREATHING/1-2/150
+
+  cidre:
+    name: 劣质苹果酒/苹果酒/伟大的苹果酒
+    ingredients:
+      - Apple/14
+    cookingtime: 7
+    distillruns: 0
+    wood: 0
+    age: 3
+    color: "f86820" # 红橙色
+    difficulty: 4
+    alcohol: 7
+
+  apple_liquor:
+    name: 酸苹果酒/普通苹果酒/Calvados苹果酒
+    ingredients:
+      - Apple/12
+    cookingtime: 16
+    distillruns: 3
+    wood: 5
+    age: 6
+    color: BRIGHT_RED
+    difficulty: 5
+    alcohol: 14
+    lore:
+      - + 酸的�?能�?酸
+      - +++ 好苹果酒
+
+  whiskey:
+    name: 劣质�?士忌/普通�?士忌/�?格兰风味�?士忌
+    ingredients:
+      - Wheat/10
+    cookingtime: 10
+    distillruns: 2
+    distilltime: 50
+    wood: 4
+    age: 18
+    color: ORANGE
+    difficulty: 7
+    alcohol: 26
+    lore: "&7纯正麦芽"
+
+  rum:
+    name: 苦涩朗姆酒/辛辣朗姆酒/&6金�?朗姆酒
+    ingredients:
+      - Sugar_Cane/18
+    cookingtime: 6
+    distillruns: 2
+    distilltime: 30
+    wood: 2
+    age: 14
+    color: DARK_RED
+    difficulty: 6
+    alcohol: 30
+    effects:
+      - FIRE_RESISTANCE/1/20-100
+      - POISON/1-0/30-0
+    lore:
+      - +&8太苦了是�?的�?�？
+      - ++&8桶香味的精�?�
+      - +++&香料黄金
+
+  vodka:
+    name: 劣质�?特加/�?特加/纯正俄�?风味�?特加
+    ingredients:
+      - Potato/10
+    cookingtime: 15
+    distillruns: 3
+    age: 0
+    color: WHITE
+    difficulty: 4
+    alcohol: 20
+    lore:
+      - + &8几乎�?能�?
+    effects:
+      - WEAKNESS/15
+      - POISON/10
+
+  shroom_vodka:
+    name: 普通蘑�?��?特加/�?�光蘑�?��?特加/�?�光蘑�?��?特加
+    ingredients:
+      - Potato/10
+      - Red_Mushroom/3
+      - Brown_Mushroom/3
+    cookingtime: 18
+    distillruns: 5
+    age: 0
+    color: "ff9999" # 粉红�??红
+    difficulty: 7
+    alcohol: 18
+    lore:
+      - +++ &a在黑暗中�?�光
+    effects:
+      - WEAKNESS/80
+      - CONFUSION/27
+      - NIGHT_VISION/50-80
+      - BLINDNESS/12-2
+      - SLOW/10-3
+
+    gin:
+      name: 淡�?��?��?酒/�?��?��?酒/�?汤姆�?��?��?酒
+      ingredients:
+        - Wheat/9
+        - blue-flowers/6
+        - Apple/1
+      cookingtime: 6
+      distillruns: 2
+      color: "99ddff" # �?�常亮的�?色
+      difficulty: 6
+      alcohol: 20
+      lore:
+        - ++ 混有�?��?��?的味�?�
+        - ++ 以�?��?��?的风味点缀
+        - +++ 完美地以�?��?��?收尾
+        - +++ 以�?��?��?的味�?�完美点缀
+
+  tequila:
+    name: 梅斯�?�尔酒/龙舌兰酒/陈年龙舌兰酒
+    ingredients:
+      - cactus/8
+    cookingtime: 15
+    distillruns: 2
+    color: "f5f07e" # 绿橙色
+    difficulty: 5
+    wood: 1
+    age: 12
+    alcohol: 20
+    lore:
+      - 沙漠精髓
+
+  absinthe:
+    name: 劣质苦艾酒/普通苦艾酒/劲猛苦艾酒
+    ingredients:
+      - types-grass/15 # 查看自定义物�?组以获�?�更多
+    cookingtime: 3
+    distillruns: 6
+    distilltime: 80
+    color: GREEN
+    difficulty: 8
+    alcohol: 42
+    effects:
+      - POISON/15-25
+    lore:
+      - "+++ &8高浓度酒精"
+
+  gr_absinthe:
+    name: 暗绿色苦艾酒/普绿色苦艾酒/亮绿色苦艾酒
+    ingredients:
+      - Grass/17
+      - Poisonous_Potato/2
+    cookingtime: 5
+    distillruns: 6
+    distilltime: 85
+    color: LIME
+    difficulty: 9
+    alcohol: 46
+    effects:
+      - POISON/25-40
+      - HARM/2
+      - NIGHT_VISION/40-60
+    lore:
+      - "&a看起�?�很怪"
+
+  potato_soup:
+    name: 土豆汤
+    ingredients:
+      - Potato/5
+      - Grass/3
+    cookingtime: 3
+    color: ORANGE
+    difficulty: 1
+    effects:
+      - HEAL/0-1
+
+  coffee:
+    name: 平淡咖啡/普通咖啡/浓苦咖啡
+    ingredients:
+      - Cocoa_Beans/12
+      - Milk_Bucket/2
+    cookingtime: 2
+    color: BLACK
+    difficulty: 3
+    alcohol: -6
+    lore: + &8一周�?的剩货
+    effects:
+      - REGENERATION/1/2-5
+      - SPEED/1/30-140
+
+  eggnog:
+    name: 鸡蛋利�?�酒/普通蛋酒/Advocaat蛋酒
+    ingredients:
+      - Egg/5
+      - Sugar/2
+      - Milk_Bucket/1
+    cookingtime: 2
+    color: "ffe680"
+    difficulty: 4
+    alcohol: 10
+    wood: 0
+    age: 3
+    lore: 用生鸡蛋制作的
+
+# 我�?希望�?�默认�?置中添加更多�?方，因为这样它们将公开�?��?，用户�?�能会利用这些信�?�作弊
+# �?务器管�?�员负责更改和添加�?方，以防止玩家利用默认�?置作弊
+# 以下是一些建议的�?方供您�?�考：
+
+# g_vodka:
+#   name: 美味�?特加/&6金色�?特加/&6闪亮金色�?特加
+#   ingredients:
+#     - Potato/10
+#     - Gold_Nugget/2
+#   cookingtime: 18
+#   distillruns: 3
+#   age: 0
+#   color: ORANGE
+#   difficulty: 6
+#   alcohol: 20
+#   effects:
+#     - WEAKNESS/28
+#     - POISON/4
+
+# fire_whiskey:
+#   name: 粉末�?士忌/燃烧�?士忌/炽热�?士忌
+#   ingredients:
+#     - Wheat/10
+#     - Blaze_Powder/2
+#   cookingtime: 12
+#   distillruns: 3
+#   distilltime: 55
+#   wood: 4
+#   age: 18
+#   color: ORANGE
+#   difficulty: 7
+#   alcohol: 28
+#   drinkmessage: '你嘴里有一�?�?�热的感觉'
+
+# 没有酒精:
+
+# hot_choc:
+#   name: 热巧克力
+#   ingredients:
+#     - cookie/3
+#   cookingtime: 2
+#   color: DARK_RED
+#   difficulty: 2
+#   effects:
+#     - FAST_DIGGING/40
+
+# iced_coffee:
+#   name: 淡咖啡/冰咖啡/浓冰咖啡
+#   ingredients:
+#     - cookie/8
+#     - snowball/4
+#     - milk_bucket/1
+#   cookingtime: 1
+#   color: BLACK
+#   difficulty: 4
+#   alcohol: -8
+#   effects:
+#     - REGENERATION/30
+#     - SPEED/10
+
+# 在《我的世界》中，有许多物�?，如藤蔓�?牛奶，以�?��?�件添加的物�?，它们都能�?为�?好的原料
+# 更多�?方创�?[�?�以作为�?�考]：
+# 蒲公英酒
+# 甜�?�根酒
+# 罂粟酒：Macum/大罂粟
+# 竹酒：竹�?��?�
+# �?�莎�?�酒
+# 干邑
+# 清酒
+# �?士忌
+# 月光酒
+# �?��?葡�?�酒
+# 白兰地
+# �??�?酒
+# 等等，以�?�如下�?��?：
+# �?�瓜香料啤酒
+# 蜜瓜�?特加
+
+# -- �?�件兼容性 --
+
+# �?�用检查其他�?�件（如果已安装）的木桶�?��? [true]
+# �?�件 'Landlord' 和 'Protection Stones' 使用 WorldGuard 标志
+# 'ClaimChunk' 是原生支�?的
+useWorldGuard: true
+useLWC: true
+useGriefPrevention: true
+useTowny: true
+useBlockLocker: true
+useGMInventories: true
+
+# 在打开木桶时，使用虚拟箱�?�?�与所有其他�?护�?�件进行交互检查
+# 这�?�能会使�??作弊�?�件产生混淆，但在其他方�?�是一个很好的使用方法
+# 请将此方法用于 'Residence' �?�件，以�?�任何其他未在 PlayerInteractEvent 中涵盖所有情况的�?�件
+useVirtualChestPerms: false
+
+# �?�用将木桶库存信�?�记录到 LogBlock [true]
+useLogBlock: true
+
+# -- 多�?务器/BungeeCord --
+# 如果 Brewery �?�件在多个通过 BungeeCord 连接的�?务器上�?行
+# �?�以在这里使用共享数�?�库�?��?�步玩家的醉酒状�?，并且能够在�?�?��?务器之间使用编�?的饮�?
+
+multiServerDB:
+  # 如果�?�用了使用数�?�库
+  enabled: false
+  # 如果玩家的醉酒状�?应该在�?务器之间�?�步
+  syncDrunkeness: true
+  host: localhost
+  port: "3306"
+  user: minec
+  password: xyz
+  database: base
+
+# -- �?��?其他设置 --
+
+# 是�?�也应该将副手中的物�?添加到炼�?�锅中 [false]
+useOffhandForCauldron: false
+
+# 如果木桶和锅炉数�?��?�以异步/在�?��?�加载 [true]
+loadDataAsync: true
+
+# 玩家下线�?�，醉酒数�?�在内存中�?留的天数，以施加宿醉等�?�续效果 [7]
+hangoverDays: 7
+
+# 饮�?上是�?�显示带颜色的�??示, 颜色由执行步骤的正误决定
+# 是�?�在陈酿酒桶内显示颜色 [true]
+colorInBarrels: true
+# 是�?�在酿造�?�内显示颜色 [true]
+colorInBrewer: true
+
+# 大型木桶是�?��?�通过点击其任一方�?��?�开�?�，�?仅仅�?于龙头或标志
+# 对于�?型木桶，这一功能始终有效 [true]
+openLargeBarrelEverywhere: false
+
+# �?许通过将饮�?倒入�?斗�?�丢弃，�?�时�?留玻璃瓶 [true]
+brewHopperDump: true
+
+# -- �?�天�?�胡设置 --
+
+# 当玩家醉酒时，是�?�使�?�天内容出现�?�胡，使其呈现出醉酒书写的样�?
+# �?�天内容的�?�胡程度与玩家的醉酒程度�?正比
+# 以下是关于�?�天内容�?�化的具体设置
+
+# 打开�?�天�?�胡功能[true]
+enableChatDistortion: true
+
+# 在�?�天内容被�?�胡�?，记录玩家实际输入的�?�天内容到�?务器日志 [false]
+logRealChat: false
+
+# 醉酒时，特定命令�?�的文本将出现�?�胡（命令列表） [- /gl]
+distortCommands:
+  - /gl
+  - /global
+  - /fl
+  - /s
+  - /letter
+  - /g
+  - /l
+  - /lokal
+  - /local
+  - /mail send
+  - /m
+  - /msg
+  - /w
+  - /whisper
+  - /reply
+  - /r
+  - /t
+  - /tell
+
+# 醉酒时，是�?�扭曲告示牌上的文本 [false]
+distortSignText: false
+
+# 使用特定字�?包围�?�天内容，以�?��?�?�天�?�胡效果（以逗�?�作为分隔符）（字�?列表） [- '[,]']
+# �?�天示例：我~�?~醉了 *但是这里�?�的�?�?会�?�哦!*
+distortBypass:
+  - "*,*"
+  - "[,]"
+
+# words[�?��?]: 当玩家醉酒时�?�天中将被改�?�的�?��?和字�?
+# 将按照从�?往�?�的顺�?进行处�?�，并且按照这个顺�?改�?�书写的�?��?
+
+# replace: �?替�?�的�?��?或字�?
+# 特殊类型：
+# "-space": 替�?�空格     "-random": �?�入到�?机�?置     "-all": 所有内容
+# "-start": 在开始处     "-end": 在结�?�处
+
+# to: 用什么替�?�它
+
+# pre: 在目标�?��?之�?的�?��?和字�?
+# 用 "," 分隔
+
+# match:
+# true = 目标�?��?�?必须有一个'pre'�?��?
+# false = 目标�?��?�?�?�?许有'pre'�?��?
+
+# alcohol[酒精度]: 1-100
+# 在醉酒程度达到这个值�?�，这个�?��?将被替�?�
+
+# percentage[概率]: �?��?替�?�的概率（百分比）
+
+words:
+  - replace: "!!!"
+    to: "!!!111!!!1111!1!"
+    pre: "!"
+    match: false
+    percentage: 20
+    alcohol: 70
+
+  - replace: "�?�?�?"
+    to: "!!!111!!!1111!1!"
+    pre: "!"
+    match: false
+    percentage: 20
+    alcohol: 70
+  - replace: "!"
+    to: "!!"
+    pre: "!"
+    match: false
+    percentage: 90
+
+  - replace: "?"
+    to: "????"
+    pre: "?"
+    match: false
+    percentage: 80
+    alcohol: 40
+
+  - replace: "？"
+    to: "????"
+    pre: "?"
+    match: false
+    percentage: 80
+    alcohol: 40
+
+  - replace: ","
+    to: ""
+    pre: h,g,w
+    match: true
+    alcohol: 10
+
+  - replace: "，"
+    to: ""
+    pre: h,g,w
+    match: true
+    alcohol: 10
+
+  - replace: "."
+    to: ""
+    percentage: 30
+    alcohol: 35
+
+  - replace: "。"
+    to: ""
+    percentage: 10
+
+  - replace: -start
+    to: 呃
+    percentage: 15
+    alcohol: 50
+
+  - replace: -start
+    to: 哼嗯
+    percentage: 10
+    alcohol: 50
+
+  - replace: -random
+    to: 噜
+    percentage: 10
+
+  - replace: -random
+    to: 啦
+    percentage: 10
+    alcohol: 50
+
+  - replace: -random
+    to: 咕
+    percentage: 20
+    alcohol: 80
+
+  - replace: -random
+    to: 咯
+    percentage: 40
+    alcohol: 85
+
+  - replace: -random
+    to: 嘎
+    percentage: 40
+    alcohol: 80
+
+  - replace: -random
+    to: " "
+    percentage: 100
+    alcohol: 70
+
+  - replace: -end
+    to: "!"
+    percentage: 40
+    alcohol: 30
+
+  - replace: -random
+    to: "*�?*"
+    percentage: 80
+    alcohol: 70
+
+  - replace: -random
+    to: "*�?*"
+    percentage: 15
+    alcohol: 40
+
+  - replace: -space
+    to: "*�?*"
+    percentage: 5
+    alcohol: 20
+
+  - replace: -end
+    to: "*�?*"
+    percentage: 70
+    alcohol: 50
+
+  - replace: -all
+    to: "*�?儿————*"
+    percentage: 3
+    alcohol: 60
+
+  - replace: -all
+    to: "*�?儿————*"
+    percentage: 6
+    alcohol: 80

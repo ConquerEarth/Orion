@@ -45,19 +45,19 @@ Options:
   mat: PUMPKIN_SEEDS
   value: 0.09
   median: 999
-  stock: 1028
+  stock: 938
   tradeType: SellOnly
 '13':
   mat: BEETROOT_SEEDS
   value: 0.09
   median: 999
-  stock: 866
+  stock: 1020
   tradeType: SellOnly
 '14':
   mat: MELON_SEEDS
   value: 0.09
   median: 999
-  stock: 1021
+  stock: 1105
   tradeType: SellOnly
 '15':
   mat: BLACK_STAINED_GLASS_PANE
@@ -71,33 +71,33 @@ Options:
   mat: BLACK_STAINED_GLASS_PANE
 '20':
   mat: SUGAR_CANE
-  value: 0.09
+  value: 0.49
   median: 999
-  stock: 884
+  stock: 1045
   tradeType: SellOnly
 '21':
   mat: WHEAT_SEEDS
   value: 0.09
   median: 999
-  stock: 1292
+  stock: 1201
   tradeType: SellOnly
 '22':
   mat: CACTUS
   value: 0.09
   median: 999
-  stock: 1181
+  stock: 976
   tradeType: SellOnly
 '23':
   mat: NETHER_WART
   value: 0.14
   median: 999
-  stock: 985
+  stock: 1073
   tradeType: SellOnly
 '24':
   mat: BAMBOO
   value: 0.09
   median: 999
-  stock: 2037
+  stock: 1065
   tradeType: SellOnly
 '25':
   mat: BLACK_STAINED_GLASS_PANE
@@ -113,7 +113,7 @@ Options:
   mat: COCOA_BEANS
   value: 0.12
   median: 999
-  stock: 839
+  stock: 996
   tradeType: SellOnly
 '31':
   mat: BLACK_STAINED_GLASS_PANE
@@ -121,7 +121,7 @@ Options:
   mat: VINE
   value: 0.11
   median: 999
-  stock: 1106
+  stock: 1052
   tradeType: SellOnly
 '33':
   mat: BLACK_STAINED_GLASS_PANE

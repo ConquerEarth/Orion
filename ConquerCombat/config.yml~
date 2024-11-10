@@ -1,0 +1,63 @@
+#time in seconds that combat tag lasts
+Timer: 60
+
+#these commands cannot be run when a player is tagged, set one line to - '' to disable
+Blocked_Commands:
+  - '/feed'
+  - '/tpa'
+  - '/tpahere'
+  - '/tpaccept'
+  - '/home'
+  - '/homes'
+  - '/heal'
+  - '/rt'
+  - '/rtp'
+  - '/wild'
+  - '/spawn'
+  - '/t spawn'
+  - '/town spawn'
+  - '/n spawn'
+  - '/nation spawn'
+  - '/ghome'
+  - '/spawn'
+
+#commands to run when a player gets combat tagged
+Commands:
+  - 'cmi'
+
+#send a countdown above the health and hunger bar
+Actionbar:
+  enabled: false
+  message: '&fCombat timer --> &c%timeleft%'
+
+#send a countdown as a bossbar
+bossbar:
+  enabled: true
+  bossbarmsg: '&f&l%timeleft%'
+  #RED, BLUE, PURPLE, WHITE, YELLOW, PINK, GREEN
+  color: WHITE
+
+#disable features on while combat tagged
+Disable:
+  Elytra: true
+  EnderPearl: false
+  ChorusFruit: false
+  Flight: true
+  Teleport: true
+  Riptide: true
+
+Cooldowns:
+  EnderPearl: 15
+  Gapples: 15
+
+
+Disable_In_Worlds:
+  - 'WORLD_NAME'
+
+Remove_Timer_On_World_Change: true
+
+Reset_Timer_On_Death: true
+
+Reset_Timer_On_Join: true
+
+Kill_On_Leave: true
