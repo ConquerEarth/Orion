@@ -1,0 +1,126 @@
+###########################################################################################################################################################################
+###################################  TradeManager Plugin By (CantBeJohn) | for permissions, please refer to the official post.  ################################
+###########################################################################################################################################################################
+
+General-Settings:
+  OP-Bypass: true
+  Reset-All-Trade-Stock-Timer:
+    Enabled: true
+    Interval: 1h
+  Display-Disabled-Items-For-Traders:
+    Enabled: false
+  Restricted-Trading-Hours:
+    Enabled: true
+    Time: 1000-13000
+    Prevent-Trade-Window:
+      Enabled: true
+      Random-Disabled-Message: &id001 []
+  Only-Display-Custom-Trades:
+    Enabled: false
+  Disabled-Worlds: *id001
+
+Villager-Trades:
+  Farmer:
+    Disabled-Trades: *id001 # Format: ITEM:AMOUNT->ITEM:AMOUNT->ITEM:AMOUNT
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Fisherman:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Mason:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Librarian:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Armorer:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Weaponsmith:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Toolsmith:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Cleric:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Fletcher:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Leatherworker:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Butcher:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Cartographer:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Shepherd:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+  Wandering-Trader:
+    Disabled-Trades: *id001
+    Custom-Trades: *id001
+    Disabled-Messages: *id001
+    Only-Display-Custom-Trades: false
+
+Villager-Spawns: # This setting only affects future spawning entities, already spawned entities are unaffected
+  Farmer:
+    Enabled: true
+  Fisherman:
+    Enabled: true
+  Shepherd:
+    Enabled: true
+  Fletcher:
+    Enabled: true
+  Librarian:
+    Enabled: true
+  Cartographer:
+    Enabled: true
+  Cleric:
+    Enabled: true
+  Armorer:
+    Enabled: true
+  Weaponsmith:
+    Enabled: true
+  Toolsmith:
+    Enabled: true
+  Butcher:
+    Enabled: true
+  Leatherworker:
+    Enabled: true
+  Mason:
+    Enabled: true
+  Nitwit:
+    Enabled: true
+  Wandering-Trader:
+    Enabled: true
+  Unemployed:
+    Enabled: true

@@ -21,797 +21,804 @@ Options:
   mat: GRASS_BLOCK
   value: 0.7
   median: 47020
-  stock: 34997
+  stock: 41527
   tradeType: BuyOnly
 '1':
   mat: DIRT
   value: 0.1
   median: 49953
-  stock: 54144
+  stock: 44337
   tradeType: BuyOnly
 '2':
   mat: PODZOL
   value: 1.63
   median: 28515
-  stock: 31519
+  stock: 29006
   tradeType: BuyOnly
 '3':
   mat: COARSE_DIRT
   value: 0.38
   median: 48401
-  stock: 52340
+  stock: 52775
   tradeType: BuyOnly
 '4':
   mat: ROOTED_DIRT
   value: 0.38
   median: 48401
-  stock: 49542
+  stock: 50433
   tradeType: BuyOnly
 '5':
   mat: MUD
   value: 0.38
   median: 48401
-  stock: 44228
+  stock: 48170
   tradeType: BuyOnly
 '6':
   mat: PACKED_MUD
   value: 1.64
   median: 28477
-  stock: 37274
+  stock: 21087
   tradeType: BuyOnly
 '7':
   mat: MUD_BRICKS
   value: 4.09
   median: 17231
-  stock: 14649
+  stock: 17085
   tradeType: BuyOnly
 '8':
   mat: COBBLESTONE
   value: 0.2
   median: 38687
-  stock: 36902
+  stock: 41942
   tradeType: BuyOnly
 '9':
   mat: MOSSY_COBBLESTONE
   value: 6.93
   median: 20314
-  stock: 20313
+  stock: 22165
   tradeType: BuyOnly
 '10':
   mat: DIORITE
   value: 1.1
   median: 38687
-  stock: 27295
+  stock: 41730
   tradeType: BuyOnly
 '11':
   mat: POLISHED_DIORITE
   value: 1.16
   median: 37975
-  stock: 45563
+  stock: 42273
   tradeType: BuyOnly
 '12':
   mat: ANDESITE
   value: 1.3
   median: 38687
-  stock: 34289
+  stock: 33549
   tradeType: BuyOnly
 '13':
   mat: POLISHED_ANDESITE
   value: 1.4
   median: 37975
-  stock: 36214
+  stock: 43947
   tradeType: BuyOnly
 '14':
   mat: GRAVEL
-  value: 0.2
+  value: 1.0
+  #  value: 0.2
   median: 49309
-  stock: 44454
+  stock: 49380
   tradeType: BuyOnly
 '15':
   mat: STONE
   value: 0.9
   median: 29839
-  stock: 32117
+  stock: 32943
   tradeType: BuyOnly
 '16':
   mat: GRANITE
   value: 1.3
   median: 38687
-  stock: 38826
+  stock: 35755
   tradeType: BuyOnly
 '17':
   mat: POLISHED_GRANITE
   value: 1.16
   median: 37975
-  stock: 35091
+  stock: 38591
   tradeType: BuyOnly
 '18':
   mat: SAND
   value: 0.15
   median: 49309
-  stock: 49876
+  stock: 51249
   tradeType: BuyOnly
 '19':
   mat: SANDSTONE
   value: 0.7
   median: 29839
-  stock: 28342
+  stock: 38430
   tradeType: BuyOnly
 '20':
   mat: SMOOTH_SANDSTONE
   value: 0.8
   median: 29315
-  stock: 28546
+  stock: 28705
   tradeType: BuyOnly
 '21':
   mat: CHISELED_SANDSTONE
   value: 0.9
   median: 28825
-  stock: 27333
+  stock: 24268
   tradeType: BuyOnly
 '22':
   mat: CUT_SANDSTONE
   value: 1.1
   median: 29315
-  stock: 29415
+  stock: 28024
   tradeType: BuyOnly
 '23':
   mat: RED_SAND
   value: 0.53
   median: 33712
-  stock: 39135
+  stock: 30564
   tradeType: BuyOnly
 '24':
   mat: RED_SANDSTONE
   value: 3.93
   median: 20314
-  stock: 19811
+  stock: 22643
   tradeType: BuyOnly
 '25':
   mat: SMOOTH_RED_SANDSTONE
   value: 3.28
   median: 19967
-  stock: 15587
+  stock: 22047
   tradeType: BuyOnly
 '26':
   mat: CUT_RED_SANDSTONE
   value: 3.28
   median: 19967
-  stock: 18821
+  stock: 26218
   tradeType: BuyOnly
 '27':
   mat: CHISELED_RED_SANDSTONE
   value: 3.02
   median: 19301
-  stock: 18026
+  stock: 18937
   tradeType: BuyOnly
 '28':
   mat: CLAY
   value: 1.3
   median: 26337
-  stock: 23807
+  stock: 25238
   tradeType: BuyOnly
 '29':
   mat: MYCELIUM
   value: 5.0
   median: 17281
-  stock: 14348
+  stock: 13138
   tradeType: BuyOnly
 '30':
   mat: TUFF
   value: 0.26
   median: 64094
-  stock: 57820
+  stock: 61959
   tradeType: BuyOnly
 '31':
   mat: DEEPSLATE
   value: 1.77
   median: 28002
-  stock: 31156
+  stock: 29325
   tradeType: BuyOnly
 '32':
   mat: MOSS_BLOCK
   value: 1.2
   median: 30353
-  stock: 28038
+  stock: 32102
   tradeType: BuyOnly
 '33':
   mat: CALCITE
   value: 1.1
   median: 38687
-  stock: 47223
+  stock: 44691
   tradeType: BuyOnly
 '34':
   mat: DRIPSTONE_BLOCK
   value: 1.82
   median: 32436
-  stock: 35564
+  stock: 39192
   tradeType: BuyOnly
 '35':
   mat: BRICKS
   value: 5
   median: 14168
-  stock: 10259
+  stock: 12375
+  tradeType: BuyOnly
+'36':
+  mat: SPONGE
+  value: 50.0
+  median: 10000
+  stock: 8831
   tradeType: BuyOnly
 '37':
   mat: BASALT
   value: 0.26
   median: 64094
-  stock: 55713
+  stock: 70494
   tradeType: BuyOnly
 '38':
   mat: POLISHED_BASALT
   value: 0.32
   median: 59601
-  stock: 59674
+  stock: 64935
   tradeType: BuyOnly
 '39':
   mat: SMOOTH_BASALT
   value: 0.29
   median: 61690
-  stock: 64161
+  stock: 60704
   tradeType: BuyOnly
 '40':
   mat: GILDED_BLACKSTONE
   value: 58.0
   median: 9657
-  stock: 10102
+  stock: 9984
   tradeType: BuyOnly
 '41':
   mat: POLISHED_BLACKSTONE
   value: 2.31
   median: 29839
-  stock: 26685
+  stock: 26774
   tradeType: BuyOnly
 '42':
   mat: CHISELED_POLISHED_BLACKSTONE
   value: 2.67
   median: 28364
-  stock: 25614
+  stock: 22281
   tradeType: BuyOnly
 '43':
   mat: BROWN_MUSHROOM_BLOCK
   value: 2.2
   median: 30353
-  stock: 33791
+  stock: 29075
   tradeType: BuyOnly
 '44':
   mat: RED_MUSHROOM_BLOCK
   value: 2.2
   median: 30353
-  stock: 32693
+  stock: 27513
   tradeType: BuyOnly
 '45':
   mat: QUARTZ_BLOCK
   value: 7.85
   median: 8597
-  stock: 8750
+  stock: 9143
   tradeType: BuyOnly
 '46':
   mat: QUARTZ_BRICKS
   value: 7.05
   median: 8446
-  stock: 9862
+  stock: 8803
   tradeType: BuyOnly
 '47':
   mat: QUARTZ_PILLAR
   value: 7.89
   median: 8452
-  stock: 6961
+  stock: 7255
   tradeType: BuyOnly
 '48':
   mat: SMOOTH_QUARTZ
   value: 7.14
   median: 8308
-  stock: 7006
+  stock: 7401
   tradeType: BuyOnly
 '49':
   mat: CHISELED_QUARTZ_BLOCK
   value: 9.28
   median: 13498
-  stock: 15239
+  stock: 16011
   tradeType: BuyOnly
 '50':
   mat: TUBE_CORAL_BLOCK
   value: 3.43
   median: 25984
-  stock: 23330
+  stock: 24067
   tradeType: BuyOnly
 '51':
   mat: BRAIN_CORAL_BLOCK
   value: 3.43
   median: 25984
-  stock: 23750
+  stock: 24241
   tradeType: BuyOnly
 '52':
   mat: BUBBLE_CORAL_BLOCK
   value: 3.43
   median: 25984
-  stock: 27140
+  stock: 26286
   tradeType: BuyOnly
 '53':
   mat: FIRE_CORAL_BLOCK
   value: 3.43
   median: 25984
-  stock: 29426
+  stock: 24879
   tradeType: BuyOnly
 '54':
   mat: HORN_CORAL_BLOCK
   value: 3.43
   median: 25984
-  stock: 21854
+  stock: 24212
   tradeType: BuyOnly
 '55':
   mat: SLIME_BLOCK
   value: 50.95
   median: 7873
-  stock: 6594
+  stock: 7549
   tradeType: BuyOnly
 '56':
   mat: HONEY_BLOCK
   value: 9.0
   median: 18538
-  stock: 17019
+  stock: 16397
   tradeType: BuyOnly
 '57':
   mat: HONEYCOMB_BLOCK
   value: 8.0
   median: 19318
-  stock: 20157
+  stock: 13900
   tradeType: BuyOnly
 '58':
   mat: STONE_BRICKS
   value: 1.8
   median: 29315
-  stock: 29585
+  stock: 26830
   tradeType: BuyOnly
 '59':
   mat: MOSSY_STONE_BRICKS
   value: 4.32
   median: 19055
-  stock: 24141
+  stock: 20845
   tradeType: BuyOnly
 '60':
   mat: CRACKED_STONE_BRICKS
   value: 2.7
   median: 25304
-  stock: 27055
+  stock: 28803
   tradeType: BuyOnly
 '61':
   mat: CHISELED_STONE_BRICKS
   value: 2.67
   median: 28364
-  stock: 25650
+  stock: 30089
   tradeType: BuyOnly
 '62':
   mat: NETHERRACK
   value: 0.3
   median: 32884
-  stock: 26066
+  stock: 31003
   tradeType: BuyOnly
 '63':
   mat: NETHER_BRICKS
   value: 6.1
   median: 12294
-  stock: 10128
+  stock: 14565
   tradeType: BuyOnly
 '64':
   mat: CRACKED_NETHER_BRICKS
   value: 6.1
   median: 10611
-  stock: 9026
+  stock: 10280
   tradeType: BuyOnly
 '65':
   mat: CHISELED_NETHER_BRICKS
   value: 6.97
   median: 11895
-  stock: 13126
+  stock: 13158
   tradeType: BuyOnly
 '66':
   mat: RED_NETHER_BRICKS
   value: 6.12
   median: 11185
-  stock: 11124
+  stock: 11327
   tradeType: BuyOnly
 '67':
   mat: MAGMA_BLOCK
   value: 12.06
   median: 10898
-  stock: 9456
+  stock: 9476
   tradeType: BuyOnly
 '68':
   mat: SOUL_SAND
   value: 6.0
   median: 17281
-  stock: 18593
+  stock: 15366
   tradeType: BuyOnly
 '69':
   mat: GLASS
   value: 4
   median: 13605
-  stock: 14254
+  stock: 15545
   tradeType: BuyOnly
 '70':
   mat: BONE_BLOCK
   value: 3.79
   median: 14491
-  stock: 17032
+  stock: 11244
   tradeType: BuyOnly
 '71':
   mat: WARPED_NYLIUM
   value: 1.25
   median: 30115
-  stock: 30913
+  stock: 27854
   tradeType: BuyOnly
 '72':
   mat: CRIMSON_NYLIUM
   value: 1.25
   median: 30115
-  stock: 29838
+  stock: 28173
   tradeType: BuyOnly
 '73':
   mat: WARPED_WART_BLOCK
   value: 30.8
   median: 7514
-  stock: 8609
+  stock: 8604
   tradeType: BuyOnly
 '74':
   mat: NETHER_WART_BLOCK
   value: 30.8
   median: 7514
-  stock: 8982
+  stock: 7121
   tradeType: BuyOnly
 '75':
   mat: PRISMARINE
   value: 15.1
   median: 13328
-  stock: 14476
+  stock: 10017
   tradeType: BuyOnly
 '76':
   mat: DARK_PRISMARINE
   value: 15.67
   median: 10195
-  stock: 10676
+  stock: 11647
   tradeType: BuyOnly
 '77':
   mat: PRISMARINE_BRICKS
   value: 15.98
   median: 10034
-  stock: 11697
+  stock: 7591
   tradeType: BuyOnly
 '78':
   mat: PURPUR_BLOCK
   value: 40.11
   median: 12292
-  stock: 12821
+  stock: 14769
   tradeType: BuyOnly
 '79':
   mat: PURPUR_PILLAR
   value: 40.09
   median: 11880
-  stock: 11963
+  stock: 10668
   tradeType: BuyOnly
 '80':
   mat: END_STONE_BRICKS
   value: 40.57
   median: 16978
-  stock: 21313
+  stock: 14177
   tradeType: BuyOnly
 '81':
   mat: OCHRE_FROGLIGHT
   value: 12.44
   median: 9574
-  stock: 10618
+  stock: 10099
   tradeType: BuyOnly
 '82':
   mat: VERDANT_FROGLIGHT
   value: 12.44
   median: 9574
-  stock: 8914
+  stock: 11425
   tradeType: BuyOnly
 '83':
   mat: PEARLESCENT_FROGLIGHT
   value: 12.44
   median: 9574
-  stock: 8108
+  stock: 10194
   tradeType: BuyOnly
 '84':
   mat: SNOW_BLOCK
   value: 2.4
   median: 23815
-  stock: 26472
+  stock: 22549
   tradeType: BuyOnly
 '85':
   mat: ICE
   value: 7.7
   median: 19578
-  stock: 20895
+  stock: 23552
   tradeType: BuyOnly
 '86':
   mat: PACKED_ICE
   value: 9.5
   median: 14994
-  stock: 17612
+  stock: 14980
   tradeType: BuyOnly
 '87':
   mat: BLUE_ICE
   value: 9.4
   median: 15361
-  stock: 15299
+  stock: 17761
   tradeType: BuyOnly
 '88':
   mat: COBBLED_DEEPSLATE
   value: 0.82
   median: 36296
-  stock: 39594
+  stock: 36948
   tradeType: BuyOnly
 '89':
   mat: CRACKED_DEEPSLATE_TILES
   value: 2.67
   median: 23323
-  stock: 21859
+  stock: 23781
   tradeType: BuyOnly
 '90':
   mat: DEEPSLATE_TILES
   value: 2.07
   median: 27012
-  stock: 25659
+  stock: 30111
   tradeType: BuyOnly
 '91':
   mat: CRACKED_DEEPSLATE_BRICKS
   value: 3.45
   median: 23721
-  stock: 26268
+  stock: 25835
   tradeType: BuyOnly
 '92':
   mat: DEEPSLATE_BRICKS
   value: 2.92
   median: 27490
-  stock: 28818
+  stock: 27171
   tradeType: BuyOnly
 '93':
   mat: POLISHED_DEEPSLATE
   value: 2.16
   median: 24287
-  stock: 29363
+  stock: 21674
   tradeType: BuyOnly
 '94':
   mat: CHISELED_DEEPSLATE
   value: 2.21
   median: 26593
-  stock: 25845
+  stock: 22515
   tradeType: BuyOnly
 '95':
   mat: BLACKSTONE
   value: 1.54
   median: 34389
-  stock: 36146
+  stock: 49190
   tradeType: BuyOnly
 '96':
   mat: CRACKED_POLISHED_BLACKSTONE_BRICKS
   value: 2.89
   median: 24864
-  stock: 28486
+  stock: 20619
   tradeType: BuyOnly
 '97':
   mat: POLISHED_BLACKSTONE_BRICKS
   value: 2.43
   median: 29315
-  stock: 28412
+  stock: 23388
   tradeType: BuyOnly
 '98':
   mat: CRYING_OBSIDIAN
   value: 392.4
   median: 4946
-  stock: 5610
+  stock: 4724
   tradeType: BuyOnly
 '99':
   mat: OBSIDIAN
   value: 130.8
   median: 7265
-  stock: 6072
+  stock: 7697
   tradeType: BuyOnly
 '100':
   mat: SCULK
   value: 30.69
   median: 12067
-  stock: 9807
+  stock: 12457
   tradeType: BuyOnly
 '101':
   mat: RED_TERRACOTTA
   value: 2.5
   median: 14885
-  stock: 18498
+  stock: 13877
   tradeType: BuyOnly
 '102':
   mat: ORANGE_TERRACOTTA
   value: 2.5
   median: 14362
-  stock: 15239
+  stock: 11478
   tradeType: BuyOnly
 '103':
   mat: YELLOW_TERRACOTTA
   value: 2.5
   median: 14972
-  stock: 18913
+  stock: 17448
   tradeType: BuyOnly
 '104':
   mat: LIME_TERRACOTTA
   value: 2.5
   median: 14931
-  stock: 15995
+  stock: 12954
   tradeType: BuyOnly
 '105':
   mat: GREEN_TERRACOTTA
   value: 2.5
   median: 14925
-  stock: 13140
+  stock: 12902
   tradeType: BuyOnly
 '106':
   mat: LIGHT_BLUE_TERRACOTTA
   value: 2.5
   median: 13648
-  stock: 11802
+  stock: 15342
   tradeType: BuyOnly
 '107':
   mat: BLUE_TERRACOTTA
   value: 2.5
   median: 14916
-  stock: 14240
+  stock: 12832
   tradeType: BuyOnly
 '108':
   mat: MAGENTA_TERRACOTTA
   value: 2.5
   median: 14928
-  stock: 16341
+  stock: 15615
   tradeType: BuyOnly
 '109':
   mat: PINK_TERRACOTTA
   value: 2.5
   median: 14194
-  stock: 15132
+  stock: 14404
   tradeType: BuyOnly
 '110':
   mat: PURPLE_TERRACOTTA
   value: 2.5
   median: 14772
-  stock: 16324
+  stock: 15881
   tradeType: BuyOnly
 '111':
   mat: CYAN_TERRACOTTA
   value: 2.5
   median: 14972
-  stock: 13476
+  stock: 10285
   tradeType: BuyOnly
 '112':
   mat: TERRACOTTA
   value: 2.5
   median: 15254
-  stock: 15514
+  stock: 14932
   tradeType: BuyOnly
 '113':
   mat: WHITE_TERRACOTTA
   value: 2.5
   median: 14362
-  stock: 13818
+  stock: 13692
   tradeType: BuyOnly
 '114':
   mat: LIGHT_GRAY_TERRACOTTA
   value: 2.5
   median: 14455
-  stock: 14082
+  stock: 17009
   tradeType: BuyOnly
 '115':
   mat: BROWN_TERRACOTTA
   value: 2.5
   median: 14972
-  stock: 12553
+  stock: 14729
   tradeType: BuyOnly
 '116':
   mat: GRAY_TERRACOTTA
   value: 2.5
   median: 14028
-  stock: 14735
+  stock: 16740
   tradeType: BuyOnly
 '117':
   mat: BLACK_TERRACOTTA
   value: 2.5
   median: 14972
-  stock: 15663
+  stock: 18673
   tradeType: BuyOnly
 '118':
   mat: RED_CONCRETE
   value: 3.5
   median: 23009
-  stock: 19034
+  stock: 21037
   tradeType: BuyOnly
 '119':
   mat: ORANGE_CONCRETE
   value: 3.5
   median: 22773
-  stock: 22426
+  stock: 28815
   tradeType: BuyOnly
 '120':
   mat: YELLOW_CONCRETE
   value: 3.5
   median: 22659
-  stock: 20496
+  stock: 18788
   tradeType: BuyOnly
 '121':
   mat: LIME_CONCRETE
   value: 3.5
   median: 19045
-  stock: 19884
+  stock: 15825
   tradeType: BuyOnly
 '122':
   mat: GREEN_CONCRETE
   value: 3.5
   median: 17079
-  stock: 21593
+  stock: 17177
   tradeType: BuyOnly
 '123':
   mat: LIGHT_BLUE_CONCRETE
   value: 3.5
   median: 20915
-  stock: 21405
+  stock: 21547
   tradeType: BuyOnly
 '124':
   mat: CYAN_CONCRETE
   value: 3.5
   median: 18005
-  stock: 15339
+  stock: 16865
   tradeType: BuyOnly
 '125':
   mat: BLUE_CONCRETE
   value: 3.5
   median: 19596
-  stock: 14747
+  stock: 19013
   tradeType: BuyOnly
 '126':
   mat: PURPLE_CONCRETE
   value: 3.5
   median: 20915
-  stock: 17528
+  stock: 20356
   tradeType: BuyOnly
 '127':
   mat: MAGENTA_CONCRETE
   value: 3.5
   median: 21720
-  stock: 20187
+  stock: 20558
   tradeType: BuyOnly
 '128':
   mat: PINK_CONCRETE
   value: 3.5
   median: 22890
-  stock: 26369
+  stock: 22883
   tradeType: BuyOnly
 '129':
   mat: BROWN_CONCRETE
   value: 3.5
   median: 17959
-  stock: 17295
+  stock: 14018
   tradeType: BuyOnly
 '130':
   mat: WHITE_CONCRETE
   value: 3.5
   median: 22773
-  stock: 20603
+  stock: 18868
   tradeType: BuyOnly
 '131':
   mat: LIGHT_GRAY_CONCRETE
   value: 3.5
   median: 21720
-  stock: 22682
+  stock: 15815
   tradeType: BuyOnly
 '132':
   mat: GRAY_CONCRETE
   value: 3.5
   median: 20915
-  stock: 23367
+  stock: 19966
   tradeType: BuyOnly
 '133':
   mat: BLACK_CONCRETE
   value: 3.5
   median: 19596
-  stock: 18733
+  stock: 16608
   tradeType: BuyOnly
