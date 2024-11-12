@@ -1,8 +1,0 @@
-# Shop name can not contain formatting codes, '/' and ' '
-
-Options:
-  title: Sample Shop
-  lore: This is sample shop
-  permission: ''
-  page: 2
-  currency: Vault
