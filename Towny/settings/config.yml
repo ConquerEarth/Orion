@@ -1952,7 +1952,7 @@ economy:
   # The daily upkeep to remain neutral, paid by the Nation bank. If unable to pay, neutral/peaceful status is lost.
   # This cost is multiplied by the nation_level peacefulCostMultiplier.
   # Neutrality will exclude you from a war event, as well as deterring enemies.
-  price_nation_neutrality: '2000.0'
+  price_nation_neutrality: '3000.0'
   
   # When it is true, the peaceful cost is multiplied by the nation's number of towns.
   # Note that the base peacful cost is calculated by the price_nation_neutrality X nation_level peacefulCostMultiplier.
@@ -1972,7 +1972,7 @@ economy:
     price_new_nation: '20000.0'
   
     # How much it costs to start a town.
-    price_new_town: '2000.0'
+    price_new_town: '1000.0'
   
     # The base cost a town has to pay to merge with another town. The town that initiates the merge pays the cost.
     price_town_merge: '3000'
@@ -1986,7 +1986,7 @@ economy:
     price_reclaim_ruined_town: '500.0'
   
     # How much it costs to make an outpost. An outpost isn't limited to being on the edge of town.
-    price_outpost: '5000.0'
+    price_outpost: '3000.0'
   
     # The price for a town to expand one townblock.
     price_claim_townblock: '350.0'
