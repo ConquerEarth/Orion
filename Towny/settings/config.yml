@@ -1915,7 +1915,7 @@ economy:
   nation_prefix: nation-
   
   # The cost of renaming a town.
-  town_rename_cost: '2500'
+  town_rename_cost: '2000'
   
   # The cost of renaming a nation.
   nation_rename_cost: '10000'
