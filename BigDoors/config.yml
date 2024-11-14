@@ -208,7 +208,7 @@ enableFileLogging: true
 # By enabling this option you agree that you will not complain if any issues arise and that it is completely
 # your own responsibility.
 # If you need to enable this option you are doing it wrong and you should rethink your life choices.
-unsafeMode: false
+unsafeMode: true
 
 # Don't use this. Just leave it on false.
 DEBUG: false
