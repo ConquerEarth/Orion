@@ -16,9 +16,9 @@ bottle:
   # How many to consume when converting. This is for every bottle you will get
   amountConsumed: 1
   # Do you want to charge money for xp conversion
-  useMoney: false
+  useMoney: True
   # How much it will gonna cost
-  moneyCost: 100.0
+  moneyCost: 3.0
   # Do you want to show extra information for how much its gonna cost to level up
   useBottleMoney: false
   # How much one xp bottle costs

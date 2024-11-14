@@ -58,7 +58,7 @@ Scavenge:
       MaxChance: 75.0
   Cost:
     # Defined base cost of extraction. Set to 0 if you want to make it free
-    Base: 100.0
+    Base: 750.0
     # Extra cost which depends on enchantment worth which can be defined with /cmi setenchantworth 
     # This value is in percentage from worth value of that each enchantment and item
     # So if you have base cost of 100, extra cost of 5% and you are trying to extract sharpness 5 which worth is 1000 and item sell hand worth is 100, then you will have to pay 155 for extraction process

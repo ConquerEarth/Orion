@@ -774,7 +774,7 @@ global_town_settings:
   
     # Allows blocking commands inside towns through the town_blacklisted_commands setting.
     # This boolean allows you to disable this feature altogether if you don't need it
-    enabled: 'false'
+    enabled: 'true'
   
     # Comma separated list of commands which cannot be run inside of any town.
     town_blacklisted_commands: somecommandhere,othercommandhere
@@ -784,7 +784,7 @@ global_town_settings:
     # inside of town-owned land. This would include mayors, assistants and possibly a builder rank.
     # Players with the towny.claimed.owntown.* permission node (given to mayors/assistants usually,)
     # will also not be limited by this command blacklist.
-    player_owned_plot_limited_commands: sethome,home
+    player_owned_plot_limited_commands: 
   
     # This allows the usage of blacklisted commands only in the player's town 
     # and the wilderness (essentially blocking commands from being ran by tourists/visitors)
@@ -2396,16 +2396,16 @@ jail:
   is_jailing_attacking_enemies: 'false'
   
   # If true attacking players who are considered an outlaw, that are killed inside town land will be placed into the defending town's jail if it exists.
-  is_jailing_attacking_outlaws: 'false'
+  is_jailing_attacking_outlaws: 'true'
   
   # How many hours an attacking outlaw will be jailed for.
-  outlaw_jail_hours: '5'
+  outlaw_jail_hours: '6'
   
   # How many hours an attacking enemy will be jailed for.
   pow_jail_hours: '5'
   
   # The maximum hours that a mayor can set when jailing someone, full number expected.
-  maximum_jail_hours: '5'
+  maximum_jail_hours: '6'
   
   # Amount that it costs per player jailed for a town, this is withdrawn from the Town bank. Set to -1 to disable.
   fee_initial_amount: '-1'
@@ -2417,24 +2417,24 @@ jail:
   jail_allows_teleport_items: 'false'
   
   # If false jailed players can use /town leave, and escape a jail.
-  jail_denies_town_leave: 'false'
+  jail_denies_town_leave: 'true'
   
   bail:
   
     # If true players can pay a bail amount to be unjailed.
-    is_allowing_bail: 'false'
+    is_allowing_bail: 'true'
   
     # Amount that bail costs for outlaw or POW arrests.
-    bail_amount: '5000'
+    bail_amount: '10000'
   
     # Max bail cost that a mayor can set.
-    bailmax_amount: '100'
+    bailmax_amount: '10000'
   
     # Amount that bail costs for Town mayors if captured.
-    bail_amount_mayor: '10'
+    bail_amount_mayor: '10000'
   
     # Amount that bail costs for Nation kings if captured.
-    bail_amount_king: '10'
+    bail_amount_king: '10000'
   
   # Amount of potential jailed players per town, set to -1 to disable.
   max_jailed_count: '-1'
@@ -2452,10 +2452,10 @@ jail:
   is_jailbook_enabled: 'true'
   
   # Commands which a jailed player cannot use.
-  blacklisted_commands: tpa,tpahere,tpaccept,rt,t spawn,town spawn,n spawn,nation spawn,home,homes,ghome,spawn
+  blacklisted_commands: tpa,tpahere,tpaccept,rt,t spawn,town spawn,n spawn,nation spawn,home,homes,ghome,spawn,cmi rt, cmi rtp,spawn,wild,cmi homes
   
   # When true, jail plots will prevent any PVP from occuring. Applies to jailed residents only.
-  do_jail_plots_deny_pvp: 'false'
+  do_jail_plots_deny_pvp: 'true'
   
   # When true, Towny will prevent a person who has been jailed by their mayor/town from logging out,
   # if they do log out they will be killed first, ensuring they respawn in the jail.
@@ -2509,7 +2509,7 @@ town_ruining:
   
     # This value determines the minimum duration in which a town must lie in ruins,
     # before it can be reclaimed by a resident.
-    min_duration_hours: '4'
+    min_duration_hours: '2'
   
     # If this is true, then after a town has been ruined for the minimum configured time,
     # it can then be reclaimed by any resident who runs /t reclaim, and pays the required price. (price is configured in the eco section)

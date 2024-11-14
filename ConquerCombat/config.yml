@@ -5,6 +5,8 @@ Timer: 60
 Blocked_Commands:
   - '/feed'
   - '/tpa'
+  - '/cmi homes'
+  - '/cmi home'
   - '/tpahere'
   - '/tpaccept'
   - '/home'
@@ -20,6 +22,8 @@ Blocked_Commands:
   - '/nation spawn'
   - '/ghome'
   - '/spawn'
+  - '/ender'
+  - '/ah'
 
 #commands to run when a player gets combat tagged
 Commands:
@@ -35,7 +39,7 @@ bossbar:
   enabled: true
   bossbarmsg: '&f&l%timeleft%'
   #RED, BLUE, PURPLE, WHITE, YELLOW, PINK, GREEN
-  color: WHITE
+  color: RED
 
 #disable features on while combat tagged
 Disable:
@@ -48,7 +52,7 @@ Disable:
 
 Cooldowns:
   EnderPearl: 15
-  Gapples: 15
+  Gapples: 0
 
 
 Disable_In_Worlds:

@@ -1,6 +1,6 @@
 #time in seconds
-Time: 1800
+Time: 86400
 
-Invulnerability_message: '&8&l(&a&l!&8&l)&a You are invulnerable to other players for the next 30 minutes!'
+Invulnerability_message: '&8&l(&a&l!&8&l)&a You are invulnerable to other players for the next 24 hours!'
 
 NoInvulnerability_message: '&8&l(&c&l!&8&l)&c You are no longer invulnerable to other players!'

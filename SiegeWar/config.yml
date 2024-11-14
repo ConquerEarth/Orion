@@ -237,7 +237,7 @@ war:
       # A high value allows more time to fortify new towns, but community engagement by mayors will be slower.
       # A low value allows less time to fortify new towns, but community engagement by mayors will be faster.
       # The default value is 168 (7 days).
-      siege_immunity_time_new_town_hours: '72'
+      siege_immunity_time_new_town_hours: '168'
   
       # This value determines how long a town is safe from sieges, after a siege finishes.
       # The default value is 168 (7 days).
@@ -248,7 +248,7 @@ war:
       # The configured value should be less than the configured post siege immunity hours (to ensure a town always gets the chance to revolt).
       # NOTE: A revolt siege breaks through siege immunity.
       # The default value is 72 (3 days).
-      revolt_immunity_post_siege_hours: '24'
+      revolt_immunity_post_siege_hours: '72'
   
       # This value determines the duration of each banner control session.
       banner_control_session_duration_minutes: '7'
@@ -830,7 +830,7 @@ bad_config_warnings:
   # NOTE: 
   # If you have 'test/debug' towns or nations, make sure their bank balances are not too high, 
   # otherwise the warnings will be inaccurate.
-  feature_enabled: 'true'
+  feature_enabled: 'false'
   
   # This setting determines the tolerance of the bad-config-warnings.
   # Example: If the 'ideal plunder rate' is set to 15%....then if the actual plunder config works out at below 10% or over 20%, a warning will be given.
